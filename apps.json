@@ -17,12 +17,12 @@
       "id": "vatradar",
       "name": "VatRadar",
       "packageName": "com.vatradar.app",
-      "versionCode": 28,
-      "versionName": "1.0.0-rc3.2",
+      "versionCode": 30,
+      "versionName": "1.0.0-rc3.4",
       "description": "Live VATSIM-radar met vluchten, ATC, vliegvelden, routes en vliegtuigfoto's.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/vatradar.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/vatradar-v1.0.0-rc3.2/VatRadar-v1.0.0-rc3.2.apk",
-      "changelog": "Release notes:\n\nZoekvenster verdwijnt nu automatisch tijdens slepen, draaien en in-/uitzoomen op de kaart.\nHet zoekvenster verschijnt weer zodra de kaart kort stilstaat.\nOok dubbel tikken en de +/− zoomknoppen volgen dit gedrag.\nKaartbediening voelt hierdoor rustiger en minder in de weg.\nDiverse kleine stabiliteits- en interfaceverbeteringen.",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/vatradar-v1.0.0-rc3.4/VatRadar-v1.0.0-rc3.4.apk",
+      "changelog": "VatRadar 1.0.0-rc3.4\n\nAdded full English language support\nAdded language selection: System, Nederlands and English\nAutomatically follows the device language when System is selected\nImproved international usability throughout the app\nFixed a Compose build issue in the flight sharing function\nVarious stability and interface improvements\n\n<img width=\"1122\" height=\"1402\" alt=\"ChatGPT Image 2 sep 2026, 00_53_52\" src=\"https://github.com/user-attachments/assets/68aea02b-073c-4105-98b1-a4a2d7a650ca\" />",
       "publishedAt": "2026-09-01"
     },
     {
