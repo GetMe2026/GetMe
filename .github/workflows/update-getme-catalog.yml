@@ -1,0 +1,195 @@
+name: Update GetMe catalog from release
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Bestaande release-tag opnieuw in apps.json verwerken"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  update-catalog:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Android tools instellen
+        uses: android-actions/setup-android@v3
+
+      - name: Android build-tools installeren
+        shell: bash
+        run: sdkmanager "build-tools;36.0.0"
+
+      - name: Release-tag bepalen
+        id: release
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "release" ]]; then
+            TAG="${{ github.event.release.tag_name }}"
+          else
+            TAG="${{ inputs.tag }}"
+          fi
+
+          if [[ -z "$TAG" ]]; then
+            echo "Geen release-tag gevonden."
+            exit 1
+          fi
+
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+
+      - name: Releasegegevens ophalen
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.release.outputs.tag }}
+        shell: bash
+        run: |
+          gh api "repos/${GITHUB_REPOSITORY}/releases/tags/${TAG}" > /tmp/getme-release.json
+
+          APK_COUNT=$(jq '[.assets[] | select(.name | ascii_downcase | endswith(".apk"))] | length' /tmp/getme-release.json)
+          if [[ "$APK_COUNT" -ne 1 ]]; then
+            echo "GetMe verwacht precies 1 APK in deze release, maar vond: $APK_COUNT"
+            echo "Upload precies één .apk-bestand naar de GitHub Release en probeer opnieuw."
+            exit 1
+          fi
+
+      - name: APK downloaden
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ steps.release.outputs.tag }}
+        shell: bash
+        run: |
+          rm -rf release-apk
+          mkdir -p release-apk
+          gh release download "$TAG" --pattern '*.apk' --dir release-apk
+
+          APK=$(find release-apk -maxdepth 1 -type f -iname '*.apk' -print -quit)
+          if [[ -z "$APK" ]]; then
+            echo "APK kon niet worden gedownload."
+            exit 1
+          fi
+
+          echo "APK_PATH=$APK" >> "$GITHUB_ENV"
+
+      - name: APK-versie en package uitlezen
+        shell: bash
+        run: |
+          AAPT=$(find "$ANDROID_HOME/build-tools" -maxdepth 2 -type f -name aapt | sort -V | tail -n 1)
+          if [[ -z "$AAPT" ]]; then
+            echo "aapt niet gevonden in Android build-tools."
+            exit 1
+          fi
+
+          BADGING=$($AAPT dump badging "$APK_PATH")
+          PACKAGE_LINE=$(printf '%s\n' "$BADGING" | grep '^package:' | head -n 1)
+
+          PACKAGE_NAME=$(printf '%s\n' "$PACKAGE_LINE" | sed -n "s/.*name='\([^']*\)'.*/\1/p")
+          VERSION_CODE=$(printf '%s\n' "$PACKAGE_LINE" | sed -n "s/.*versionCode='\([^']*\)'.*/\1/p")
+          VERSION_NAME=$(printf '%s\n' "$PACKAGE_LINE" | sed -n "s/.*versionName='\([^']*\)'.*/\1/p")
+
+          if [[ -z "$PACKAGE_NAME" || -z "$VERSION_CODE" || -z "$VERSION_NAME" ]]; then
+            echo "Package- of versiegegevens konden niet uit de APK worden gelezen."
+            echo "$PACKAGE_LINE"
+            exit 1
+          fi
+
+          echo "PACKAGE_NAME=$PACKAGE_NAME" >> "$GITHUB_ENV"
+          echo "VERSION_CODE=$VERSION_CODE" >> "$GITHUB_ENV"
+          echo "VERSION_NAME=$VERSION_NAME" >> "$GITHUB_ENV"
+
+          echo "APK: $PACKAGE_NAME · $VERSION_NAME · versionCode $VERSION_CODE"
+
+      - name: apps.json automatisch bijwerken
+        shell: bash
+        run: |
+          python3 <<'PY'
+          import json
+          import os
+          import re
+          from pathlib import Path
+
+          catalog_path = Path("apps.json")
+          release_path = Path("/tmp/getme-release.json")
+
+          if not catalog_path.exists():
+              raise SystemExit("apps.json staat niet in de hoofdmap van de repository.")
+
+          catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
+          release = json.loads(release_path.read_text(encoding="utf-8"))
+
+          package_name = os.environ["PACKAGE_NAME"]
+          version_code = int(os.environ["VERSION_CODE"])
+          version_name = os.environ["VERSION_NAME"]
+
+          apk_assets = [
+              asset for asset in release.get("assets", [])
+              if str(asset.get("name", "")).lower().endswith(".apk")
+          ]
+          if len(apk_assets) != 1:
+              raise SystemExit(f"Verwacht 1 APK-asset, gevonden: {len(apk_assets)}")
+
+          apk_url = apk_assets[0]["browser_download_url"]
+          published_at = str(release.get("published_at") or "")[:10]
+          notes = (release.get("body") or "").strip()
+
+          # Maak GitHub-Markdown wat rustiger voor de gewone tekstweergave in GetMe.
+          cleaned_lines = []
+          for line in notes.splitlines():
+              line = re.sub(r"^\s{0,3}#{1,6}\s*", "", line)
+              line = line.replace("**", "").replace("__", "").replace("`", "")
+              cleaned_lines.append(line.rstrip())
+          changelog = "\n".join(cleaned_lines).strip()
+          if not changelog:
+              changelog = f"Update naar {version_name}."
+
+          apps = catalog.setdefault("apps", [])
+          match = next((app for app in apps if app.get("packageName") == package_name), None)
+          if match is None:
+              known = ", ".join(sorted(str(a.get("packageName", "")) for a in apps))
+              raise SystemExit(
+                  f"{package_name} staat nog niet in apps.json. "
+                  f"Voeg een nieuwe app één keer handmatig toe. Bekende packages: {known}"
+              )
+
+          old_version = match.get("versionName", "?")
+          old_code = match.get("versionCode", "?")
+
+          match["versionCode"] = version_code
+          match["versionName"] = version_name
+          match["apkUrl"] = apk_url
+          match["changelog"] = changelog
+          match["publishedAt"] = published_at
+
+          catalog_path.write_text(
+              json.dumps(catalog, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8",
+          )
+
+          print(
+              f"Catalogus bijgewerkt: {package_name} "
+              f"{old_version} ({old_code}) -> {version_name} ({version_code})"
+          )
+          PY
+
+      - name: Wijziging naar main committen
+        shell: bash
+        run: |
+          if git diff --quiet -- apps.json; then
+            echo "apps.json was al actueel; niets te committen."
+            exit 0
+          fi
+
+          git config user.name "GetMe Release Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add apps.json
+          git commit -m "GetMe: ${PACKAGE_NAME} ${VERSION_NAME}"
+          git push origin main
