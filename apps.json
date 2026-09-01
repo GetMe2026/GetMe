@@ -69,8 +69,8 @@
       "versionName": "1.0.0-alpha10.3",
       "description": "Live vliegtuigen in de buurt bekijken op de kaart met vluchtgegevens, routes en vliegtuigfoto's.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/skyradar.png",
-      "apkUrl": "",
-      "changelog": "Eerste versie van SkyRadar in GetMe.",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/skyradar-v1.0.0-alpha10.3/SkyRadar-v1.0.0-alpha10.3.apk",
+      "changelog": "SkyRadar v1.0.0-alpha10.3\n\n- Eerste SkyRadar-release via GetMe.\n- Bekijk live vliegtuigen in je omgeving.\n- Interactieve kaart met vliegtuigposities.\n- Vluchtgegevens zoals route, hoogte, snelheid en heading.\n- Zoeken op callsign, vluchtnummer en registratie.\n- Vliegtuigfoto's en route-informatie.\n- Vluchten volgen op de kaart.\n- Favorieten en opgeslagen vliegtuigen.\n- Material You-interface met licht, donker en dynamische kleuren.",
       "publishedAt": "2026-09-01"
     }
   ]
