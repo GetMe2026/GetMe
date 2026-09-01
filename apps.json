@@ -36,6 +36,18 @@
       "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/esmarty-v0.4.0/Esmarty-v0.4.0.apk",
       "changelog": "Esmarty v0.4.0\n\n- Eerste Esmarty-release via GetMe.\n- Lokale prepaid-eSIMs zoeken en vergelijken.\n- Prijzen worden in euro weergegeven.\n- Wallet voor het lokaal bewaren van gekozen aanbiedingen.\n- Material You-interface.",
       "publishedAt": "2026-09-01"
+    },
+    {
+      "id": "p2dichtbij",
+      "name": "P2 Dichtbij",
+      "packageName": "nl.negentwee",
+      "versionCode": 31945,
+      "versionName": "2.47.2",
+      "description": "P2000-meldingen en incidenten bij jou in de buurt.",
+      "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/p2dichtbij.png",
+      "apkUrl": "",
+      "changelog": "Eerste versie van P2 Dichtbij in GetMe.",
+      "publishedAt": "2026-09-01"
     }
   ]
 }
