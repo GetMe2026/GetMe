@@ -5,12 +5,12 @@
       "id": "radiosphere",
       "name": "RadioSphere",
       "packageName": "com.radiosphere.app",
-      "versionCode": 44,
-      "versionName": "0.3.23",
+      "versionCode": 48,
+      "versionName": "0.3.27",
       "description": "Radio, podcasts, lokale audio en nieuwsbulletins.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/radiosphere.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/radiosphere-v0.3.23/RadioSphere-v0.3.23.apk",
-      "changelog": "RadioSphere v0.3.23\n\n- Luisterstatistieken verplaatst van Bibliotheek naar Home.\n- Verder luisteren staat in Bibliotheek nu direct bovenaan.\n- Podcastkaarten op Home compacter gemaakt.\n- Home-indeling verder verfijnd zonder lege vlakken.\n- Batterijoptimalisaties uit v0.3.22 blijven behouden.",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/radiosphere-v0.3.27/RadioSphere.v0.3.27.apk",
+      "changelog": "RadioSphere v0.3.27\n\nv0.3.27 — actuele Nieuw-lijst bij openen Podcasts\n\n- Bij het openen van de Podcast-pagina controleert RadioSphere eenmalig alle favoriete podcasts op nieuwe afleveringen.\n- De voorgrondcontrole draait uitsluitend terwijl de Podcast-pagina zelf geopend is en maakt geen extra WorkManager-taak, service of achtergrondpolling aan.\n- De controle is maximaal één keer per 30 minuten, ook na een app-herstart, zodat heen-en-weer tikken geen onnodige netwerkrequests veroorzaakt.\n- Nieuwe afleveringen worden meteen aan Podcast → Nieuw toegevoegd. De per-podcast en algemene meldingsinstellingen bepalen alleen of Android daarnaast een melding toont; ze verbergen geen afleveringen uit de in-app Nieuw-lijst.\n- De ingestelde achtergrondcontrole (bijvoorbeeld iedere 3 uur) blijft ongewijzigd als fallback wanneer RadioSphere gesloten is.\n- Tijdelijke feedfouten laten bestaande Nieuw-items en episode-markers ongemoeid; de periodieke worker kan later opnieuw controleren.\n- Alle batterijoptimalisaties, notificatietoestemming en populaire-podcastcache uit v0.3.22–v0.3.26 blijven behouden.",
       "publishedAt": "2026-09-01"
     },
     {
