@@ -1,0 +1,17 @@
+{
+  "catalogVersion": 1,
+  "apps": [
+    {
+      "id": "radiosphere",
+      "name": "RadioSphere",
+      "packageName": "com.radiosphere.app",
+      "versionCode": 42,
+      "versionName": "0.3.21",
+      "description": "Radio, podcasts, lokale audio, nieuwsbulletins en actuele verkeersinformatie.",
+      "iconUrl": "",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/radiosphere-v0.3.21/RadioSphere-v0.3.21.apk",
+      "changelog": "Verbeterde verkeersinformatie, duidelijker onderscheid tussen files en verkeershinder, VILD-locaties voor Nederlandse wegen en diverse verbeteringen aan bibliotheek, podcasts en mediaspeler.",
+      "publishedAt": "2026-09-01"
+    }
+  ]
+}
