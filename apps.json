@@ -5,12 +5,12 @@
       "id": "radiosphere",
       "name": "RadioSphere",
       "packageName": "com.radiosphere.app",
-      "versionCode": 43,
-      "versionName": "0.3.22",
+      "versionCode": 44,
+      "versionName": "0.3.23",
       "description": "Radio, podcasts, lokale audio en nieuwsbulletins.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/radiosphere.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/radiosphere-v0.3.22/RadioSphere-v0.3.22.apk",
-      "changelog": "RadioSphere v0.3.22\n\n- Lager batterijverbruik door efficiëntere playback-updates.\n- Podcastvoortgang wordt direct opgeslagen bij pauzeren en blijft correct hervatten.\n- Achtergrondcontrole van podcasts draait alleen wanneer deze daadwerkelijk nodig is voor meldingen of automatisch downloaden.\n- Onnodige achtergrondactiviteit tijdens gepauzeerde audio is verminderd.\n- Verkeersinformatie volledig verwijderd uit RadioSphere en uit de instellingen.\n- Oude achtergrondtaken voor verkeersinformatie worden na de update automatisch opgeruimd.",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/radiosphere-v0.3.23/RadioSphere-v0.3.23.apk",
+      "changelog": "RadioSphere v0.3.23\n\n- Luisterstatistieken verplaatst van Bibliotheek naar Home.\n- Verder luisteren staat in Bibliotheek nu direct bovenaan.\n- Podcastkaarten op Home compacter gemaakt.\n- Home-indeling verder verfijnd zonder lege vlakken.\n- Batterijoptimalisaties uit v0.3.22 blijven behouden.",
       "publishedAt": "2026-09-01"
     },
     {
