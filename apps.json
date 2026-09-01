@@ -45,8 +45,32 @@
       "versionName": "2.47.2",
       "description": "P2000-meldingen en incidenten bij jou in de buurt.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/p2dichtbij.png",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/p2dichtbij-v2.47.2/P2Dichtbij-v2.47.2.apk",
+      "changelog": "P2 Dichtbij v2.47.2\n\n- Eerste P2 Dichtbij-release via GetMe.\n- P2000-meldingen en incidenten in de buurt.\n- Vernieuwde P2 Dichtbij-naam en app-icoon.\n- Material You-interface.",
+      "publishedAt": "2026-09-01"
+    },
+    {
+      "id": "helderweer",
+      "name": "HelderWeer",
+      "packageName": "com.helderweer.app",
+      "versionCode": 9,
+      "versionName": "1.5.0",
+      "description": "Material You weer-app met verwachtingen, waarschuwingen, radar en weerdetails.",
+      "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/helderweer.png",
       "apkUrl": "",
-      "changelog": "Eerste versie van P2 Dichtbij in GetMe.",
+      "changelog": "Eerste versie van HelderWeer in GetMe.",
+      "publishedAt": "2026-09-01"
+    },
+    {
+      "id": "skyradar",
+      "name": "SkyRadar",
+      "packageName": "com.skyradar.app",
+      "versionCode": 13,
+      "versionName": "1.0.0-alpha10.3",
+      "description": "Live vliegtuigen in de buurt bekijken op de kaart met vluchtgegevens, routes en vliegtuigfoto's.",
+      "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/skyradar.png",
+      "apkUrl": "",
+      "changelog": "Eerste versie van SkyRadar in GetMe.",
       "publishedAt": "2026-09-01"
     }
   ]
