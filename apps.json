@@ -53,12 +53,12 @@
       "id": "helderweer",
       "name": "HelderWeer",
       "packageName": "com.helderweer.app",
-      "versionCode": 9,
-      "versionName": "1.5.0",
+      "versionCode": 10,
+      "versionName": "2.0.0",
       "description": "Material You weer-app met verwachtingen, waarschuwingen, radar en weerdetails.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/helderweer.png",
-      "apkUrl": "",
-      "changelog": "Eerste versie van HelderWeer in GetMe.",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/helderweer-v2.0.0/HelderWeer-v2.0.0.apk",
+      "changelog": "• Volledig vernieuwd weeroverzicht met slimme weersamenvatting\n• Nauwkeurigere korte-termijn regenverwachting met 15-minutenupdates\n• Nieuwe kaarten voor UV, pollen, luchtkwaliteit, mist, windstoten, hitte, vorst, onweer en sneeuw\n• Nieuwe interactieve weerkaart met radar, bewolking, wind, temperatuur en luchtkwaliteit\n• Betrouwbaarheid van verwachtingen op basis van meerdere weermodellen\n• Modelvergelijking tussen o.a. KNMI, ECMWF en ICON\n• Uitgebreidere weerwaarschuwingen met regio en geldigheidsduur\n• Nieuwe kustinformatie zoals golven en zeewatertemperatuur\n• Dauwpunt, neerslag afgelopen 24 uur en vergelijking met gisteren toegevoegd\n• Favoriete locaties en verbeterde locatiezoekfunctie\n• Drie vernieuwde Material You-widgets: compact, breed en dagoverzicht\n• Slimmere caching en offline weergave\n• Achtergrondverbruik en batterijgebruik verder geoptimaliseerd\n• Diverse verbeteringen en bugfixes",
       "publishedAt": "2026-09-01"
     },
     {
