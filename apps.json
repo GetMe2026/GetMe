@@ -7,10 +7,10 @@
       "packageName": "com.radiosphere.app",
       "versionCode": 43,
       "versionName": "0.3.22",
-      "description": "Radio, podcasts, lokale audio, nieuwsbulletins en actuele verkeersinformatie.",
+      "description": "Radio, podcasts, lokale audio en nieuwsbulletins.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/radiosphere.png",
       "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/radiosphere-v0.3.22/RadioSphere-v0.3.22.apk",
-      "changelog": "RadioSphere v0.3.22\n\n* Lager batterijverbruik door efficiëntere playback-updates.\n* Podcastvoortgang wordt direct opgeslagen bij pauzeren en blijft correct hervatten.\n* Achtergrondcontrole van podcasts draait alleen wanneer deze daadwerkelijk nodig is voor meldingen of automatisch downloaden.\n* Onnodige achtergrondactiviteit tijdens gepauzeerde audio is verminderd.\n* Verkeersinformatie volledig verwijderd uit RadioSphere en uit de instellingen.\n* Oude achtergrondtaken voor verkeersinformatie worden na de update automatisch opgeruimd.",
+      "changelog": "RadioSphere v0.3.22\n\n- Lager batterijverbruik door efficiëntere playback-updates.\n- Podcastvoortgang wordt direct opgeslagen bij pauzeren en blijft correct hervatten.\n- Achtergrondcontrole van podcasts draait alleen wanneer deze daadwerkelijk nodig is voor meldingen of automatisch downloaden.\n- Onnodige achtergrondactiviteit tijdens gepauzeerde audio is verminderd.\n- Verkeersinformatie volledig verwijderd uit RadioSphere en uit de instellingen.\n- Oude achtergrondtaken voor verkeersinformatie worden na de update automatisch opgeruimd.",
       "publishedAt": "2026-09-01"
     },
     {
@@ -23,6 +23,18 @@
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/vatradar.png",
       "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/vatradar-v1.0.0-rc3.1/VatRadar-v1.0.0-rc3.1.apk",
       "changelog": "Uitgebreide ATC-tab met alle online controllers, Drukste ATC-sortering, controllerdetails en filters voor Alle, CTR, APP, TWR en GND.",
+      "publishedAt": "2026-09-01"
+    },
+    {
+      "id": "esmarty",
+      "name": "Esmarty",
+      "packageName": "com.esmarty.app",
+      "versionCode": 5,
+      "versionName": "0.4.0",
+      "description": "Material You app voor het vinden en vergelijken van lokale prepaid-eSIMs.",
+      "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/esmarty.png",
+      "apkUrl": "",
+      "changelog": "Eerste versie van Esmarty in GetMe.",
       "publishedAt": "2026-09-01"
     }
   ]
