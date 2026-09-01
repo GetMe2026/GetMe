@@ -17,12 +17,12 @@
       "id": "vatradar",
       "name": "VatRadar",
       "packageName": "com.vatradar.app",
-      "versionCode": 27,
-      "versionName": "1.0.0-rc3.1",
+      "versionCode": 28,
+      "versionName": "1.0.0-rc3.2",
       "description": "Live VATSIM-radar met vluchten, ATC, vliegvelden, routes en vliegtuigfoto's.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/vatradar.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/vatradar-v1.0.0-rc3.1/VatRadar-v1.0.0-rc3.1.apk",
-      "changelog": "Uitgebreide ATC-tab met alle online controllers, Drukste ATC-sortering, controllerdetails en filters voor Alle, CTR, APP, TWR en GND.",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/vatradar-v1.0.0-rc3.2/VatRadar-v1.0.0-rc3.2.apk",
+      "changelog": "Release notes:\n\nZoekvenster verdwijnt nu automatisch tijdens slepen, draaien en in-/uitzoomen op de kaart.\nHet zoekvenster verschijnt weer zodra de kaart kort stilstaat.\nOok dubbel tikken en de +/− zoomknoppen volgen dit gedrag.\nKaartbediening voelt hierdoor rustiger en minder in de weg.\nDiverse kleine stabiliteits- en interfaceverbeteringen.",
       "publishedAt": "2026-09-01"
     },
     {
