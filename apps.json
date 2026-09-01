@@ -5,12 +5,12 @@
       "id": "radiosphere",
       "name": "RadioSphere",
       "packageName": "com.radiosphere.app",
-      "versionCode": 48,
-      "versionName": "0.3.27",
+      "versionCode": 50,
+      "versionName": "0.3.29",
       "description": "Radio, podcasts, lokale audio en nieuwsbulletins.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/radiosphere.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/radiosphere-v0.3.27/RadioSphere-v0.3.27.apk",
-      "changelog": "RadioSphere v0.3.27\n\n- Nieuwe afleveringen worden direct gecontroleerd wanneer je de Podcast-pagina opent.\n- Deze controle gebeurt alleen tijdens actief gebruik en maximaal eens per 30 minuten.\n- De bestaande achtergrondcontrole voor podcastmeldingen blijft behouden.\n- Verbeterde betrouwbaarheid van podcastmeldingen en notificatierechten.\n- Nieuwe afleveringen verwijderd van Home om dubbele inhoud te voorkomen.\n- Populaire podcasts op Home compacter en hoger geplaatst.\n- Betrouwbaardere caching en verversing van populaire podcasts.\n- Batterijoptimalisaties uit eerdere versies blijven behouden.",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/radiosphere-v0.3.29/RadioSphere-v0.3.29.apk",
+      "changelog": "RadioSphere v0.3.29 — Stable\n\nDit is de gestabiliseerde RadioSphere-release na een volledige controle van de broncode.\n\n- Betrouwbaardere zenderlogo's, inclusief ondersteuning voor SVG-afbeeldingen en betere fallbacks.\n- Verbeterde zenderlogo's in de app, mediaspeler en op het lockscreen.\n- Podcastmeldingen en controles verder gestabiliseerd.\n- Nieuwe afleveringen worden tijdens gebruik efficiënt bijgewerkt zonder extra achtergrondwerk.\n- Betere afhandeling van tijdelijke RSS-, Apple- en Radio Browser-fouten.\n- Oude of langzame netwerkverzoeken kunnen nieuwere acties niet meer overschrijven.\n- Radio Browser-zoekopdrachten blijven bruikbaar als één bron tijdelijk niet reageert.\n- Populaire podcasts worden lokaal gecachet en betrouwbaar per land vernieuwd.\n- Communityfuncties volledig verwijderd.\n- Bibliotheek vereenvoudigd: de dubbele 'Alles'-weergave is verwijderd.\n- Verder luisteren, radiofavorieten en podcastfavorieten staan nu alleen op hun relevante plek.\n- Geocoder en netwerkverzoeken hebben extra bescherming tegen time-outs.\n- Batterijoptimalisaties uit eerdere versies blijven behouden.\n- Diverse interne stabiliteits- en onderhoudsverbeteringen.\n\nAanbevolen stabiele versie.",
       "publishedAt": "2026-09-01"
     },
     {
