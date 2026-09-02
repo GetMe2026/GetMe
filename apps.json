@@ -5,12 +5,12 @@
       "id": "radiosphere",
       "name": "RadioSphere",
       "packageName": "com.radiosphere.app",
-      "versionCode": 57,
-      "versionName": "0.3.36",
+      "versionCode": 58,
+      "versionName": "0.3.37",
       "description": "Radio, podcasts, lokale audio en nieuwsbulletins.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/radiosphere.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/radiosphere-v0.3.36/RadioSphere-v0.3.36.apk",
-      "changelog": "What's new in RadioSphere 0.3.36\n\n- Optional Now Playing support for radio stations\n- Displays artist and track title when the stream provides metadata\n- Battery-friendly metadata handling with no background polling when radio is not playing\n- Added an on/off setting for Now Playing\n- Updated lock screen, notification, widget and mini player metadata\n- More compact “What is your mood?” section\n- Removed the duplicate podcast section from Home\n- “Popular in your country” now appears higher on the Home screen\n- Country-based station recommendations remain unchanged\n- Various UI and stability improvements\n\n<img width=\"1054\" height=\"1492\" alt=\"644933895-ec16e4cf-4bb5-4ca9-b1fa-7392505a95f1\" src=\"https://github.com/user-attachments/assets/156efdaa-38d6-4555-86ff-c0c1b9ebbf87\" />",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/radiosphere-v0.3.37/RadioSphere-v0.3.37.apk",
+      "changelog": "RadioSphere v0.3.37\n\nWPCN added\n\nTrue Oldies 92.1 & 1010 AM WPCN from Stevens Point, Wisconsin, has been added.\n\n<img width=\"1054\" height=\"1492\" alt=\"645102301-156efdaa-38d6-4555-86ff-c0c1b9ebbf87\" src=\"https://github.com/user-attachments/assets/b983be1b-1cc7-45d9-b6c4-12885e65effc\" />",
       "publishedAt": "2026-09-02"
     },
     {
