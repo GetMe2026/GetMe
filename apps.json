@@ -29,13 +29,13 @@
       "id": "esmarty",
       "name": "Esmarty",
       "packageName": "com.esmarty.app",
-      "versionCode": 5,
-      "versionName": "0.4.0",
+      "versionCode": 6,
+      "versionName": "0.5.0",
       "description": "Material You app voor het vinden en vergelijken van lokale prepaid-eSIMs.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/esmarty.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/esmarty-v0.4.0/Esmarty-v0.4.0.apk",
-      "changelog": "Esmarty v0.4.0\n\n- Eerste Esmarty-release via GetMe.\n- Lokale prepaid-eSIMs zoeken en vergelijken.\n- Prijzen worden in euro weergegeven.\n- Wallet voor het lokaal bewaren van gekozen aanbiedingen.\n- Material You-interface.",
-      "publishedAt": "2026-09-01"
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/esmarty-v0.5.0/Esmarty-v0.5.0.apk",
+      "changelog": "Esmarty 0.5.0\n\nA major update that turns Esmarty into a more complete travel and local eSIM assistant.\n\nWhat's new:\n\nAdded My Trips with a personal travel dashboard\nAdded multi-country trip planning\nAdded a data usage calculator for Maps, messaging, social media, music and video\nAdded the Esmarty Score to help find the best prepaid eSIM for your trip\nImproved local provider, network and 5G information\nAdded smarter eSIM comparison and recommendations\nExpanded the Wallet with installation and activation statuses\nAdded automatic “Expiring soon” status without background notifications\nAdded device and eSIM compatibility check\nAdded step-by-step installation assistance\nAdded arrival mode with a useful connectivity checklist\nAdded an interactive troubleshooting assistant\nPrices are displayed in euros by default\nOnly countries with verified local prepaid eSIM providers remain available\nRemoved reminder and notification functionality\nVarious interface, stability and usability improvements\n\nEsmarty remains privacy-friendly and performs most travel planning locally on your device.\n\n<img width=\"1122\" height=\"1402\" alt=\"ChatGPT Image 3 sep 2026, 00_55_17\" src=\"https://github.com/user-attachments/assets/76f5b5ad-6f51-481c-9f58-36d334145a81\" />",
+      "publishedAt": "2026-09-02"
     },
     {
       "id": "p2dichtbij",
