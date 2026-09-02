@@ -5,13 +5,13 @@
       "id": "radiosphere",
       "name": "RadioSphere",
       "packageName": "com.radiosphere.app",
-      "versionCode": 51,
-      "versionName": "0.3.30",
+      "versionCode": 53,
+      "versionName": "0.3.32",
       "description": "Radio, podcasts, lokale audio en nieuwsbulletins.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/radiosphere.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/radiosphere-v0.3.30/RadioSphere-v0.3.30.apk",
-      "changelog": "RadioSphere v0.3.30 — Stable\n\n- Betrouwbaardere weergave van zenderlogo's.\n- Tijdelijk mislukte logo's kunnen later opnieuw worden geladen.\n- Extra fallback voor ontbrekende zenderlogo's.\n- SVG-zenderlogo's blijven ondersteund.\n- Vernieuwde Material You-mediaspeler.\n- Groter artwork en duidelijkere zender- en trackinformatie.\n- Rustigere bediening voor afspelen, cast, favorieten en audiokwaliteit.\n- Podcastmeldingen en achtergrondcontroles blijven ongewijzigd.\n- Stabiliteitsverbeteringen uit v0.3.29 blijven behouden.",
-      "publishedAt": "2026-09-01"
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/radiosphere-v0.3.32/RadioSphere-v0.3.32.apk",
+      "changelog": "🚀 Wat is er nieuw\n\nSlimme Mood Player op het Home-scherm\nDe luisterstatistiekenkaart op het Home-scherm is vervangen door de nieuwe functie ‘Wat is je mood?’. Met één tik op een stemming (zoals 😰 Stress, Somber, Vrolijk, Moe, Energie of Rust) speelt RadioSphere direct de best passende zender af—zonder tussenkomst van een keuzelijst.\n\nAchter de schermen: Slimme & bewuste zenderselectie\nHet kiezen van de juiste zender gebeurt via een geavanceerd selectie-algoritme dat rekening houdt met meerdere factoren:\n\nMulti-genre zoekopdracht: Zoekt gelijktijdig op meerdere relevante genres die passen bij jouw gekozen stemming.\n\nAlleen werkende zenders: Filtert vooraf en accepteert uitsluitend zenders die door Radio Browser als actief en werkend zijn gemarkeerd.\n\nGeavanceerde tag-matching: Geeft extra gewicht aan exacte mood-matches en sluit tegenstrijdige genres uit (bijv. geen hardstyle, metal of news wanneer je kiest voor Stress).\n\nPopulariteit & Betrouwbaarheid: Gebruikt luisterstatistieken en gebruikssignalen als doorslaggevende factor voor de beste luisterervaring.\n\n Afwisseling: Onthoudt recent afgespeelde stations om te voorkomen dat je achter elkaar dezelfde zender te horen krijgt.\n\nOptimale Audiokwaliteit: Respecteert jouw persoonlijke audiokwaliteit-instelling. Onze kwaliteitsresolver kiest vervolgens automatisch de beste streamvariant van het geselecteerde station.",
+      "publishedAt": "2026-09-02"
     },
     {
       "id": "vatradar",
