@@ -5,12 +5,12 @@
       "id": "radiosphere",
       "name": "RadioSphere",
       "packageName": "com.radiosphere.app",
-      "versionCode": 58,
-      "versionName": "0.3.37",
+      "versionCode": 59,
+      "versionName": "0.3.38",
       "description": "Radio, podcasts, lokale audio en nieuwsbulletins.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/radiosphere.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/radiosphere-v0.3.37/RadioSphere-v0.3.37.apk",
-      "changelog": "RadioSphere v0.3.37\n\nWPCN added\n\nTrue Oldies 92.1 & 1010 AM WPCN from Stevens Point, Wisconsin, has been added.\n\n<img width=\"1054\" height=\"1492\" alt=\"645102301-156efdaa-38d6-4555-86ff-c0c1b9ebbf87\" src=\"https://github.com/user-attachments/assets/b983be1b-1cc7-45d9-b6c4-12885e65effc\" />",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/radiosphere-v0.3.38/RadioSphere-v0.3.38.apk",
+      "changelog": "Added True Oldies 92.1 & 1010 AM WPCN\n\n<img width=\"1054\" height=\"1492\" alt=\"645102301-156efdaa-38d6-4555-86ff-c0c1b9ebbf87\" src=\"https://github.com/user-attachments/assets/bf283612-8de9-47a9-9fc1-670ac57f0fa8\" />",
       "publishedAt": "2026-09-02"
     },
     {
