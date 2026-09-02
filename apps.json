@@ -13,18 +13,18 @@
       "changelog": "RadioSphere 0.3.33\n\nWorld radio, podcasts, news and mood-based listening.\n\nWhat's new\n\n- English and Dutch language support\n- New \"What's your mood?\" feature\n- Mood-based automatic radio station selection\n- Actual codec, bitrate and sample rate information\n- Highest available stream quality automatically selected\n\n<img width=\"1054\" height=\"1492\" alt=\"ChatGPT Image 2 sep 2026, 12_12_07\" src=\"https://github.com/user-attachments/assets/ec16e4cf-4bb5-4ca9-b1fa-7392505a95f1\" />",
       "publishedAt": "2026-09-02"
     },
-    {
-      "id": "vatradar",
-      "name": "VatRadar",
-      "packageName": "com.vatradar.app",
-      "versionCode": 30,
-      "versionName": "1.0.0-rc3.4",
-      "description": "Live VATSIM-radar met vluchten, ATC, vliegvelden, routes en vliegtuigfoto's.",
-      "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/vatradar.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/vatradar-v1.0.0-rc3.4/VatRadar-v1.0.0-rc3.4.apk",
-      "changelog": "VatRadar 1.0.0-rc3.4\n\nAdded full English language support\nAdded language selection: System, Nederlands and English\nAutomatically follows the device language when System is selected\nImproved international usability throughout the app\nFixed a Compose build issue in the flight sharing function\nVarious stability and interface improvements\n\n<img width=\"1122\" height=\"1402\" alt=\"ChatGPT Image 2 sep 2026, 00_53_52\" src=\"https://github.com/user-attachments/assets/68aea02b-073c-4105-98b1-a4a2d7a650ca\" />",
-      "publishedAt": "2026-09-01"
-    },
+{
+  "id": "vatradar",
+  "name": "VAT24",
+  "packageName": "com.vatradar.app",
+  "versionCode": 31,
+  "versionName": "1.0.0",
+  "description": "Moderne VATSIM flight tracker met live radar, vluchten, vliegvelden, ATC, weer, routes, vliegtuigfoto's en SimBrief-integratie.",
+  "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/vat24.png",
+  "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/vat24-v1.0.0/VAT24-v1.0.0.apk",
+  "changelog": "VAT24 1.0.0\n\nVAT Radar is now VAT24\nComplete new VAT24 design and branding\nNew VAT24 app icon\nRedesigned live radar interface\nNew flight and airport search\nRedesigned flight details\nImproved airport information\nImproved navigation and cleaner interface\nLive VATSIM traffic, ATC and weather retained\nAircraft photos and route tracking retained\nSimBrief integration retained\nDutch and English support\nAll existing VAT Radar functionality retained",
+  "publishedAt": "2026-09-02"
+},
     {
       "id": "esmarty",
       "name": "Esmarty",
