@@ -5,12 +5,12 @@
       "id": "radiosphere",
       "name": "RadioSphere",
       "packageName": "com.radiosphere.app",
-      "versionCode": 53,
-      "versionName": "0.3.32",
+      "versionCode": 54,
+      "versionName": "0.3.33",
       "description": "Radio, podcasts, lokale audio en nieuwsbulletins.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/radiosphere.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/radiosphere-v0.3.32/RadioSphere-v0.3.32.apk",
-      "changelog": "🚀 Wat is er nieuw\n\nSlimme Mood Player op het Home-scherm\nDe luisterstatistiekenkaart op het Home-scherm is vervangen door de nieuwe functie ‘Wat is je mood?’. Met één tik op een stemming (zoals 😰 Stress, Somber, Vrolijk, Moe, Energie of Rust) speelt RadioSphere direct de best passende zender af—zonder tussenkomst van een keuzelijst.\n\nAchter de schermen: Slimme & bewuste zenderselectie\nHet kiezen van de juiste zender gebeurt via een geavanceerd selectie-algoritme dat rekening houdt met meerdere factoren:\n\nMulti-genre zoekopdracht: Zoekt gelijktijdig op meerdere relevante genres die passen bij jouw gekozen stemming.\n\nAlleen werkende zenders: Filtert vooraf en accepteert uitsluitend zenders die door Radio Browser als actief en werkend zijn gemarkeerd.\n\nGeavanceerde tag-matching: Geeft extra gewicht aan exacte mood-matches en sluit tegenstrijdige genres uit (bijv. geen hardstyle, metal of news wanneer je kiest voor Stress).\n\nPopulariteit & Betrouwbaarheid: Gebruikt luisterstatistieken en gebruikssignalen als doorslaggevende factor voor de beste luisterervaring.\n\n Afwisseling: Onthoudt recent afgespeelde stations om te voorkomen dat je achter elkaar dezelfde zender te horen krijgt.\n\nOptimale Audiokwaliteit: Respecteert jouw persoonlijke audiokwaliteit-instelling. Onze kwaliteitsresolver kiest vervolgens automatisch de beste streamvariant van het geselecteerde station.",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/radiosphere-v0.3.33/RadioSphere-v0.3.33.apk",
+      "changelog": "RadioSphere 0.3.33\n\nWorld radio, podcasts, news and mood-based listening.\n\nWhat's new\n\n- English and Dutch language support\n- New \"What's your mood?\" feature\n- Mood-based automatic radio station selection\n- Actual codec, bitrate and sample rate information\n- Highest available stream quality automatically selected\n\n<img width=\"1054\" height=\"1492\" alt=\"ChatGPT Image 2 sep 2026, 12_12_07\" src=\"https://github.com/user-attachments/assets/ec16e4cf-4bb5-4ca9-b1fa-7392505a95f1\" />",
       "publishedAt": "2026-09-02"
     },
     {
