@@ -17,13 +17,13 @@
       "id": "vatradar",
       "name": "VatRadar",
       "packageName": "com.vatradar.app",
-      "versionCode": 30,
-      "versionName": "1.0.0-rc3.4",
+      "versionCode": 31,
+      "versionName": "1.0.0",
       "description": "Live VATSIM-radar met vluchten, ATC, vliegvelden, routes en vliegtuigfoto's.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/vatradar.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/vatradar-v1.0.0-rc3.4/VatRadar-v1.0.0-rc3.4.apk",
-      "changelog": "VatRadar 1.0.0-rc3.4\n\nAdded full English language support\nAdded language selection: System, Nederlands and English\nAutomatically follows the device language when System is selected\nImproved international usability throughout the app\nFixed a Compose build issue in the flight sharing function\nVarious stability and interface improvements\n\n<img width=\"1122\" height=\"1402\" alt=\"ChatGPT Image 2 sep 2026, 00_53_52\" src=\"https://github.com/user-attachments/assets/68aea02b-073c-4105-98b1-a4a2d7a650ca\" />",
-      "publishedAt": "2026-09-01"
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/vat24-v1.0.0/VAT24.v1.0.0.apk",
+      "changelog": "VAT24 v1.0.0 — complete rebrand & redesign\n\nVAT24 is the redesigned successor to VAT Radar. This build is based on the latest VAT Radar v1.0.0-rc3.4 Android source and keeps its existing data/repository logic and feature set while replacing the visible product identity and core navigation/UI.\n\n What changed\n\n- Complete visible rename from VAT Radar to VAT24.\n- New dark navy + cyan Material 3 design system, inspired by a modern aviation radar interface.\n- New VAT24 launcher/adaptive icon and branding.\n- New main navigation: Radar · Search · Airports · Settings.\n- Live overview, ATC, Following and SimBrief remain available from the overflow menu, so no existing function is removed.\n- New dedicated flight/airport Search screen.\n- Cleaner fullscreen radar with compact filters and a persistent selected-flight card.\n- Redesigned flight detail hero with route, operator/type, status and core metrics.\n- Redesigned airport browser/details with card-based traffic presentation.\n- Dutch and English support retained.\n- Existing VATSIM, weather, ATC, SimBrief, aircraft-photo, notification, route-line, favourites and background functionality retained.\n- New vat24://flight/<CALLSIGN> deep links; legacy vatradar://flight/<CALLSIGN> links still open for compatibility.\n- Package/application ID intentionally remains com.vatradar.app so existing installations can update in place.\n- Preferred signing/API Gradle properties use VAT24_*; existing VATRADAR_* properties are accepted as a compatibility fallback.\n- versionCode 31, versionName 1.0.0, compileSdk 37, targetSdk 36.\n\n> VAT24 remains an independent, unofficial VATSIM companion for flight simulation only.",
+      "publishedAt": "2026-09-03"
     },
     {
       "id": "esmarty",
