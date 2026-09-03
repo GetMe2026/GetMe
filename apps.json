@@ -60,6 +60,18 @@
       "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/weatherme-v2.4.1/WeatherMe-v2.4.1.apk",
       "changelog": "WeatherMe 2.4.1\n\n- Fixed the WeatherMe launcher icon on Android.\n- Improved adaptive icon scaling for launchers and Android app settings.\n- No changes to weather functionality, widgets, alerts or radar.\n\n<img width=\"1122\" height=\"1402\" alt=\"645544882-4fb915bc-dd7b-471f-93b6-dbd27b12b586\" src=\"https://github.com/user-attachments/assets/3df894b3-c0e4-421f-b608-490a623408d1\" />",
       "publishedAt": "2026-09-03"
+    },
+    {
+      "id": "skyradar",
+      "name": "SkyRadar",
+      "packageName": "com.skyradar.app",
+      "versionCode": 16,
+      "versionName": "1.0.0-alpha13.0",
+      "description": "Live aircraft spotting met vliegtuigfoto's, kaart, slimme meldingen en uitgebreide spotterfuncties.",
+      "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/skyradar.png",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/skyradar-v1.0.0-alpha13.0/SkyRadar-v1.0.0-alpha13.0.apk",
+      "changelog": "SkyRadar 1.0.0-alpha13.0\n\n- Completely redesigned Material 3 interface.\n- Nearby aircraft is now the default home screen.\n- Aircraft cards show photos, distance, altitude, speed, registration and aircraft type.\n- Tap an aircraft to open and select it directly on the live map.\n- Added smart proximity notifications.\n- Filter notifications by radius, airline and aircraft type.\n- Added maximum altitude filters.\n- Added favorite aircraft registrations and alerts.\n- Added special aircraft filtering for aircraft such as the A380, Boeing 747, Antonov and military traffic.\n- Added likely-overflight detection using distance, altitude, speed and heading.\n- Added Spotter section with Favorites and Today.\n- Today records nearby aircraft including minimum distance and time of passage.\n- Improved aircraft photo matching and caching.\n- Improved location updates, navigation and overall stability.",
+      "publishedAt": "2026-09-03"
     }
   ]
 }
