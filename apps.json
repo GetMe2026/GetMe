@@ -29,13 +29,13 @@
       "id": "esmarty",
       "name": "Esmarty",
       "packageName": "com.esmarty.app",
-      "versionCode": 6,
-      "versionName": "0.5.0",
+      "versionCode": 7,
+      "versionName": "0.5.1",
       "description": "Material You app voor het vinden en vergelijken van lokale prepaid-eSIMs.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/esmarty.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/esmarty-v0.5.0/Esmarty-v0.5.0.apk",
-      "changelog": "Esmarty 0.5.0\n\nA major update that turns Esmarty into a more complete travel and local eSIM assistant.\n\nWhat's new:\n\nAdded My Trips with a personal travel dashboard\nAdded multi-country trip planning\nAdded a data usage calculator for Maps, messaging, social media, music and video\nAdded the Esmarty Score to help find the best prepaid eSIM for your trip\nImproved local provider, network and 5G information\nAdded smarter eSIM comparison and recommendations\nExpanded the Wallet with installation and activation statuses\nAdded automatic “Expiring soon” status without background notifications\nAdded device and eSIM compatibility check\nAdded step-by-step installation assistance\nAdded arrival mode with a useful connectivity checklist\nAdded an interactive troubleshooting assistant\nPrices are displayed in euros by default\nOnly countries with verified local prepaid eSIM providers remain available\nRemoved reminder and notification functionality\nVarious interface, stability and usability improvements\n\nEsmarty remains privacy-friendly and performs most travel planning locally on your device.\n\n<img width=\"1122\" height=\"1402\" alt=\"ChatGPT Image 3 sep 2026, 00_55_17\" src=\"https://github.com/user-attachments/assets/76f5b5ad-6f51-481c-9f58-36d334145a81\" />",
-      "publishedAt": "2026-09-02"
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/esmarty-v0.5.1/Esmarty-v0.5.1.apk",
+      "changelog": "Esmarty 0.5.1\n\n- Redesigned the interface to more closely match the promotional concept.\n- Added richer destination cards with built-in city and country artwork.\n- Added featured destinations to the Countries screen.\n- Improved country overview cards with clearer pricing and availability information.\n- Redesigned eSIM offer cards with destination imagery and a more premium layout.\n- Improved empty states for Favorites, Wallet, Compare and Trips.\n- Added a more consistent Esmarty color palette and Material You styling.\n- All existing Esmarty functionality has been retained.\n- Travel Assistant, Wallet, Compare, trip planning, device check and installation tools remain available\n\n<img width=\"1130\" height=\"1413\" alt=\"promotie\" src=\"https://github.com/user-attachments/assets/a1713bbe-e3b8-42c5-87ad-9222f271d901\" />",
+      "publishedAt": "2026-09-03"
     },
     {
       "id": "p2dichtbij",
