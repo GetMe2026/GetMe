@@ -29,12 +29,12 @@
       "id": "esmarty",
       "name": "Esmarty",
       "packageName": "com.esmarty.app",
-      "versionCode": 7,
-      "versionName": "0.5.1",
+      "versionCode": 9,
+      "versionName": "0.5.3",
       "description": "Material You app voor het vinden en vergelijken van lokale prepaid-eSIMs.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/esmarty.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/esmarty-v0.5.1/Esmarty-v0.5.1.apk",
-      "changelog": "Esmarty 0.5.1\n\n- Redesigned the interface to more closely match the promotional concept.\n- Added richer destination cards with built-in city and country artwork.\n- Added featured destinations to the Countries screen.\n- Improved country overview cards with clearer pricing and availability information.\n- Redesigned eSIM offer cards with destination imagery and a more premium layout.\n- Improved empty states for Favorites, Wallet, Compare and Trips.\n- Added a more consistent Esmarty color palette and Material You styling.\n- All existing Esmarty functionality has been retained.\n- Travel Assistant, Wallet, Compare, trip planning, device check and installation tools remain available\n\n<img width=\"1130\" height=\"1413\" alt=\"promotie\" src=\"https://github.com/user-attachments/assets/a1713bbe-e3b8-42c5-87ad-9222f271d901\" />",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/esmarty-v0.5.3/Esmarty.v0.5.3.apk",
+      "changelog": "Esmarty changelog\n\nv0.5.3\n\n- Added provider-aware purchase actions instead of sending every offer to a generic provider landing page.\n- Vodafone Netherlands now separates ordering a prepaid eSIM from viewing/activating the selected bundle.\n- Added exact official tariff/product links where stable for Vodafone Spain and Vodafone Germany.\n- Updated True-dtac Thailand and Telstra Australia to their dedicated tourist/prepaid eSIM pages.\n- Added clearer purchase notes for providers where activation timing or a separate bundle step matters.\n- Improved provider actions in offer cards, Wallet, Compare and trip recommendations.\n- Corrected the Orange Maroc catalog entry so Esmarty no longer presents 20 MAD as a fixed Marhaba package price.\n- Kept conservative official landing pages where provider checkout URLs are dynamic or may change.\n- All v0.5.2 interface improvements, destination imagery, Travel Assistant, Wallet, Compare and trip planning remain intact.\n\n<img width=\"1130\" height=\"1413\" alt=\"645592512-a1713bbe-e3b8-42c5-87ad-9222f271d901\" src=\"https://github.com/user-attachments/assets/ac957106-214e-45d1-9d75-e17eb4b87bbf\" />",
       "publishedAt": "2026-09-03"
     },
     {
