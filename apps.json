@@ -5,12 +5,12 @@
       "id": "radiosphere",
       "name": "RadioSphere",
       "packageName": "com.radiosphere.app",
-      "versionCode": 61,
-      "versionName": "0.3.40",
+      "versionCode": 62,
+      "versionName": "0.3.41",
       "description": "Radio, podcasts, lokale audio en nieuwsbulletins.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/radiosphere.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/radiosphere-v0.3.40/RadioSphere-v0.3.40.apk",
-      "changelog": "RadioSphere 0.3.40\n\n- Reduced unnecessary playback wakeups during live radio\n- Improved wake mode handling for downloaded podcasts\n- Improved Wi-Fi-only scheduling for automatic podcast downloads\n- Reduced unnecessary background checks when notifications are blocked\n- Existing playback, now-playing detection and app functionality remain unchanged\n\n<img width=\"1536\" height=\"1024\" alt=\"295bd528-ab2a-4ce4-97f8-116eeb585865\" src=\"https://github.com/user-attachments/assets/ba189372-48f7-493e-9289-15f954ac280e\" />",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/radiosphere-v0.3.41/RadioSphere-v0.3.41.apk",
+      "changelog": "RadioSphere 0.3.41\n\n- Added RadioSphere Mix for continuous podcast discovery.\n- RadioSphere can now recommend and automatically play a similar podcast episode after the current episode ends.\n- Recommendations are based on podcast title, genre, episode title and description.\n- Added a “RadioSphere Mix · Up next” preview in the player.\n- Recommended episodes can be skipped before they start.\n- Manual queue items always have priority over RadioSphere Mix.\n- “Stop after this episode” continues to work as before.\n- Previously played and explicit episodes are excluded from automatic recommendations.\n- No AI account or API key is required.\n- Battery optimizations from 0.3.40 remain included.\n\n<img width=\"1536\" height=\"1024\" alt=\"645567169-ba189372-48f7-493e-9289-15f954ac280e\" src=\"https://github.com/user-attachments/assets/94b6e714-dcd2-4149-a17e-1383bf51894f\" />",
       "publishedAt": "2026-09-03"
     },
     {
