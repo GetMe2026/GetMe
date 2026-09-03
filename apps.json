@@ -2,13 +2,14 @@
   "catalogVersion": 1,
   "apps": [
     {
+    
       "id": "radiosphere",
-      "name": "RadioSphere",
+      "name": "Sound2U",
       "packageName": "com.radiosphere.app",
       "versionCode": 68,
       "versionName": "0.3.47",
-      "description": "Radio, podcasts, lokale audio en nieuwsbulletins.",
-      "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/radiosphere.png",
+      "description": "Wereldwijde radio, podcasts, lokale audio en nieuwsbulletins met slimme ontdekking, vertaling en Talk2Me.",
+      "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/sound2u.png",
       "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/sound2u-v0.3.47/Sound2U-v0.3.47.apk",
       "changelog": "<img width=\"1536\" height=\"1024\" alt=\"ChatGPT Image 3 sep 2026, 21_41_20\" src=\"https://github.com/user-attachments/assets/9e5d1fd1-d2ac-4e7e-9f6a-68a91e6f52a2\" />\n\nSound2U 0.3.47\n\nRadioSphere is now Sound2U.\n\n- Complete rebrand from RadioSphere to Sound2U with a new app icon.\n- Added Talk2Me for saving and summarizing translated radio, podcast and news fragments.\n- Added separate translation controls for radio, podcasts and news bulletins.\n- Improved spoken-audio translation and lower-resource audio handling.\n- Improved duplicate station detection while preserving alternative stream qualities.\n- Improved support for stations with multiple directory entries, including 538 and 4EVER49.\n- Added WDJO / Oldies 1480 Cincinnati as a reliable searchable fallback.\n- WPCN / True Oldies 92.1 & 1010 remains available with SecureNet stream handling.\n- Fixed stale station metadata briefly appearing when switching stations through Mood.\n- Improved translation privacy and API-key storage.\n- Further battery and background-processing optimizations.",
       "publishedAt": "2026-09-03"
