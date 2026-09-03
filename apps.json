@@ -5,13 +5,13 @@
       "id": "radiosphere",
       "name": "RadioSphere",
       "packageName": "com.radiosphere.app",
-      "versionCode": 60,
-      "versionName": "0.3.39",
+      "versionCode": 61,
+      "versionName": "0.3.40",
       "description": "Radio, podcasts, lokale audio en nieuwsbulletins.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/radiosphere.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/radiosphere-v0.3.39/RadioSphere-v0.3.39.apk",
-      "changelog": "RadioSphere 0.3.39\n\n- Fixed playback for True Oldies 92.1 & 1010 AM WPCN in Stevens Point, Wisconsin.\n- WPCN now uses the current SecureNet stream session used by the station's official web player.\n- Added proper WPCN station artwork.\n- Improved WPCN search matching for WPCN, True Oldies, 92.1, 1010 and Stevens Point.\n- No changes to existing RadioSphere functionality.\n\n<img width=\"1054\" height=\"1492\" alt=\"645102301-156efdaa-38d6-4555-86ff-c0c1b9ebbf87\" src=\"https://github.com/user-attachments/assets/c8004d8a-58de-4f8d-8663-3859490ac25a\" />",
-      "publishedAt": "2026-09-02"
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/radiosphere-v0.3.40/RadioSphere-v0.3.40.apk",
+      "changelog": "RadioSphere 0.3.40\n\n- Reduced unnecessary playback wakeups during live radio\n- Improved wake mode handling for downloaded podcasts\n- Improved Wi-Fi-only scheduling for automatic podcast downloads\n- Reduced unnecessary background checks when notifications are blocked\n- Existing playback, now-playing detection and app functionality remain unchanged\n\n<img width=\"1536\" height=\"1024\" alt=\"295bd528-ab2a-4ce4-97f8-116eeb585865\" src=\"https://github.com/user-attachments/assets/ba189372-48f7-493e-9289-15f954ac280e\" />",
+      "publishedAt": "2026-09-03"
     },
     {
       "id": "vatradar",
