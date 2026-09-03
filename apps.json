@@ -72,6 +72,18 @@
       "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/skyradar-v1.0.0-alpha13.0/SkyRadar-v1.0.0-alpha13.0.apk",
       "changelog": "SkyRadar 1.0.0-alpha13.0\n\n- Completely redesigned Material 3 interface.\n- Nearby aircraft is now the default home screen.\n- Aircraft cards show photos, distance, altitude, speed, registration and aircraft type.\n- Tap an aircraft to open and select it directly on the live map.\n- Added smart proximity notifications.\n- Filter notifications by radius, airline and aircraft type.\n- Added maximum altitude filters.\n- Added favorite aircraft registrations and alerts.\n- Added special aircraft filtering for aircraft such as the A380, Boeing 747, Antonov and military traffic.\n- Added likely-overflight detection using distance, altitude, speed and heading.\n- Added Spotter section with Favorites and Today.\n- Today records nearby aircraft including minimum distance and time of passage.\n- Improved aircraft photo matching and caching.\n- Improved location updates, navigation and overall stability.",
       "publishedAt": "2026-09-03"
+    },
+    {
+      "id": "customernearby",
+      "name": "Customer Nearby",
+      "packageName": "com.customernearby.app",
+      "versionCode": 1,
+      "versionName": "0.1.0",
+      "description": "Wereldwijde klantenservicezoeker met telefoon, WhatsApp, e-mail, websites en storingsinformatie.",
+      "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/customernearby.png",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/customernearby-v0.1.0/CustomerNearby-v0.1.0.apk",
+      "changelog": "Customer Nearby 0.1.0\n\n- First public release of Customer Nearby.\n- Search for companies and customer service contacts worldwide.\n- Automatically selects your country.\n- Native Material You company profiles.\n- Direct calling, email and website actions.\n- Detects official WhatsApp customer service links.\n- Opens WhatsApp conversations directly in the WhatsApp app.\n- Dedicated outage section with company shortcuts.\n- Save frequently used companies.\n- Google Places support with Wikidata fallback.",
+      "publishedAt": "2026-09-03"
     }
   ]
 }
