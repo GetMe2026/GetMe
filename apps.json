@@ -51,13 +51,13 @@
     },
     {
       "id": "helderweer",
-      "name": "HelderWeer",
+      "name": "WeatherMe",
       "packageName": "com.helderweer.app",
-      "versionCode": 15,
-      "versionName": "2.3.0",
+      "versionCode": 17,
+      "versionName": "2.4.0",
       "description": "Material You weer-app met verwachtingen, waarschuwingen, radar en weerdetails.",
-      "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/helderweer.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/helderweer-v2.3.0/HelderWeer-v2.3.0.apk",
+      "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/ChatGPT%20Image%203%20sep%202026_10_03_24.png",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/weatherme-v2.4.0/WeatherMe-v2.4.0.apk",
       "changelog": "Changelog\n\n2.3.0\n\n- Weather map fully migrated to MapLibre with smooth panning, pinch-to-zoom, +/- controls, and fullscreen.\n- RainViewer radar frames from approximately the last two hours added to a real animation timeline.\n- RainViewer source tiles are limited at zoom 7 and scaled up by MapLibre above that level; Zoom Level Not Supported has therefore been removed.\n- Open-Meteo 15-minute precipitation added as a clearly marked model forecast after the last measured radar frame.\n- One combined timeline with play/pause for measured radar and future model precipitation.\n- Quick selects for Local, Netherlands, and Europe added.\n\n-Forecast precipitation gets a smooth intensity display from blue/green via yellow/red to purple; measured RainViewer data uses the public Universal Blue scale.\n\n-Cloud cover, wind, temperature, and air quality retained as interactive map layers with viewport-dependent labels. - Wind animation remains active only as long as the wind layer is visible.\n\n-Map data is loaded foreground-on-demand only and temporarily cached in memory; no new WorkManager task or background location added.\n\n-Arrangeable home screen tiles from v2.2, widgets, notifications, alerts, favorite locations, and Dutch/English retained.\n\n-Map source attribution adjusted: MapLibre/OpenStreetMap, RainViewer, and Open-Meteo. KNMI remains the only source for official Dutch warnings where applicable.",
       "publishedAt": "2026-09-02"
     }
