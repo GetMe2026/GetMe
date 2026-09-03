@@ -2,16 +2,15 @@
   "catalogVersion": 1,
   "apps": [
     {
-    
       "id": "radiosphere",
       "name": "Sound2U",
       "packageName": "com.radiosphere.app",
-      "versionCode": 68,
-      "versionName": "0.3.47",
+      "versionCode": 70,
+      "versionName": "0.3.49",
       "description": "Wereldwijde radio, podcasts, lokale audio en nieuwsbulletins met slimme ontdekking, vertaling en Talk2Me.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/sound2u.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/sound2u-v0.3.47/Sound2U-v0.3.47.apk",
-      "changelog": "<img width=\"1536\" height=\"1024\" alt=\"ChatGPT Image 3 sep 2026, 21_41_20\" src=\"https://github.com/user-attachments/assets/9e5d1fd1-d2ac-4e7e-9f6a-68a91e6f52a2\" />\n\nSound2U 0.3.47\n\nRadioSphere is now Sound2U.\n\n- Complete rebrand from RadioSphere to Sound2U with a new app icon.\n- Added Talk2Me for saving and summarizing translated radio, podcast and news fragments.\n- Added separate translation controls for radio, podcasts and news bulletins.\n- Improved spoken-audio translation and lower-resource audio handling.\n- Improved duplicate station detection while preserving alternative stream qualities.\n- Improved support for stations with multiple directory entries, including 538 and 4EVER49.\n- Added WDJO / Oldies 1480 Cincinnati as a reliable searchable fallback.\n- WPCN / True Oldies 92.1 & 1010 remains available with SecureNet stream handling.\n- Fixed stale station metadata briefly appearing when switching stations through Mood.\n- Improved translation privacy and API-key storage.\n- Further battery and background-processing optimizations.",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/sound2u-v0.3.49/Sound2U-v0.3.49.apk",
+      "changelog": "<img width=\"1536\" height=\"1024\" alt=\"645934614-9e5d1fd1-d2ac-4e7e-9f6a-68a91e6f52a2\" src=\"https://github.com/user-attachments/assets/0f528b16-3c77-4bc4-af8b-b4f840ce6647\" />\n\nSound2U 0.3.49\n\n- Replaced cloud/API-key based spoken-audio translation with local on-device translation.\n- Removed the OpenAI API-key requirement.\n- Added a central spoken-audio translation switch in Settings.\n- Added separate translation controls for radio, podcasts and news.\n- Added support for translating complete news bulletins.\n- Translation automatically stops when a complete bulletin has finished.\n- Talk2Me remains available for saving translated content.\n- Talk2Me is now displayed prominently next to Library.\n- Translation audio remains temporary and is processed locally.\n- Restored separate radio directory entries instead of merging station families.\n- This restores individual stream metadata behavior, including song metadata for stations such as 4EVER49.\n- Existing stations, WPCN and WDJO fallbacks, metadata switching fixes and other Sound2U features remain",
       "publishedAt": "2026-09-03"
     },
     {
