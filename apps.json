@@ -5,13 +5,13 @@
       "id": "radiosphere",
       "name": "Sound2U",
       "packageName": "com.radiosphere.app",
-      "versionCode": 70,
-      "versionName": "0.3.49",
+      "versionCode": 71,
+      "versionName": "0.3.50",
       "description": "Wereldwijde radio, podcasts, lokale audio en nieuwsbulletins met slimme ontdekking, vertaling en Talk2Me.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/sound2u.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/sound2u-v0.3.49/Sound2U-v0.3.49.apk",
-      "changelog": "<img width=\"1536\" height=\"1024\" alt=\"645934614-9e5d1fd1-d2ac-4e7e-9f6a-68a91e6f52a2\" src=\"https://github.com/user-attachments/assets/0f528b16-3c77-4bc4-af8b-b4f840ce6647\" />\n\nSound2U 0.3.49\n\n- Replaced cloud/API-key based spoken-audio translation with local on-device translation.\n- Removed the OpenAI API-key requirement.\n- Added a central spoken-audio translation switch in Settings.\n- Added separate translation controls for radio, podcasts and news.\n- Added support for translating complete news bulletins.\n- Translation automatically stops when a complete bulletin has finished.\n- Talk2Me remains available for saving translated content.\n- Talk2Me is now displayed prominently next to Library.\n- Translation audio remains temporary and is processed locally.\n- Restored separate radio directory entries instead of merging station families.\n- This restores individual stream metadata behavior, including song metadata for stations such as 4EVER49.\n- Existing stations, WPCN and WDJO fallbacks, metadata switching fixes and other Sound2U features remain",
-      "publishedAt": "2026-09-03"
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/sound2u-v0.3.50/Sound2U-v0.3.50.apk",
+      "changelog": "<img width=\"1536\" height=\"1024\" alt=\"645982235-0f528b16-3c77-4bc4-af8b-b4f840ce6647\" src=\"https://github.com/user-attachments/assets/1dca17be-d152-429a-b17b-ad8810245bda\" />\n\nSound2U 0.3.50\n\nChangelog:\n\nMore reliable podcast search featuring caching and improved rate-limit handling.\nPodcasts remain discoverable worldwide across multiple catalog regions.\nSound2U Mix improved and more reliable when automatically selecting the next episode.\nBetter recognition of trance, electronic, house, techno, and other music podcasts for Sound2U Mix.\nFixed an issue where podcast search results would sometimes temporarily disappear.\nStabilized news bulletin translation and prevented excessive SpeechRecognizer requests.\nAutomatic retries implemented for temporary speech recognition limitations.\n'Continue listening' now accurately displays the last item listened to, whether it was a radio station or a podcast episode.\nPodcast progress on the Home screen now updates correctly.\nEpisodes from RSS feeds are now sorted by date more reliably.\nRemoved the non-functional 'Radio lyrics' option.\nVarious stability and error-handling improvements.",
+      "publishedAt": "2026-09-04"
     },
     {
       "id": "vatradar",
