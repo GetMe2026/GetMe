@@ -17,12 +17,12 @@
       "id": "vatradar",
       "name": "VatRadar",
       "packageName": "com.vatradar.app",
-      "versionCode": 32,
-      "versionName": "1.0.1",
+      "versionCode": 34,
+      "versionName": "1.0.3",
       "description": "Live VATSIM-radar met vluchten, ATC, vliegvelden, routes en vliegtuigfoto's.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/VAT24.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/vat24-v1.0.1/VAT24-v1.0.1.apk",
-      "changelog": "<img width=\"922\" height=\"1152\" alt=\"645990788-ce40eb23-d785-4031-8ea5-c23b8116e81a\" src=\"https://github.com/user-attachments/assets/1309d177-1a21-480b-a277-314c593f0484\" />\n\nVAT24 1.0.1\n\n- Live overview is now available as a dedicated main tab next to Airports.\n- Improved swipe navigation between the main sections.\n- Radar uses edge swipes for tab navigation so normal map panning is not interrupted.\n- Live overview removed from the overflow menu.\n- ATC, Upcoming flights and SimBrief remain available from the menu.\n- Various navigation and usability improvements.",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/vat24-v1.0.3/VAT24-v1.0.3.apk",
+      "changelog": "<img width=\"1190\" height=\"1322\" alt=\"0d0cdae8-eac9-4824-adb5-e9b3bba57ba5\" src=\"https://github.com/user-attachments/assets/3751cd16-26ec-4569-a5a8-bac1827d554c\" />\n\nVAT24 1.0.3\n\n- Added ATC along your planned SimBrief route.\n- Added Recently viewed flights to Search.\n- Airports and airlines can now be favourited directly from relevant screens.\n- ATC airport and traffic chips now open the corresponding airport or flight.\n- Nearby aircraft in flight details can now be opened directly.\n- Smarter live-data refresh for improved battery efficiency.\n- Background notification polling now runs only when actually required.\n- Notification permissions are requested only when a notification feature is enabled.\n- Various navigation, battery and usability improvements.",
       "publishedAt": "2026-09-04"
     },
     {
