@@ -84,6 +84,18 @@
       "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/customernearby-v0.2.13/Customer.Nearby.0.2.13.apk",
       "changelog": "<img width=\"864\" height=\"1821\" alt=\"a49da2ea-a038-46d1-987e-48a437e02944\" src=\"https://github.com/user-attachments/assets/33bc612a-a15a-4a58-a25b-dbf5e401198d\" />\n\nCustomer Nearby 0.2.13\n\n- Added direct curated Netherlands customer-service call actions for DELTA (0118 22 55 75), Ziggo (0900 1884) and Odido (0800 0092), while retaining existing KPN/Vodafone/Guidion profiles.\n- Added Odido's international service number and normalized current first-party support routes for Ziggo and Odido.\n- Booking.com NL now shows a descriptive Bericht of bel 24/7 action that opens Booking.com's official localized support flow instead of inventing a fixed phone number.\n- Contact-cache schema bumped to 7 so older sparse cached profiles cannot hide new curated contact actions.\n- Split outage routing into a user-facing preferred status URL and a separate regional automatic-detection URL.\n- KPN, Ziggo, Odido and DELTA now open verified first-party status/service checkers from the outage UI where available.\n- Added DELTA to the Netherlands outage catalogue.\n- Added a 30-minute per-country automatic backoff after regional outage-source 403/429 responses, preventing repeated Home/company-open retries against a temporarily blocked source.\n- Manual outage refresh may still explicitly retry; failed/unparseable checks remain UNKNOWN and never become false outage cards.\n- Added Dutch/English/Spanish strings for the new official-status and Booking.com contact UI.\n- Version bumped to 0.2.13 / versionCode 17.",
       "publishedAt": "2026-09-04"
+    },
+    {
+      "id": "datamaat",
+      "name": "DataMaat",
+      "packageName": "com.datamaat.app",
+      "versionCode": 5,
+      "versionName": "0.2.1",
+      "description": "Slim inzicht in je mobiele databundel, appverbruik, SIM/eSIM-wissels, roaming en dataverbruik.",
+      "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/datamaat.png",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/datamaat-v0.2.1/DataMaat-v0.2.1.apk",
+      "changelog": "DataMaat 0.2.1\n\n- Completely redesigned mobile data dashboard.\n- Shows used and remaining data, daily allowance and expected end-of-cycle usage.\n- Added per-app mobile data usage and daily insights.\n- Added smart SIM / eSIM change detection.\n- Added roaming overview with current network provider and country.\n- DataMaat can automatically start a new usage session after switching SIM / eSIM.\n- Added compact and detailed home screen widgets.\n- Widget refresh interval is configurable.\n- Added smart data usage warnings and cycle summaries.\n- Improved back swipe and navigation behaviour.\n- Added battery and background-work optimisations.",
+      "publishedAt": "2026-09-05"
     }
   ]
 }
