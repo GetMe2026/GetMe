@@ -77,13 +77,13 @@
       "id": "customernearby",
       "name": "Customer Nearby",
       "packageName": "com.customernearby.app",
-      "versionCode": 1,
-      "versionName": "0.1.0",
+      "versionCode": 8,
+      "versionName": "0.2.4",
       "description": "Wereldwijde klantenservicezoeker met telefoon, WhatsApp, e-mail, websites en storingsinformatie.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/customernearby.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/customernearby-v0.1.0/CustomerNearby-v0.1.0.apk",
-      "changelog": "Customer Nearby 0.1.0\n\n- First public release of Customer Nearby.\n- Search for companies and customer service contacts worldwide.\n- Automatically selects your country.\n- Native Material You company profiles.\n- Direct calling, email and website actions.\n- Detects official WhatsApp customer service links.\n- Opens WhatsApp conversations directly in the WhatsApp app.\n- Dedicated outage section with company shortcuts.\n- Save frequently used companies.\n- Google Places support with Wikidata fallback.",
-      "publishedAt": "2026-09-03"
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/customernearby-v0.2.4/Customer.Nearby.v0.2.4.apk",
+      "changelog": "<img width=\"1024\" height=\"1536\" alt=\"652e39a6-6529-4dc3-9a52-eabe7ddc4153\" src=\"https://github.com/user-attachments/assets/d3ab1819-466f-4f75-b7cc-92829f478a65\" />\n\nCustomer Nearby 0.2.4\n\n- Kotlin regex escape build fix: corrected phone-detection regex escapes and HTML script/style word-boundaries.\n\n- Country-aware outage pages: built-in status lists and status URLs now follow the selected country instead of always showing Dutch/US results.\n- Regional outage support added for NL, ES, GB, US, DE, FR and IT; unsupported countries explicitly show that no reliable integrated local outage source is configured.\n- Outage parsing expanded with multilingual no-problem/possible-problem/problem phrases while still classifying only the primary H1 status sentence.\n- Curated global brands now use stable country-independent IDs; country-specific brand variants such as Vodafone NL/ES remain separate.\n- Favorites and recent companies are automatically migrated to the current canonical brand IDs after updating.\n- Added a generic trustpilotDomain company field. Trustpilot routing no longer hardcodes easyJet/Ryanair in the UI and uses curated canonical domains when available.\n- Autocomplete Wikidata suggestions are cached in memory for 20 minutes (bounded to 80 queries), including successful empty results, reducing repeat network traffic while typing.\n- Visible-text phone-number fallback is stricter: a plausible number now needs nearby phone/contact/customer-service wording and is rejected near order/invoice/postcode/tracking identifiers.\n- Partial public-source failures no longer show a large warning card when useful results are already available; only complete online-extension failure produces a subtle notice.\n- Embedded WebView hardened: mixed content blocked, Safe Browsing enabled, pop-up JavaScript disabled, and only explicit tel:, mailto:, geo:, sms:/smsto: external schemes are allowed. Unknown/deep-link schemes such as intent:, file:, content:, data: and javascript: are blocked.\n- Bellen/e-mail/kaart/deep-link actions now show a clear toast when Android has no suitable handler instead of failing silently.\n- Contact-cache schema bumped to 4 so old sparse/country-keyed data cannot override the hardened canonical profiles.\n- No background polling, GPS, foreground service, wake lock or periodic worker was added.",
+      "publishedAt": "2026-09-04"
     }
   ]
 }
