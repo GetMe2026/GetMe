@@ -5,12 +5,12 @@
       "id": "radiosphere",
       "name": "Sound2U",
       "packageName": "com.radiosphere.app",
-      "versionCode": 74,
-      "versionName": "0.3.53",
+      "versionCode": 75,
+      "versionName": "0.3.54",
       "description": "Wereldwijde radio, podcasts, lokale audio en nieuwsbulletins met slimme ontdekking, vertaling en Talk2Me.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/sound2u.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/sound2u-v0.3.53/Sound2U-v0.3.53.apk",
-      "changelog": "<img width=\"1448\" height=\"1086\" alt=\"c63b88c6-72f1-4997-8f72-b3241a7ea807\" src=\"https://github.com/user-attachments/assets/7272faea-e212-40b5-b703-5f0cfc1af594\" />\n\nSound2U 0.3.53\n\n- \"Continue listening\" now displays only the most recently played media item.\n- Radio and podcasts now share a single \"Continue listening\" tile.\n- Playing something else automatically replaces the previous item.\n- The tile thus always reflects the latest item from the media player.\n- Various minor stability improvements.",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/sound2u-v0.3.54/Sound2U-v0.3.54.apk",
+      "changelog": "<img width=\"1448\" height=\"1086\" alt=\"c63b88c6-72f1-4997-8f72-b3241a7ea807\" src=\"https://github.com/user-attachments/assets/4997dcd8-ae3a-4ea3-879b-6fa62e806a9e\" />\n\nSound2U 0.3.54\n\n- Stats2U now shows a compact Top 3 for radio stations and podcasts.\n- Added “View all” for the complete listening rankings.\n- Stats2U radio stations can now be played directly from the ranking.\n- Podcast entries now open the podcast or resume playback.\n- Duplicate station statistics are combined more intelligently.\n- Very short listening sessions are excluded from rankings.\n- Added a monthly Stats2U recap on the final day of each month.\n- What's New now follows the app language.\n- Various Stats2U usability and reliability improvements.",
       "publishedAt": "2026-09-04"
     },
     {
