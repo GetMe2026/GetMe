@@ -5,12 +5,12 @@
       "id": "radiosphere",
       "name": "Sound2U",
       "packageName": "com.radiosphere.app",
-      "versionCode": 71,
-      "versionName": "0.3.50",
+      "versionCode": 73,
+      "versionName": "0.3.52",
       "description": "Wereldwijde radio, podcasts, lokale audio en nieuwsbulletins met slimme ontdekking, vertaling en Talk2Me.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/sound2u.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/sound2u-v0.3.50/Sound2U-v0.3.50.apk",
-      "changelog": "<img width=\"1536\" height=\"1024\" alt=\"645982235-0f528b16-3c77-4bc4-af8b-b4f840ce6647\" src=\"https://github.com/user-attachments/assets/1dca17be-d152-429a-b17b-ad8810245bda\" />\n\nSound2U 0.3.50\n\nChangelog:\n\nMore reliable podcast search featuring caching and improved rate-limit handling.\nPodcasts remain discoverable worldwide across multiple catalog regions.\nSound2U Mix improved and more reliable when automatically selecting the next episode.\nBetter recognition of trance, electronic, house, techno, and other music podcasts for Sound2U Mix.\nFixed an issue where podcast search results would sometimes temporarily disappear.\nStabilized news bulletin translation and prevented excessive SpeechRecognizer requests.\nAutomatic retries implemented for temporary speech recognition limitations.\n'Continue listening' now accurately displays the last item listened to, whether it was a radio station or a podcast episode.\nPodcast progress on the Home screen now updates correctly.\nEpisodes from RSS feeds are now sorted by date more reliably.\nRemoved the non-functional 'Radio lyrics' option.\nVarious stability and error-handling improvements.",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/sound2u-v0.3.52/Sound2U-v0.3.52.apk",
+      "changelog": "<img width=\"1448\" height=\"1086\" alt=\"c63b88c6-72f1-4997-8f72-b3241a7ea807\" src=\"https://github.com/user-attachments/assets/7b792b86-fa98-4cea-a5cc-4903175f8456\" />\n\nSound2U 0.3.52\n\nWhat's new\n\n- Added Stats2U with monthly listening reports.\n- View your listening time, estimated data usage, top radio stations and top podcasts.\n- Stats2U can be disabled completely from Settings.\n- Optional notification when your monthly Stats2U report is ready.\n- Improved audio quality selection and Data Saver behaviour.\n- Audio quality preferences now select the best available stream without reducing search reliability.\n- Added a new What's New screen after installation and updates.\n- Improved Continue Listening across radio and podcasts.\n- Improved podcast discovery and Sound2U Mix reliability.\n- Improved background notification handling and battery efficiency.\n- Translation and Talk2Me have been removed.\n- Various stability and performance improvements.",
       "publishedAt": "2026-09-04"
     },
     {
