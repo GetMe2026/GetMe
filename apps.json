@@ -77,12 +77,12 @@
       "id": "customernearby",
       "name": "Customer Nearby",
       "packageName": "com.customernearby.app",
-      "versionCode": 10,
-      "versionName": "0.2.6",
+      "versionCode": 16,
+      "versionName": "0.2.12",
       "description": "Wereldwijde klantenservicezoeker met telefoon, WhatsApp, e-mail, websites en storingsinformatie.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/customernearby.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/customernearby-v0.2.6/Customer.Nearby.v0.2.6.apk",
-      "changelog": "<img width=\"1024\" height=\"1536\" alt=\"652e39a6-6529-4dc3-9a52-eabe7ddc4153\" src=\"https://github.com/user-attachments/assets/0742a1f1-d6ab-453c-964b-382ec1bc9211\" />\n\n Customer Nearby 0.2.6\n\n- Trustpilot routing is now country-aware for multinational companies.\n- The selected or automatically detected country is used when resolving a company review profile.\n- Country-specific curated brand variants win over global domains (for example Vodafone NL -> www.vodafone.nl, Vodafone ES -> www.vodafone.es).\n- Added a shared verified local-domain registry for multi-domain brands such as Vodafone, Coolblue, Three, Orange, Walmart and Best Buy.\n- Global brands that genuinely use one domain, such as easyJet and Ryanair, continue to use their canonical .com profile instead of guessing a local ccTLD.\n- Unknown companies fall back safely to their discovered official website domain; no local domain is invented.\n- The Trustpilot card now shows the country and exact business domain that will be opened.\n- No additional background work or API dependency was introduced.\n- Network user agents bumped to 0.2.6.\n- Version bumped to 0.2.6 / versionCode 10.",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/customernearby-v0.2.12/Customer.Nearby.0.2.12.apk",
+      "changelog": "<img width=\"864\" height=\"1821\" alt=\"a49da2ea-a038-46d1-987e-48a437e02944\" src=\"https://github.com/user-attachments/assets/a5975378-170e-4773-ae04-d7928299e7d9\" />\n\n  Customer Nearby 0.2.11\n\n- Added full UI language support for Dutch, English and Spanish; the app follows the active Android/app language.\n- Added Android 13+ per-app language declarations for nl, en and es.\n- Localized navigation, Home, search, outage status, saved items, company details, contact actions, Trustpilot UI, country picker, error banners and key source/status messages.\n- Expanded the curated company directory from 94 to 112 major brands.\n- Added first-party support/contact routes for dozens of well-known companies so a failed website scraper no longer leaves a known brand with only a website button.\n- Newly curated brands include Temu, SHEIN, H&M, Zara, Klarna, Wise, Wizz Air, Turkish Airlines, Etihad Airways, Singapore Airlines, Bolt, Just Eat, Deliveroo, Steam, Discord, Snapchat, Telegram and LinkedIn.\n- Existing brands hardened with direct official support routes include KLM, NS, Rabobank, ABN AMRO, PostNL, Coolblue, bol, DHL, UPS, FedEx, Amazon, Apple, Microsoft, Google, Samsung, Spotify, Netflix, PayPal, Airbnb, Uber and many others.\n- Existing Home/outage hardening and Android light/dark system following remain unchanged.\n- Version bumped to 0.2.11 / versionCode 15.",
       "publishedAt": "2026-09-04"
     }
   ]
