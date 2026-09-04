@@ -29,13 +29,13 @@
       "id": "esmarty",
       "name": "Esmarty",
       "packageName": "com.esmarty.app",
-      "versionCode": 9,
-      "versionName": "0.5.3",
+      "versionCode": 10,
+      "versionName": "0.5.4",
       "description": "Material You app voor het vinden en vergelijken van lokale prepaid-eSIMs.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/esmarty.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/esmarty-v0.5.3/Esmarty.v0.5.3.apk",
-      "changelog": "Esmarty changelog\n\nv0.5.3\n\n- Added provider-aware purchase actions instead of sending every offer to a generic provider landing page.\n- Vodafone Netherlands now separates ordering a prepaid eSIM from viewing/activating the selected bundle.\n- Added exact official tariff/product links where stable for Vodafone Spain and Vodafone Germany.\n- Updated True-dtac Thailand and Telstra Australia to their dedicated tourist/prepaid eSIM pages.\n- Added clearer purchase notes for providers where activation timing or a separate bundle step matters.\n- Improved provider actions in offer cards, Wallet, Compare and trip recommendations.\n- Corrected the Orange Maroc catalog entry so Esmarty no longer presents 20 MAD as a fixed Marhaba package price.\n- Kept conservative official landing pages where provider checkout URLs are dynamic or may change.\n- All v0.5.2 interface improvements, destination imagery, Travel Assistant, Wallet, Compare and trip planning remain intact.\n\n<img width=\"1130\" height=\"1413\" alt=\"645592512-a1713bbe-e3b8-42c5-87ad-9222f271d901\" src=\"https://github.com/user-attachments/assets/ac957106-214e-45d1-9d75-e17eb4b87bbf\" />",
-      "publishedAt": "2026-09-03"
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/esmarty-v0.5.4/Esmarty.0.5.4.apk",
+      "changelog": "<img width=\"1130\" height=\"1413\" alt=\"645622060-ac957106-214e-45d1-9d75-e17eb4b87bbf\" src=\"https://github.com/user-attachments/assets/b1242901-7510-4722-8af7-060e57e71535\" />\n\n  Esmarty changelog\n\n  v0.5.4\n\n- Provider links now open in Esmarty's own in-app browser by default instead of always handing the URL to Android's default browser.\n- Added automatic provider-page language detection and on-device translation with ML Kit.\n- Added website translation targets: System language, Dutch, English and Spanish.\n- Esmarty first prefers an official provider language variant when one is advertised by the site; otherwise it translates the visible page text.\n- Added Original / Translate switching plus an explicit Open in browser action.\n- Login, authentication, cart, checkout and payment flows are handed back to the user's normal browser.\n- Added an Esmarty settings dialog for in-app browser and translation preferences.\n- Fixed system theme handling: Esmarty now uses the dark palette when Android dark mode is enabled and the light palette otherwise.\n- The embedded browser follows system dark mode using WebView algorithmic darkening where supported.\n- Added explicit day/night system-bar styling.\n- Updated app version to 0.5.4 (versionCode 10).",
+      "publishedAt": "2026-09-04"
     },
     {
       "id": "p2dichtbij",
