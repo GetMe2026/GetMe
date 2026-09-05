@@ -5,12 +5,12 @@
       "id": "radiosphere",
       "name": "Sound2U",
       "packageName": "com.radiosphere.app",
-      "versionCode": 79,
-      "versionName": "0.3.58",
+      "versionCode": 82,
+      "versionName": "0.3.61",
       "description": "Wereldwijde radio, podcasts, lokale audio en nieuwsbulletins met slimme ontdekking, vertaling en Talk2Me.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/sound2u.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/sound2u-v0.3.58/Sound2U-v0.3.58.apk",
-      "changelog": "<img width=\"1447\" height=\"1087\" alt=\"95a7c5e0-deee-41ec-9e27-77f20f9bd7ee\" src=\"https://github.com/user-attachments/assets/352fc959-0616-4797-962f-eb01a27e5577\" />\n\n  Sound2U 0.3.58\n\n- Save2U playback now opens the Sound2U player immediately.\n- Playing a saved podcast from Recent or Podcasts no longer requires leaving Save2U first.\n- Radio and news recordings keep the same direct-player behaviour.\n- Back navigation returns naturally to Save2U.\n- All Save2U features and battery optimizations from v0.3.57 remain intact.",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/sound2u-v0.3.61/Sound2U.0.3.61.apk",
+      "changelog": "Sound2U 0.3.61\n\n- Added smart important-news cards with country-based sources.\n- Important stories are selected using relevance, recency and editorial signals instead of simply showing the newest article.\n- News headlines and summaries can now be automatically translated to the selected Sound2U language.\n- Added optional notifications for important news.\n- News cards can be marked as read or dismissed and are automatically replaced when a more important story appears.\n- Improved news caching and prevented duplicate background requests.\n- Reduced unnecessary translation, network and CPU usage.\n- Improved battery efficiency for background news checks.\n- Improved location and feed handling for better reliability.\n- Removed an unused Android permission.\n- General stability, performance and reliability improvements.",
       "publishedAt": "2026-09-05"
     },
     {
@@ -89,12 +89,12 @@
       "id": "datamaat",
       "name": "DataMaat",
       "packageName": "com.datamaat.app",
-      "versionCode": 5,
-      "versionName": "0.2.1",
+      "versionCode": 6,
+      "versionName": "0.2.2",
       "description": "Slim inzicht in je mobiele databundel, appverbruik, SIM/eSIM-wissels, roaming en dataverbruik.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/datamaat.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/datamaat-v0.2.1/DataMaat-v0.2.1.apk",
-      "changelog": "DataMaat 0.2.1\n\n- Completely redesigned mobile data dashboard.\n- Shows used and remaining data, daily allowance and expected end-of-cycle usage.\n- Added per-app mobile data usage and daily insights.\n- Added smart SIM / eSIM change detection.\n- Added roaming overview with current network provider and country.\n- DataMaat can automatically start a new usage session after switching SIM / eSIM.\n- Added compact and detailed home screen widgets.\n- Widget refresh interval is configurable.\n- Added smart data usage warnings and cycle summaries.\n- Improved back swipe and navigation behaviour.\n- Added battery and background-work optimisations.",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/datamaat-v0.2.2/DataMaat.0.2.2.apk",
+      "changelog": "DataMaat 0.2.2\n\n- Added a new Usage Today tile on the Overview screen, automatically displaying data in MB or GB.\n- Today's usage is measured from local midnight, or from the start of the current data-SIM session if it began later.\n- Added settings to show or hide the Period Overview, Usage Today, Remaining Data and Days Left tiles.\n- Existing overview options for forecast, daily graph, Top Apps and previous-period comparison remain available.\n- Usage Today uses one lightweight device-wide NetworkStats query.\n- No new timers, workers or background services were added.\n- When Usage Today is disabled, the additional daily query is not executed.",
       "publishedAt": "2026-09-05"
     },
     {
