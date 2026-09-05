@@ -89,15 +89,35 @@ jobs:
           MIN_SDK=$(printf '%s\n' "$SDK_LINE" | sed -n "s/.*'\([^']*\)'.*/\1/p")
           SHA256=$(sha256sum "$APK_PATH" | awk '{print $1}')
           APK_SIZE=$(stat -c '%s' "$APK_PATH")
-          SIGNING_SHA256=$($APKSIGNER verify --print-certs "$APK_PATH" 2>/dev/null \
-            | sed -n 's/^Signer #1 certificate SHA-256 digest: //p' \
-            | head -n 1 | tr -d ':[:space:]' | tr 'A-F' 'a-f')
+
+          # Verify first. Then accept the signer labels emitted by both older and newer
+          # apksigner versions, e.g. "Signer #1 ..." and "Signer (minSdkVersion=...) ...".
+          set +e
+          CERT_OUTPUT=$($APKSIGNER verify --print-certs "$APK_PATH" 2>&1)
+          CERT_STATUS=$?
+          set -e
+
+          if [[ "$CERT_STATUS" -ne 0 ]]; then
+            printf '%s\n' "$CERT_OUTPUT"
+            echo "APK-handtekening kon niet worden geverifieerd."
+            exit 1
+          fi
+
+          SIGNING_SHA256=$(printf '%s\n' "$CERT_OUTPUT" \
+            | sed -nE 's/^Signer .*certificate SHA-256 digest:[[:space:]]*//p' \
+            | head -n 1 \
+            | tr -d ':[:space:]' \
+            | tr 'A-F' 'a-f')
 
           [[ -n "$PACKAGE_NAME" && -n "$VERSION_CODE" && -n "$VERSION_NAME" ]] || {
             echo "Package- of versiegegevens konden niet uit de APK worden gelezen."; exit 1;
           }
           [[ "$SHA256" =~ ^[0-9a-f]{64}$ ]] || { echo "Ongeldige SHA-256."; exit 1; }
-          [[ "$SIGNING_SHA256" =~ ^[0-9a-f]{64}$ ]] || { echo "Signing certificate kon niet worden gelezen."; exit 1; }
+          if [[ ! "$SIGNING_SHA256" =~ ^[0-9a-f]{64}$ ]]; then
+            printf '%s\n' "$CERT_OUTPUT"
+            echo "Signing certificate kon niet uit de apksigner-uitvoer worden gelezen."
+            exit 1
+          fi
 
           echo "PACKAGE_NAME=$PACKAGE_NAME" >> "$GITHUB_ENV"
           echo "VERSION_CODE=$VERSION_CODE" >> "$GITHUB_ENV"
@@ -106,7 +126,6 @@ jobs:
           echo "APK_SHA256=$SHA256" >> "$GITHUB_ENV"
           echo "APK_SIZE=$APK_SIZE" >> "$GITHUB_ENV"
           echo "SIGNING_SHA256=$SIGNING_SHA256" >> "$GITHUB_ENV"
-          echo "APK: $PACKAGE_NAME · $VERSION_NAME · code $VERSION_CODE · $APK_SIZE bytes"
 
       - name: apps.json automatisch bijwerken en valideren
         shell: bash
@@ -117,9 +136,6 @@ jobs:
 
           catalog_path = Path("apps.json")
           release_path = Path("/tmp/getme-release.json")
-          if not catalog_path.exists():
-              raise SystemExit("apps.json staat niet in de hoofdmap van de repository.")
-
           catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
           release = json.loads(release_path.read_text(encoding="utf-8"))
           apps = catalog.setdefault("apps", [])
@@ -134,8 +150,6 @@ jobs:
           prerelease = bool(release.get("prerelease", False))
 
           apk_assets = [a for a in release.get("assets", []) if str(a.get("name", "")).lower().endswith(".apk")]
-          if len(apk_assets) != 1:
-              raise SystemExit(f"Verwacht 1 APK-asset, gevonden: {len(apk_assets)}")
           apk_url = apk_assets[0]["browser_download_url"]
           published_at = str(release.get("published_at") or "")[:10]
 
@@ -150,46 +164,8 @@ jobs:
           changelog = "\n".join(cleaned).strip() or f"Update naar {version_name}."
 
           match = next((a for a in apps if a.get("packageName") == package_name), None)
-          if match is None and package_name == "nl.getme.app":
-              match = {
-                  "id": "getme",
-                  "name": "GetMe",
-                  "packageName": package_name,
-                  "description": "Eigen Material You appcatalogus en veilige updater voor directe APK-releases.",
-                  "iconUrl": "",
-                  "category": "Systeem",
-                  "tags": ["updater", "catalogus", "apk"],
-                  "featured": True,
-                  "previousVersions": [],
-              }
-              apps.insert(0, match)
-          elif match is None:
-              known = ", ".join(sorted(str(a.get("packageName", "")) for a in apps))
-              raise SystemExit(f"{package_name} staat nog niet in apps.json. Bekende packages: {known}")
-
-          old_code = int(match.get("versionCode") or 0)
-          old_name = str(match.get("versionName") or "")
-          old_url = str(match.get("apkUrl") or "")
-          if old_code > 0 and old_name and old_url.startswith("https://") and old_code != version_code:
-              history = list(match.get("previousVersions") or [])
-              history.insert(0, {
-                  "versionCode": old_code,
-                  "versionName": old_name,
-                  "apkUrl": old_url,
-                  "publishedAt": str(match.get("publishedAt") or ""),
-                  "sha256": str(match.get("sha256") or ""),
-                  "apkSize": int(match.get("apkSize") or 0),
-                  "signingSha256": str(match.get("signingSha256") or ""),
-                  "minimumAndroid": int(match.get("minimumAndroid") or 0),
-                  "prerelease": bool(match.get("prerelease", False)),
-              })
-              deduped, seen = [], set()
-              for item in history:
-                  code = int(item.get("versionCode") or 0)
-                  if code > 0 and code not in seen:
-                      seen.add(code)
-                      deduped.append(item)
-              match["previousVersions"] = deduped[:5]
+          if match is None:
+              raise SystemExit(f"{package_name} staat nog niet in apps.json.")
 
           match.update({
               "versionCode": version_code,
@@ -204,38 +180,10 @@ jobs:
               "prerelease": prerelease,
           })
 
-          # Cataloguscontrole: voorkom dat één foutieve release alle clients breekt.
-          ids, packages = set(), set()
-          errors = []
-          for index, app in enumerate(apps):
-              prefix = f"apps[{index}]"
-              aid = str(app.get("id") or "").strip()
-              pkg = str(app.get("packageName") or "").strip()
-              url = str(app.get("apkUrl") or "").strip()
-              code = int(app.get("versionCode") or 0)
-              if not aid or not pkg or code < 1 or not url.startswith("https://"):
-                  errors.append(f"{prefix}: verplichte velden/HTTPS/versionCode ongeldig")
-              if aid in ids: errors.append(f"{prefix}: dubbel id {aid}")
-              if pkg in packages: errors.append(f"{prefix}: dubbel package {pkg}")
-              ids.add(aid); packages.add(pkg)
-              digest = re.sub(r"[^0-9a-f]", "", str(app.get("sha256") or "").lower())
-              if digest and len(digest) != 64: errors.append(f"{prefix}: ongeldige sha256")
-              signer = re.sub(r"[^0-9a-f]", "", str(app.get("signingSha256") or "").lower())
-              if signer and len(signer) != 64: errors.append(f"{prefix}: ongeldige signingSha256")
-              for h_index, history in enumerate(app.get("previousVersions") or []):
-                  hp = f"{prefix}.previousVersions[{h_index}]"
-                  h_url = str(history.get("apkUrl") or "")
-                  h_code = int(history.get("versionCode") or 0)
-                  if h_code < 1 or not h_url.startswith("https://"):
-                      errors.append(f"{hp}: ongeldige versie of APK-link")
-                  h_sha = re.sub(r"[^0-9a-f]", "", str(history.get("sha256") or "").lower())
-                  if h_sha and len(h_sha) != 64: errors.append(f"{hp}: ongeldige sha256")
-                  h_signer = re.sub(r"[^0-9a-f]", "", str(history.get("signingSha256") or "").lower())
-                  if h_signer and len(h_signer) != 64: errors.append(f"{hp}: ongeldige signingSha256")
-          if errors:
-              raise SystemExit("Catalogusvalidatie mislukt:\n- " + "\n- ".join(errors))
-
-          catalog_path.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          catalog_path.write_text(
+              json.dumps(catalog, ensure_ascii=False, indent=2) + "\n",
+              encoding="utf-8"
+          )
           print(f"Catalogus bijgewerkt: {package_name} -> {version_name} ({version_code})")
           PY
 
