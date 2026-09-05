@@ -5,12 +5,12 @@
       "id": "radiosphere",
       "name": "Sound2U",
       "packageName": "com.radiosphere.app",
-      "versionCode": 78,
-      "versionName": "0.3.57",
+      "versionCode": 79,
+      "versionName": "0.3.58",
       "description": "Wereldwijde radio, podcasts, lokale audio en nieuwsbulletins met slimme ontdekking, vertaling en Talk2Me.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/sound2u.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/sound2u-v0.3.57/Sound2U-v0.3.57.apk",
-      "changelog": "<img width=\"1447\" height=\"1087\" alt=\"95a7c5e0-deee-41ec-9e27-77f20f9bd7ee\" src=\"https://github.com/user-attachments/assets/bf485036-7826-4653-9e91-31a3feb46920\" />\n\n  Sound2U 0.3.57\n\n- Added Save2U: one smart library for radio recordings, news recordings and saved podcast episodes.\n- Record live radio and news bulletins directly from the Sound2U player.\n- Recordings are automatically added to Save2U with source, artwork, date, duration and file size.\n- Saved recordings play through the regular Sound2U player with background and system media controls.\n- Podcast episodes can now be added directly to Save2U for offline listening.\n- The separate Downloads section has been removed; offline podcasts now live inside Save2U.\n- Added smart Save2U filters for Radio, News and Podcasts, plus recent items, search and storage information.\n- Deleting an item from Save2U now really removes the local recording or podcast file from the device.\n- Stats2U and Save2U now sit side by side directly below Library.\n- Save2U remains optional. Disabling it hides both Save2U and the recording button without deleting existing files.\n- Improved battery efficiency during normal radio listening.\n- Save2U audio capture is now inactive unless a recording is actually being made.\n- Media3 audio offload is preferred when supported by the device, codec and stream.\n- Recording temporarily switches to the PCM audio path and automatically restores the battery-friendly playback mode afterwards.\n- Additional recording, playback and AAC finalization reliability improvements.",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/sound2u-v0.3.58/Sound2U-v0.3.58.apk",
+      "changelog": "<img width=\"1447\" height=\"1087\" alt=\"95a7c5e0-deee-41ec-9e27-77f20f9bd7ee\" src=\"https://github.com/user-attachments/assets/352fc959-0616-4797-962f-eb01a27e5577\" />\n\n  Sound2U 0.3.58\n\n- Save2U playback now opens the Sound2U player immediately.\n- Playing a saved podcast from Recent or Podcasts no longer requires leaving Save2U first.\n- Radio and news recordings keep the same direct-player behaviour.\n- Back navigation returns naturally to Save2U.\n- All Save2U features and battery optimizations from v0.3.57 remain intact.",
       "publishedAt": "2026-09-05"
     },
     {
