@@ -5,12 +5,12 @@
       "id": "radiosphere",
       "name": "Sound2U",
       "packageName": "com.radiosphere.app",
-      "versionCode": 82,
-      "versionName": "0.3.61",
+      "versionCode": 83,
+      "versionName": "0.3.62",
       "description": "Wereldwijde radio, podcasts, lokale audio en nieuwsbulletins met slimme ontdekking, vertaling en Talk2Me.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/sound2u.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/sound2u-v0.3.61/Sound2U.0.3.61.apk",
-      "changelog": "Sound2U 0.3.61\n\n- Added smart important-news cards with country-based sources.\n- Important stories are selected using relevance, recency and editorial signals instead of simply showing the newest article.\n- News headlines and summaries can now be automatically translated to the selected Sound2U language.\n- Added optional notifications for important news.\n- News cards can be marked as read or dismissed and are automatically replaced when a more important story appears.\n- Improved news caching and prevented duplicate background requests.\n- Reduced unnecessary translation, network and CPU usage.\n- Improved battery efficiency for background news checks.\n- Improved location and feed handling for better reliability.\n- Removed an unused Android permission.\n- General stability, performance and reliability improvements.",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/sound2u-v0.3.62/Sound2U.0.3.62.apk",
+      "changelog": "Sound2U 0.3.62\n\n- Redesigned the Important News card to be much more compact.\n- News images are now shown as smaller thumbnails instead of large full-width images.\n- Reduced headline and summary length for a cleaner News overview.\n- Fixed HTML, URLs and RSS markup appearing in news summaries for international sources.\n- Improved Google News RSS parsing and text cleanup.\n- Invalid feed descriptions are now hidden instead of being shown as article text.\n- Improved publisher-name cleanup in news headlines.\n- Smart news selection, automatic translation and battery optimizations remain intact.",
       "publishedAt": "2026-09-05"
     },
     {
