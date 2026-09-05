@@ -94,13 +94,18 @@
       "id": "datamaat",
       "name": "DataMaat",
       "packageName": "com.datamaat.app",
-      "versionCode": 6,
-      "versionName": "0.2.2",
+      "versionCode": 8,
+      "versionName": "0.2.4",
       "description": "Slim inzicht in je mobiele databundel, appverbruik, SIM/eSIM-wissels, roaming en dataverbruik.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/datamaat.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/datamaat-v0.2.2/DataMaat.0.2.2.apk",
-      "changelog": "DataMaat 0.2.2\n\n- Added a new Usage Today tile on the Overview screen, automatically displaying data in MB or GB.\n- Today's usage is measured from local midnight, or from the start of the current data-SIM session if it began later.\n- Added settings to show or hide the Period Overview, Usage Today, Remaining Data and Days Left tiles.\n- Existing overview options for forecast, daily graph, Top Apps and previous-period comparison remain available.\n- Usage Today uses one lightweight device-wide NetworkStats query.\n- No new timers, workers or background services were added.\n- When Usage Today is disabled, the additional daily query is not executed.",
-      "publishedAt": "2026-09-05"
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/datamaat-v0.2.4/DataMaat.0.2.4.apk",
+      "changelog": "DataMaat 0.2.4\n\nAdded manual carrier usage correction for situations where Android's measured total differs from your provider's reported usage.\nEnter the current carrier value in MB or GB; DataMaat then continues counting new Android-measured usage from that point.\nManual corrections are automatically tied to the active billing cycle and SIM/eSIM session, preventing old corrections from carrying over into a new period.\nRemaining data, forecast, pacing, widgets and usage warnings now use the corrected total when a carrier baseline is active.\nPer-app usage and “Used today” remain direct Android measurements and are never artificially adjusted.\nImproved bottom navigation with compact single-line labels.\nImproved localization of unknown carrier, unknown app and country labels across the app and widgets.\nWidget country names now follow the selected DataMaat language.\nApp icons are now loaded asynchronously instead of being decoded on the Compose main thread.\nApp icons are resized to 96×96 and stored in a bounded cache for smoother scrolling and lower memory usage.\nExisting SIM/eSIM detection, roaming logic and NetworkStats calculations remain unchanged.\nNo new timers, services, polling or background workers were added.\nVarious UI, performance and stability refinements.",
+      "publishedAt": "2026-09-05",
+      "sha256": "810e398222efaa3ed663dd400c829016666d74bde2beaf1d3ec7a454cce04a2d",
+      "apkSize": 13021534,
+      "signingSha256": "d52c3a3b5b5f7957c091c1db67d212bfc655323ae5ae32c96ed70f9bed623936",
+      "minimumAndroid": 26,
+      "prerelease": false
     },
     {
       "id": "getme",
