@@ -22,13 +22,18 @@
       "id": "vatradar",
       "name": "VatRadar",
       "packageName": "com.vatradar.app",
-      "versionCode": 34,
-      "versionName": "1.0.3",
+      "versionCode": 35,
+      "versionName": "1.0.4",
       "description": "Live VATSIM-radar met vluchten, ATC, vliegvelden, routes en vliegtuigfoto's.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/VAT24.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/vat24-v1.0.3/VAT24-v1.0.3.apk",
-      "changelog": "<img width=\"1190\" height=\"1322\" alt=\"0d0cdae8-eac9-4824-adb5-e9b3bba57ba5\" src=\"https://github.com/user-attachments/assets/3751cd16-26ec-4569-a5a8-bac1827d554c\" />\n\nVAT24 1.0.3\n\n- Added ATC along your planned SimBrief route.\n- Added Recently viewed flights to Search.\n- Airports and airlines can now be favourited directly from relevant screens.\n- ATC airport and traffic chips now open the corresponding airport or flight.\n- Nearby aircraft in flight details can now be opened directly.\n- Smarter live-data refresh for improved battery efficiency.\n- Background notification polling now runs only when actually required.\n- Notification permissions are requested only when a notification feature is enabled.\n- Various navigation, battery and usability improvements.",
-      "publishedAt": "2026-09-04"
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/vat24-v1.0.4/VAT24-v1.0.4.apk",
+      "changelog": "VAT24 1.0.4\n\nOpenStreetMap now follows dark mode with a local dark-theme transformation while keeping the existing tile source.\nAircraft markers on the map are larger, clearer and more aircraft-like for better readability at a glance.\nSelected, emergency and altitude-coloured aircraft remain visually distinct.\nAircraft photos now load faster by preferring smaller source images and avoiding unnecessary full-resolution decoding.\nImage decoding is now sampled to the required display size for lower memory usage.\nAdded bounded memory and disk caches for aircraft images to prevent uncontrolled cache growth.\nDuplicate image downloads are deduplicated and failed image URLs fall back faster.\nFlight detail data such as aircraft photo, airline logo, METAR and airport information now loads in parallel.\nFlight details refresh correctly when VATSIM adds or changes aircraft, registration, departure or arrival information under the same callsign.\nAdded short-lived METAR caching and longer-lived airport and airline metadata caching to reduce repeated network requests.\nMap and weather tile disk caches are now bounded and cleaned up opportunistically without adding background workers.\nDuplicate VATSIM snapshots with the same update timestamp no longer trigger unnecessary Compose updates.\nATC along the SimBrief route is now interactive and can open the relevant airport or ATC view.\nImproved Dutch and English localization across flight, airport and weather details.\nAdded stricter release checks for unfinished privacy-policy placeholders.\nNo new continuous polling, foreground services or background workers were added.\nVarious performance, memory, navigation and stability refinements.",
+      "publishedAt": "2026-09-05",
+      "sha256": "de75c2316929a507c982e917da1ce8e149ec2d6d3f1610888dfde745fda4de74",
+      "apkSize": 15922594,
+      "signingSha256": "7d54fbb91e35db9b60f647644d829363fbea7cb2a69436a5d05a660aa68ce2cb",
+      "minimumAndroid": 26,
+      "prerelease": false
     },
     {
       "id": "esmarty",
