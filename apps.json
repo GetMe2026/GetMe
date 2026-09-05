@@ -96,6 +96,25 @@
       "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/datamaat-v0.2.1/DataMaat-v0.2.1.apk",
       "changelog": "DataMaat 0.2.1\n\n- Completely redesigned mobile data dashboard.\n- Shows used and remaining data, daily allowance and expected end-of-cycle usage.\n- Added per-app mobile data usage and daily insights.\n- Added smart SIM / eSIM change detection.\n- Added roaming overview with current network provider and country.\n- DataMaat can automatically start a new usage session after switching SIM / eSIM.\n- Added compact and detailed home screen widgets.\n- Widget refresh interval is configurable.\n- Added smart data usage warnings and cycle summaries.\n- Improved back swipe and navigation behaviour.\n- Added battery and background-work optimisations.",
       "publishedAt": "2026-09-05"
+    },
+    {
+      "id": "getme",
+      "name": "GetMe",
+      "packageName": "nl.getme.app",
+      "versionCode": 8,
+      "versionName": "1.4.0",
+      "description": "Eigen Material You appcatalogus en veilige updater voor directe APK-releases.",
+      "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/getme.png",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/getme-v1.4.0/GetMe-v1.4.0.apk",
+      "changelog": "GetMe 1.4.0\n\n- Added a new Update Center with update count and Update all.\n- Added app details, categories, favorites and My apps.\n- Added installed, update available, new and updated status indicators.\n- Added resumable APK downloads with progress, pause, cancel and retry.\n- Added optional Wi-Fi-only downloads.\n- Added APK package, version, signature and SHA-256 verification.\n- Added previous-version history with guarded rollback support.\n- Added battery-friendly automatic update checks.\n- Added catalog validation and safer cache handling.\n- GetMe can now update itself through GetMe.",
+      "publishedAt": "2026-09-05",
+      "category": "Systeem",
+      "tags": [
+        "updater",
+        "catalogus",
+        "apk"
+      ],
+      "featured": true
     }
   ]
 }
