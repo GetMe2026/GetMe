@@ -29,7 +29,7 @@
       "apkUrl": "https://github.com/GetMe2026/GetMe/releases/edit/vat24-v1.0.15/VAT24.1.0.15.apk",
       "changelog": "VAT24 v1.0.12\n\n- Refined the compact flight detail card so all actions remain fully visible.\n- Removed unnecessary empty space below the compact flight panel.\n- Improved spacing and sizing of Route, Follow, All details and Share actions.\n- Selected aircraft now remain continuously centered on the radar while moving.\n- Automatic map tracking continues even after dismissing the compact detail card.\n- Aircraft selection, route line and live movement remain active until you select another aircraft or clear the selection.\n- Follow now only controls the existing VAT24 follow/notification feature; map tracking happens automatically.\n- General UI polish and stability improvements.",
       "publishedAt": "2026-09-06",
-      "sha256": "7ef1403afa96e10f88f6086145a0a82728239d6656a6747ef1c44a881215798a",
+      "sha256": "03e5bb00c159b1674468d4f4a8b29c59964a75480e1301a8954be5208f82ad60",
       "apkSize": 15988174,
       "signingSha256": "7d54fbb91e35db9b60f647644d829363fbea7cb2a69436a5d05a660aa68ce2cb",
       "minimumAndroid": 26,
