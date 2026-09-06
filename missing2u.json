@@ -1,0 +1,853 @@
+{
+  "schemaVersion": 1,
+  "stations": [
+    {
+      "id": "bo-bollenstreek",
+      "names": [
+        "BO",
+        "Bollenstreek Omroep",
+        "Bo de omroep van de Bollenstreek"
+      ],
+      "domains": [
+        "bollenstreekomroep.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "archiveUrl": "https://www.bollenstreekomroep.nl/radio-uitzending-gemist/",
+      "sourceType": "HTML_AUDIO",
+      "sourceUrl": "https://www.bollenstreekomroep.nl/radio-uitzending-gemist/",
+      "programAliases": [
+        "Nostalchiel",
+        "BO Ochtendshow",
+        "Nieuwsboulevard",
+        "De Koffiemix",
+        "BO Brunch",
+        "BO Boomers",
+        "Flashback Radio",
+        "Thuiswedstrijd",
+        "Trance Life",
+        "Bollenstreek Sport"
+      ],
+      "radioBrowserUuids": [],
+      "streamDomains": []
+    },
+    {
+      "id": "rtv-dordrecht-drechtstad-fm",
+      "names": [
+        "Drechtstad FM",
+        "RTV Dordrecht",
+        "Drechtstad FM - RTV Dordrecht"
+      ],
+      "domains": [
+        "rtvdordrecht.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "archiveUrl": "https://www.rtvdordrecht.nl/radio",
+      "sourceType": "HTML_AUDIO",
+      "sourceUrl": "https://www.rtvdordrecht.nl/radio",
+      "programAliases": [
+        "Basic Beats",
+        "Nachtvlucht",
+        "Drechtstad Continu",
+        "Gospel Magazine",
+        "Wij Houden Het Hollands",
+        "Back to the Roots",
+        "Crossroads",
+        "Club Live",
+        "Sound(&)Tracks",
+        "De Late Avond",
+        "DZM Show",
+        "De Grote Vrijdagavondshow",
+        "Energy of Trance",
+        "Studio De Witt"
+      ],
+      "radioBrowserUuids": [],
+      "streamDomains": []
+    },
+    {
+      "id": "sleutelstad-radio",
+      "names": [
+        "Sleutelstad",
+        "Sleutelstad Radio"
+      ],
+      "domains": [
+        "sleutelstad.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "archiveUrl": "https://sleutelstad.nl/uitzending-gemist/",
+      "sourceType": "HTML_AUDIO",
+      "sourceUrl": "https://sleutelstad.nl/uitzending-gemist/",
+      "programAliases": [
+        "Nieuws071",
+        "Sport071",
+        "Cultuur071",
+        "Sleutelstad 30",
+        "Radio Gemiva"
+      ],
+      "radioBrowserUuids": [],
+      "streamDomains": []
+    },
+    {
+      "id": "rtv-nof",
+      "names": [
+        "RTV NOF",
+        "RTVNOF"
+      ],
+      "domains": [
+        "rtvnof.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "archiveUrl": "https://www.rtvnof.nl/uitzending-gemist/",
+      "sourceType": "HTML_AUDIO",
+      "sourceUrl": "https://www.rtvnof.nl/uitzending-gemist/",
+      "programAliases": [
+        "Klankbord",
+        "Op 'e Hichte",
+        "Rûnwei Sport",
+        "Hollandse Toppers",
+        "Hit Tijdmachine"
+      ],
+      "radioBrowserUuids": [],
+      "streamDomains": []
+    },
+    {
+      "id": "1twente-radio",
+      "names": [
+        "1Twente",
+        "Twente FM",
+        "1Twente Radio"
+      ],
+      "domains": [
+        "1twente.nl",
+        "twentefm.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "archiveUrl": "https://www.1twente.nl/luister/programmas",
+      "sourceType": "HTML_AUDIO",
+      "sourceUrl": "https://www.1twente.nl/luister/programmas",
+      "programAliases": [
+        "Twente Wordt Wakker",
+        "Twente Komt Thuis",
+        "Door de Middag",
+        "De Ottershow",
+        "Avonddienst met Peter",
+        "Avonddienst met Ralf",
+        "Avonddienst met Richard",
+        "Twente FM Weekend",
+        "Weekend Henk",
+        "Uitzendkracht"
+      ],
+      "radioBrowserUuids": [],
+      "streamDomains": [
+        "player.twentefm.nl"
+      ]
+    },
+    {
+      "id": "rtv1",
+      "names": [
+        "RTV1",
+        "RTV Eén",
+        "RTVeen"
+      ],
+      "domains": [
+        "rtveen.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "archiveUrl": "https://rtveen.nl/uitzending-gemist/",
+      "sourceType": "HTML_AUDIO",
+      "sourceUrl": "https://rtveen.nl/uitzending-gemist/",
+      "programAliases": [
+        "Blueprint",
+        "RTV1 Piratencafé",
+        "Piratencafé",
+        "Muziek op 1",
+        "PretLetters"
+      ],
+      "radioBrowserUuids": [],
+      "streamDomains": []
+    },
+    {
+      "id": "noordkop-centraal",
+      "names": [
+        "Noordkop Centraal",
+        "Noordkop247",
+        "Noordkop 247"
+      ],
+      "domains": [
+        "noordkopcentraal.nl",
+        "noordkop247.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "archiveUrl": "https://www.noordkopcentraal.nl/uitzendinggemist",
+      "sourceType": "HTML_AUDIO",
+      "sourceUrl": "https://www.noordkopcentraal.nl/uitzendinggemist",
+      "programAliases": [
+        "Met de deur Open",
+        "De Nieuwscarrousel"
+      ],
+      "radioBrowserUuids": [],
+      "streamDomains": []
+    },
+    {
+      "id": "npo-radio-1",
+      "names": [
+        "NPO Radio 1",
+        "Radio 1"
+      ],
+      "domains": [
+        "nporadio1.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "archiveUrl": "https://www.nporadio1.nl/uitzendingen",
+      "sourceType": "HTML_AUDIO",
+      "sourceUrl": "https://www.nporadio1.nl/uitzendingen",
+      "programAliases": [
+        "NOS Radio 1 Journaal",
+        "NOS Met het Oog op Morgen",
+        "Langs de Lijn",
+        "Nieuwsweekend",
+        "De Taalstaat"
+      ],
+      "radioBrowserUuids": [],
+      "streamDomains": []
+    },
+    {
+      "id": "npo-radio-2",
+      "names": [
+        "NPO Radio 2",
+        "Radio 2"
+      ],
+      "domains": [
+        "nporadio2.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "archiveUrl": "https://www.nporadio2.nl/uitzendingen",
+      "sourceType": "HTML_AUDIO",
+      "sourceUrl": "https://www.nporadio2.nl/uitzendingen",
+      "programAliases": [
+        "RINKELDEKINKEL",
+        "Muziekcafé",
+        "Spijkers Met Koppen",
+        "Soul Night",
+        "Top 2000"
+      ],
+      "radioBrowserUuids": [],
+      "streamDomains": []
+    },
+    {
+      "id": "npo-3fm",
+      "names": [
+        "NPO 3FM",
+        "3FM"
+      ],
+      "domains": [
+        "npo3fm.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "archiveUrl": "https://www.npo3fm.nl/uitzendingen",
+      "sourceType": "HTML_AUDIO",
+      "sourceUrl": "https://www.npo3fm.nl/uitzendingen",
+      "programAliases": [
+        "3voor12 Radio",
+        "Vera On Track",
+        "The Beat",
+        "VoorAan",
+        "De BVO-Show"
+      ],
+      "radioBrowserUuids": [],
+      "streamDomains": []
+    },
+    {
+      "id": "npo-radio-5",
+      "names": [
+        "NPO Radio 5",
+        "Radio 5"
+      ],
+      "domains": [
+        "nporadio5.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "archiveUrl": "https://www.nporadio5.nl/uitzendingen",
+      "sourceType": "HTML_AUDIO",
+      "sourceUrl": "https://www.nporadio5.nl/uitzendingen",
+      "programAliases": [
+        "Arbeidsvitaminen",
+        "Goeiedag Haandrikman",
+        "Open Huis",
+        "Volgspot",
+        "Theater van het Sentiment"
+      ],
+      "radioBrowserUuids": [],
+      "streamDomains": []
+    },
+    {
+      "id": "npo-klassiek",
+      "names": [
+        "NPO Klassiek",
+        "Radio 4",
+        "NPO Radio 4"
+      ],
+      "domains": [
+        "npoklassiek.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "archiveUrl": "https://www.npoklassiek.nl/uitzendingen",
+      "sourceType": "HTML_AUDIO",
+      "sourceUrl": "https://www.npoklassiek.nl/uitzendingen",
+      "programAliases": [
+        "De Klassieken",
+        "De Muziekfabriek",
+        "Podium",
+        "Opium",
+        "NTR ZaterdagMatinee"
+      ],
+      "radioBrowserUuids": [],
+      "streamDomains": []
+    },
+    {
+      "id": "bnr-nieuwsradio",
+      "names": [
+        "BNR Nieuwsradio",
+        "BNR"
+      ],
+      "domains": [
+        "bnr.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "archiveUrl": "https://www.bnr.nl/player/live",
+      "sourceType": "HTML_AUDIO",
+      "sourceUrl": "https://www.bnr.nl/player/live",
+      "programAliases": [
+        "The Daily Move",
+        "BNR Beurs",
+        "BNR Zakendoen",
+        "BNR's Big Five",
+        "De Grote Tech Show"
+      ],
+      "radioBrowserUuids": [],
+      "streamDomains": []
+    },
+    {
+      "id": "radio-538",
+      "names": [
+        "Radio 538",
+        "538"
+      ],
+      "domains": [
+        "538.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "archiveUrl": "https://www.538.nl/radio/gemist",
+      "sourceType": "HTML_AUDIO",
+      "sourceUrl": "https://www.538.nl/radio/gemist",
+      "programAliases": [
+        "De 538 Ochtendshow",
+        "Frank en Airen",
+        "Evers & Co.",
+        "Bas & Dylan",
+        "538 TOP 50",
+        "A STATE OF TRANCE",
+        "DANCE DEPARTMENT",
+        "Hardwell",
+        "Martin Garrix"
+      ],
+      "radioBrowserUuids": [],
+      "streamDomains": []
+    },
+    {
+      "id": "radio-10",
+      "names": [
+        "Radio 10"
+      ],
+      "domains": [
+        "radio10.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "archiveUrl": "https://www.radio10.nl/radio",
+      "sourceType": "HTML_AUDIO",
+      "sourceUrl": "https://www.radio10.nl/radio",
+      "programAliases": [
+        "Radio 10 Staat Op!",
+        "Gijs op 10",
+        "Eriks Top 40 Hitdossier",
+        "De Radio 10 Weekendshow"
+      ],
+      "radioBrowserUuids": [],
+      "streamDomains": []
+    },
+    {
+      "id": "qmusic-nl",
+      "names": [
+        "Qmusic",
+        "Q-music",
+        "Qmusic Nederland"
+      ],
+      "domains": [
+        "qmusic.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "archiveUrl": "https://qmusic.nl/programmas",
+      "sourceType": "HTML_AUDIO",
+      "sourceUrl": "https://qmusic.nl/programmas",
+      "programAliases": [
+        "Mattie & Marieke",
+        "Domien & Anton",
+        "Stephan Bouwman",
+        "Kris Kross Amsterdam",
+        "Cain Slobbe"
+      ],
+      "radioBrowserUuids": [],
+      "streamDomains": []
+    }
+  ],
+  "discoverySeeds": [
+    {
+      "id": "regional-l1",
+      "names": [
+        "L1 Radio",
+        "L1"
+      ],
+      "domains": [
+        "l1.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://www.l1.nl/radio"
+      ]
+    },
+    {
+      "id": "regional-nh",
+      "names": [
+        "NH Radio",
+        "NH Nieuws",
+        "NH"
+      ],
+      "domains": [
+        "nhnieuws.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://www.nhnieuws.nl/media",
+        "https://www.nhnieuws.nl/media/radio-programmas/1067"
+      ]
+    },
+    {
+      "id": "regional-omroep-brabant",
+      "names": [
+        "Omroep Brabant Radio",
+        "Omroep Brabant"
+      ],
+      "domains": [
+        "omroepbrabant.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://www.omroepbrabant.nl/radio/programmas"
+      ]
+    },
+    {
+      "id": "regional-omroep-flevoland",
+      "names": [
+        "Omroep Flevoland Radio",
+        "Omroep Flevoland"
+      ],
+      "domains": [
+        "omroepflevoland.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://www.omroepflevoland.nl/gemist"
+      ]
+    },
+    {
+      "id": "regional-gld",
+      "names": [
+        "Radio Gelderland",
+        "Omroep Gelderland",
+        "GLD Radio",
+        "GLD"
+      ],
+      "domains": [
+        "gld.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://www.gld.nl/radio",
+        "https://www.gld.nl/gemist"
+      ]
+    },
+    {
+      "id": "regional-omroep-west",
+      "names": [
+        "Radio West",
+        "Omroep West"
+      ],
+      "domains": [
+        "omroepwest.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://www.omroepwest.nl/radio"
+      ]
+    },
+    {
+      "id": "regional-omroep-zeeland",
+      "names": [
+        "Omroep Zeeland Radio",
+        "Omroep Zeeland"
+      ],
+      "domains": [
+        "omroepzeeland.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://www.omroepzeeland.nl/radio",
+        "https://www.omroepzeeland.nl/gemist"
+      ]
+    },
+    {
+      "id": "regional-omrop-fryslan",
+      "names": [
+        "Omrop Fryslân Radio",
+        "Omroep Friesland",
+        "Omrop Fryslân"
+      ],
+      "domains": [
+        "omropfryslan.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://www.omropfryslan.nl/nl/radio"
+      ]
+    },
+    {
+      "id": "regional-rtv-drenthe",
+      "names": [
+        "Radio Drenthe",
+        "RTV Drenthe"
+      ],
+      "domains": [
+        "rtvdrenthe.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://www.rtvdrenthe.nl/radio"
+      ]
+    },
+    {
+      "id": "regional-rtv-noord",
+      "names": [
+        "Radio Noord",
+        "RTV Noord"
+      ],
+      "domains": [
+        "rtvnoord.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://www.rtvnoord.nl/radio",
+        "https://www.rtvnoord.nl/radio-gemist"
+      ]
+    },
+    {
+      "id": "regional-oost",
+      "names": [
+        "Radio Oost",
+        "RTV Oost",
+        "Oost"
+      ],
+      "domains": [
+        "oost.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://www.oost.nl/radio"
+      ]
+    },
+    {
+      "id": "regional-rijnmond",
+      "names": [
+        "Radio Rijnmond",
+        "RTV Rijnmond",
+        "Rijnmond"
+      ],
+      "domains": [
+        "rijnmond.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://www.rijnmond.nl/radio"
+      ]
+    },
+    {
+      "id": "regional-rtv-utrecht",
+      "names": [
+        "Radio M Utrecht",
+        "RTV Utrecht",
+        "Radio M"
+      ],
+      "domains": [
+        "rtvutrecht.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://www.rtvutrecht.nl/radio"
+      ]
+    },
+    {
+      "id": "national-joe-nl",
+      "names": [
+        "JOE",
+        "JOE Nederland"
+      ],
+      "domains": [
+        "joe.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://joe.nl/programmas"
+      ]
+    },
+    {
+      "id": "national-sky-radio",
+      "names": [
+        "Sky Radio",
+        "Sky Radio 101 FM"
+      ],
+      "domains": [
+        "skyradio.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://www.skyradio.nl/"
+      ]
+    },
+    {
+      "id": "national-kink",
+      "names": [
+        "KINK",
+        "KINK FM"
+      ],
+      "domains": [
+        "kink.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://kink.nl/gemist"
+      ]
+    },
+    {
+      "id": "national-slam",
+      "names": [
+        "SLAM!",
+        "SLAM",
+        "SLAM FM"
+      ],
+      "domains": [
+        "slam.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://www.slam.nl/programmas"
+      ]
+    },
+    {
+      "id": "national-100pctnl",
+      "names": [
+        "100% NL",
+        "100 procent NL",
+        "100P NL"
+      ],
+      "domains": [
+        "100p.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://www.100p.nl/programmas"
+      ]
+    },
+    {
+      "id": "national-sublime",
+      "names": [
+        "Sublime",
+        "Sublime FM"
+      ],
+      "domains": [
+        "sublime.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://sublime.nl/"
+      ]
+    },
+    {
+      "id": "national-noordzee",
+      "names": [
+        "Radio Noordzee",
+        "Noordzee"
+      ],
+      "domains": [
+        "radionoordzee.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://www.radionoordzee.nl/shows"
+      ]
+    },
+    {
+      "id": "national-funx",
+      "names": [
+        "FunX",
+        "NPO FunX"
+      ],
+      "domains": [
+        "funx.nl",
+        "npo.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://npo.nl/luister/podcasts/595-fun-x-fissa",
+        "https://www.funx.nl/"
+      ]
+    },
+    {
+      "id": "national-sterren-nl",
+      "names": [
+        "Sterren NL Radio",
+        "Sterren NL"
+      ],
+      "domains": [
+        "nporadio5.nl",
+        "npo.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://npo.nl/luister/podcasts/495-gouden-uren",
+        "https://npo.nl/luister/podcasts/496-sterren-nl-top-25"
+      ]
+    },
+    {
+      "id": "national-npo-blend",
+      "names": [
+        "NPO Blend",
+        "Blend"
+      ],
+      "domains": [
+        "npo.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://npo.nl/luister"
+      ]
+    },
+    {
+      "id": "national-radionl",
+      "names": [
+        "RADIONL",
+        "Radio NL"
+      ],
+      "domains": [
+        "radionl.fm"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://radionl.fm/"
+      ]
+    },
+    {
+      "id": "national-arrow",
+      "names": [
+        "Arrow Classic Rock",
+        "Arrow"
+      ],
+      "domains": [
+        "arrow.nl"
+      ],
+      "countryCodes": [
+        "NL"
+      ],
+      "sourceHints": [
+        "https://www.arrow.nl/"
+      ]
+    }
+  ]
+}
