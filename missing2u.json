@@ -16,18 +16,36 @@
       ],
       "archiveUrl": "https://www.bollenstreekomroep.nl/radio-uitzending-gemist/",
       "sourceType": "HTML_AUDIO",
-      "sourceUrl": "https://uitzendinggemist.onrcloud.com/sys/bollenstreek-omroep/",
+      "sourceUrl": "https://www.bollenstreekomroep.nl/radio-uitzending-gemist/",
       "programAliases": [
         "Nostalchiel",
         "BO Ochtendshow",
         "Nieuwsboulevard",
+        "Trance Life",
+        "Bollenstreek Sport",
         "De Koffiemix",
+        "'t Twaalf uurtje",
         "BO Brunch",
         "BO Boomers",
+        "Vive La France",
+        "Terug naar Zee",
+        "De Bollenschuur",
         "Flashback Radio",
+        "BO Jazz",
         "Thuiswedstrijd",
-        "Trance Life",
-        "Bollenstreek Sport"
+        "BO lero",
+        "Country Festival",
+        "Leven in de brouwerij",
+        "Twilight Zone",
+        "Nyce!Radio",
+        "De Banjoshow",
+        "Ontwaacken in alle Smaacken",
+        "Peer & Meer",
+        "Cheyenne",
+        "HouseKamer",
+        "Durf te geloven",
+        "Zingen op Zondag",
+        "Het Neusje van de Zoute Zalm"
       ],
       "radioBrowserUuids": [],
       "streamDomains": []
@@ -164,9 +182,9 @@
       "countryCodes": [
         "NL"
       ],
-      "archiveUrl": "https://rtveen.nl/uitzending-gemist/",
+      "archiveUrl": "https://rtveen.nl/uitzendinggemist-radio/",
       "sourceType": "HTML_AUDIO",
-      "sourceUrl": "https://rtveen.nl/uitzending-gemist/",
+      "sourceUrl": "https://rtveen.nl/uitzendinggemist-radio/",
       "programAliases": [
         "Blueprint",
         "RTV1 Piratencafé",
@@ -396,13 +414,19 @@
         "NL"
       ],
       "archiveUrl": "https://www.radio10.nl/radio",
-      "sourceType": "HTML_AUDIO",
-      "sourceUrl": "https://www.radio10.nl/radio",
+      "sourceType": "RSS",
+      "sourceUrl": "https://omny.fm/shows/radio-10-gemist/playlists/radio-10-gemist-app.rss",
       "programAliases": [
         "Radio 10 Staat Op!",
         "Gijs op 10",
+        "Radio 10 Ochtendshow",
+        "De Radio 10 Ochtendshow",
         "Eriks Top 40 Hitdossier",
-        "De Radio 10 Weekendshow"
+        "De Radio 10 Weekendshow",
+        "Dennis Verheugd",
+        "Jeroen Nieuwenhuize",
+        "Jan-Paul Grootentraast",
+        "Lex Gaarthuis"
       ],
       "radioBrowserUuids": [],
       "streamDomains": []
@@ -854,7 +878,7 @@
     }
   ],
   "discoveryRules": {
-    "revision": 3,
+    "revision": 4,
     "catchupPhrases": [
       "uitzending gemist",
       "programma gemist",
