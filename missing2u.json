@@ -16,7 +16,7 @@
       ],
       "archiveUrl": "https://www.bollenstreekomroep.nl/radio-uitzending-gemist/",
       "sourceType": "HTML_AUDIO",
-      "sourceUrl": "https://www.bollenstreekomroep.nl/radio-uitzending-gemist/",
+      "sourceUrl": "https://uitzendinggemist.onrcloud.com/sys/bollenstreek-omroep/",
       "programAliases": [
         "Nostalchiel",
         "BO Ochtendshow",
@@ -365,8 +365,8 @@
         "NL"
       ],
       "archiveUrl": "https://www.538.nl/radio/gemist",
-      "sourceType": "HTML_AUDIO",
-      "sourceUrl": "https://www.538.nl/radio/gemist",
+      "sourceType": "RSS",
+      "sourceUrl": "https://omny.fm/shows/538-gemist/playlists/538-app-gemist.rss",
       "programAliases": [
         "De 538 Ochtendshow",
         "Frank en Airen",
@@ -376,7 +376,10 @@
         "A STATE OF TRANCE",
         "DANCE DEPARTMENT",
         "Hardwell",
-        "Martin Garrix"
+        "Martin Garrix",
+        "538 Hotline",
+        "Global Dance Chart",
+        "De 538 Middagshow"
       ],
       "radioBrowserUuids": [],
       "streamDomains": []
@@ -851,7 +854,7 @@
     }
   ],
   "discoveryRules": {
-    "revision": 2,
+    "revision": 3,
     "catchupPhrases": [
       "uitzending gemist",
       "programma gemist",
@@ -908,7 +911,8 @@
       "radioplayer.nl",
       "radioplayer.org",
       "omny.fm",
-      "omnystudio.com"
+      "omnystudio.com",
+      "omnycontent.com"
     ],
     "pathHints": [
       "/programma-gemist",
