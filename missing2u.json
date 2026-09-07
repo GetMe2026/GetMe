@@ -878,7 +878,7 @@
     }
   ],
   "discoveryRules": {
-    "revision": 4,
+    "revision": 5,
     "catchupPhrases": [
       "uitzending gemist",
       "programma gemist",
