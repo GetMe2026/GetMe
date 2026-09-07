@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "stations": [
     {
       "id": "bo-bollenstreek",
@@ -849,5 +849,80 @@
         "https://www.arrow.nl/"
       ]
     }
-  ]
+  ],
+  "discoveryRules": {
+    "revision": 2,
+    "catchupPhrases": [
+      "uitzending gemist",
+      "programma gemist",
+      "radio gemist",
+      "luister opnieuw",
+      "luister terug",
+      "terugluisteren",
+      "terug luisteren",
+      "gemiste uitzending",
+      "afleveringen gemist",
+      "listen again",
+      "replay",
+      "catch up",
+      "catchup",
+      "on demand",
+      "past shows",
+      "recent shows",
+      "sendung verpasst",
+      "nachhören",
+      "radiothek",
+      "réécouter",
+      "replay radio",
+      "émissions en replay",
+      "volver a escuchar",
+      "radio a la carta",
+      "programas a la carta"
+    ],
+    "livePhrases": [
+      "luister live",
+      "live radio",
+      "nu speelt",
+      "now playing",
+      "listen live",
+      "jetzt live",
+      "écouter en direct",
+      "escuchar en directo"
+    ],
+    "feedHints": [
+      "podcast",
+      "radio",
+      "audio",
+      "uitzending",
+      "programma",
+      "gemist",
+      "feed",
+      "episode",
+      "show",
+      "sendung",
+      "émission",
+      "programa"
+    ],
+    "providerDomains": [
+      "onrcloud.com",
+      "radioplayer.nl",
+      "radioplayer.org",
+      "omny.fm",
+      "omnystudio.com"
+    ],
+    "pathHints": [
+      "/programma-gemist",
+      "/uitzending-gemist",
+      "/radio/gemist",
+      "/gemist",
+      "/terugluisteren",
+      "/radio/terugluisteren",
+      "/radio/programmas",
+      "/programmas",
+      "/listen-again",
+      "/catch-up",
+      "/replay"
+    ],
+    "excludeDomains": []
+  }
 }
