@@ -102,11 +102,11 @@
     },
     {
       "id": "datamaat",
-      "name": "DataMaat",
+      "name": "Data2U",
       "packageName": "com.datamaat.app",
       "versionCode": 9,
       "versionName": "0.2.5",
-      "description": "Slim inzicht in je mobiele databundel, appverbruik, SIM/eSIM-wissels, roaming en dataverbruik.",
+      "description": "Smart mobile data tracking with app usage, SIM/eSIM insights, roaming, forecasts and widgets.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/datamaat.png",
       "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/v0.2.5/Data2U-v0.2.5.apk",
       "changelog": "Data2U v0.2.5\n\n- Renamed the visible app branding from DataMaat to Data2U.\n- Cleaned up the main dashboard by removing redundant carrier correction information.\n- Removed the separate “Data-SIM session active” dashboard card.\n- Improved foreground refresh behavior to avoid unnecessary repeated NetworkStats scans.\n- Smart pace alerts can now work independently from standard data allowance notifications.\n- Improved backup/privacy handling by excluding local usage correction and SIM-session data from Android backup and device transfer.\n- Updated widget text and in-app references to Data2U.\n- General stability and efficiency improvements.",
