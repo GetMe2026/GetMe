@@ -1,8 +1,2511 @@
 {
   "schemaVersion": 3,
   "generatedAt": "2026-09-08",
-  "description": "Versioned carrier accounting profiles for Data2U. Comparison sites are used to discover active carriers and networks; billing rules are applied only when an official carrier source explicitly confirms them.",
+  "description": "Data2U European carrier profile database. Comparison/catalogue sources discover carriers; only official carrier sources may activate billing or maximum-speed rules.",
   "profiles": [
+    {
+      "id": "base_be",
+      "displayName": "BASE",
+      "country": "BE",
+      "aliases": [
+        "base"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "BASE is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "BASE is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Telenet",
+      "discoveredVia": [
+        "Selectra Belgium"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "edpnet_be",
+      "displayName": "edpnet",
+      "country": "BE",
+      "aliases": [
+        "edpnet"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "edpnet is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "edpnet is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "Selectra Belgium"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "ello_be",
+      "displayName": "Ello Mobile",
+      "country": "BE",
+      "aliases": [
+        "ello mobile",
+        "ello"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Ello Mobile is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Ello Mobile is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "Selectra Belgium"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "heytelecom_be",
+      "displayName": "hey! telecom",
+      "country": "BE",
+      "aliases": [
+        "hey! telecom",
+        "hey telecom",
+        "hey!"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "hey! telecom is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "hey! telecom is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Orange",
+      "discoveredVia": [
+        "Selectra Belgium"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "mega_be",
+      "displayName": "Mega Telecom",
+      "country": "BE",
+      "aliases": [
+        "mega telecom",
+        "mega"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Mega Telecom is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Mega Telecom is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "Selectra Belgium"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "mobilevikings_be",
+      "displayName": "Mobile Vikings",
+      "country": "BE",
+      "aliases": [
+        "mobile vikings",
+        "mobilevikings"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Mobile Vikings is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Mobile Vikings is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Proximus",
+      "discoveredVia": [
+        "Selectra Belgium"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "orange_be",
+      "displayName": "Orange Belgium",
+      "country": "BE",
+      "aliases": [
+        "orange belgium",
+        "orange"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Orange Belgium is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Orange Belgium is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Orange",
+      "discoveredVia": [
+        "Selectra Belgium"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "proximus_be",
+      "displayName": "Proximus",
+      "country": "BE",
+      "aliases": [
+        "proximus"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Proximus is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Proximus is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Proximus",
+      "discoveredVia": [
+        "Selectra Belgium"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "scarlet_be",
+      "displayName": "Scarlet",
+      "country": "BE",
+      "aliases": [
+        "scarlet"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Scarlet is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Scarlet is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Proximus",
+      "discoveredVia": [
+        "Selectra Belgium"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "telenet_be",
+      "displayName": "Telenet",
+      "country": "BE",
+      "aliases": [
+        "telenet"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Telenet is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Telenet is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Telenet",
+      "discoveredVia": [
+        "Selectra Belgium"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "voo_be",
+      "displayName": "VOO",
+      "country": "BE",
+      "aliases": [
+        "voo"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "VOO is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "VOO is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Orange",
+      "discoveredVia": [
+        "Selectra Belgium"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "yoin_be",
+      "displayName": "yoin",
+      "country": "BE",
+      "aliases": [
+        "yoin"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "yoin is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "yoin is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "Selectra Belgium"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "1und1_de",
+      "displayName": "1&1",
+      "country": "DE",
+      "aliases": [
+        "1&1",
+        "1und1"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "1&1 is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "1&1 is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "1&1 / Vodafone roaming",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "bildconnect_de",
+      "displayName": "BILDconnect",
+      "country": "DE",
+      "aliases": [
+        "bildconnect"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "BILDconnect is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "BILDconnect is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "1&1 / Vodafone roaming",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "blau_de",
+      "displayName": "Blau",
+      "country": "DE",
+      "aliases": [
+        "blau"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Blau is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Blau is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "O2 Telefónica",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "congstar_de",
+      "displayName": "congstar",
+      "country": "DE",
+      "aliases": [
+        "congstar"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "congstar is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "congstar is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Telekom",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "crash_de",
+      "displayName": "crash",
+      "country": "DE",
+      "aliases": [
+        "crash"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "crash is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "crash is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "drsim_de",
+      "displayName": "DR.SIM",
+      "country": "DE",
+      "aliases": [
+        "dr.sim",
+        "dr sim"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "DR.SIM is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "DR.SIM is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Vodafone",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "edekasmart_de",
+      "displayName": "EDEKA smart",
+      "country": "DE",
+      "aliases": [
+        "edeka smart"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "EDEKA smart is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "EDEKA smart is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Telekom",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "fraenk_de",
+      "displayName": "fraenk",
+      "country": "DE",
+      "aliases": [
+        "fraenk"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "fraenk is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "fraenk is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Telekom",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "freenet_de",
+      "displayName": "freenet",
+      "country": "DE",
+      "aliases": [
+        "freenet"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "freenet is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "freenet is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "fyve_de",
+      "displayName": "FYVE",
+      "country": "DE",
+      "aliases": [
+        "fyve"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "FYVE is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "FYVE is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Vodafone",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "gmx_de",
+      "displayName": "GMX",
+      "country": "DE",
+      "aliases": [
+        "gmx"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "GMX is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "GMX is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "1&1 / Vodafone roaming",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "handyvertrag_de",
+      "displayName": "handyvertrag.de",
+      "country": "DE",
+      "aliases": [
+        "handyvertrag.de",
+        "handyvertrag"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "handyvertrag.de is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "handyvertrag.de is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "1&1 / Vodafone roaming",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "high_de",
+      "displayName": "HIGH",
+      "country": "DE",
+      "aliases": [
+        "high mobile",
+        "high"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "HIGH is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "HIGH is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Telekom",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "jamobil_de",
+      "displayName": "ja! mobil",
+      "country": "DE",
+      "aliases": [
+        "ja! mobil",
+        "ja mobil"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "ja! mobil is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "ja! mobil is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Telekom",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "klarmobil_de",
+      "displayName": "klarmobil",
+      "country": "DE",
+      "aliases": [
+        "klarmobil"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "klarmobil is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "klarmobil is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "lidlconnect_de",
+      "displayName": "Lidl Connect",
+      "country": "DE",
+      "aliases": [
+        "lidl connect"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Lidl Connect is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Lidl Connect is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Vodafone",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "maxxim_de",
+      "displayName": "maXXim",
+      "country": "DE",
+      "aliases": [
+        "maxxim"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "maXXim is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "maXXim is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "1&1 / Vodafone roaming",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "megasim_de",
+      "displayName": "MegaSIM",
+      "country": "DE",
+      "aliases": [
+        "megasim"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "MegaSIM is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "MegaSIM is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "O2 Telefónica",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "normaconnect_de",
+      "displayName": "NORMA connect",
+      "country": "DE",
+      "aliases": [
+        "norma connect"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "NORMA connect is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "NORMA connect is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Telekom",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "o2_de",
+      "displayName": "O2 Germany",
+      "country": "DE",
+      "aliases": [
+        "o2-de",
+        "o2 germany",
+        "telefonica",
+        "o2"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "O2 Germany is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "O2 Germany is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "O2 Telefónica",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "otelo_de",
+      "displayName": "otelo",
+      "country": "DE",
+      "aliases": [
+        "otelo"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "otelo is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "otelo is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Vodafone",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "pennymobil_de",
+      "displayName": "Penny Mobil",
+      "country": "DE",
+      "aliases": [
+        "penny mobil"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Penny Mobil is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Penny Mobil is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Telekom",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "premiumsim_de",
+      "displayName": "premiumSIM",
+      "country": "DE",
+      "aliases": [
+        "premiumsim"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "premiumSIM is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "premiumSIM is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "1&1 / Vodafone roaming",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "simde_de",
+      "displayName": "sim.de",
+      "country": "DE",
+      "aliases": [
+        "sim.de"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "sim.de is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "sim.de is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "1&1 / Vodafone roaming",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "simplytel_de",
+      "displayName": "simplytel",
+      "country": "DE",
+      "aliases": [
+        "simplytel"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "simplytel is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "simplytel is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "1&1 / Vodafone roaming",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "smartmobil_de",
+      "displayName": "smartmobil.de",
+      "country": "DE",
+      "aliases": [
+        "smartmobil.de",
+        "smartmobil"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "smartmobil.de is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "smartmobil.de is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "1&1 / Vodafone roaming",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "tchibo_de",
+      "displayName": "Tchibo mobil",
+      "country": "DE",
+      "aliases": [
+        "tchibo mobil",
+        "tchibo"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Tchibo mobil is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Tchibo mobil is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "O2 Telefónica",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "telekom_de",
+      "displayName": "Telekom",
+      "country": "DE",
+      "aliases": [
+        "telekom",
+        "deutsche telekom"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Telekom is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Telekom is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Telekom",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "vodafone_de",
+      "displayName": "Vodafone DE",
+      "country": "DE",
+      "aliases": [
+        "vodafone de",
+        "vodafone"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Vodafone DE is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Vodafone DE is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Vodafone",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "webde_de",
+      "displayName": "WEB.DE",
+      "country": "DE",
+      "aliases": [
+        "web.de"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "WEB.DE is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "WEB.DE is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "1&1 / Vodafone roaming",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "wetell_de",
+      "displayName": "WEtell",
+      "country": "DE",
+      "aliases": [
+        "wetell"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "WEtell is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "WEtell is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Vodafone",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "winsim_de",
+      "displayName": "winSIM",
+      "country": "DE",
+      "aliases": [
+        "winsim"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "winSIM is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "winSIM is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "1&1 / Vodafone roaming",
+      "discoveredVia": [
+        "CHECK24"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "alemobil_es",
+      "displayName": "alemobil",
+      "country": "ES",
+      "aliases": [
+        "alemobil",
+        "ale movil",
+        "ale móvil"
+      ],
+      "mccMncs": [],
+      "network": "MasOrange",
+      "discoveredVia": [
+        "Kelisto editorial",
+        "Official carrier source"
+      ],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "verifiedDate": "2026-09-08",
+      "source": {
+        "label": "alemobil current mobile tariffs",
+        "url": "https://alemobil.com/tarifas-movil/"
+      },
+      "ruleNoteNl": "alemobil is als aanvullende budgetprovider opgenomen. De officiële site vermeldt mobiele bundels en MasOrange-dekking. Data2U past geen onbevestigde afrondregel toe.",
+      "ruleNoteEn": "alemobil is included as an additional budget carrier. Its official site lists mobile plans and MasOrange coverage. Data2U applies no unverified rounding rule."
+    },
+    {
+      "id": "digi_es",
+      "displayName": "DIGI",
+      "country": "ES",
+      "aliases": [
+        "digi",
+        "digimobil"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "DIGI España current 5G mobile tariffs",
+        "url": "https://www.digimobil.es/movil/"
+      },
+      "ruleNoteNl": "DIGI ES is opgenomen met actuele officiële tarieven. De bron bevestigt bundels en belvoorwaarden, maar Data2U neemt zonder expliciete facturatie-eenheid geen afrondregel aan.",
+      "ruleNoteEn": "DIGI ES is included with current official tariffs. The source confirms allowances and call conditions, but Data2U assumes no rounding rule without an explicit billing unit.",
+      "verifiedDate": "2026-09-08",
+      "network": "Movistar",
+      "discoveredVia": [
+        "Official carrier source"
+      ]
+    },
+    {
+      "id": "euskaltel_es",
+      "displayName": "Euskaltel",
+      "country": "ES",
+      "aliases": [
+        "euskaltel"
+      ],
+      "mccMncs": [],
+      "network": "Orange",
+      "discoveredVia": [
+        "Kelisto"
+      ],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "verifiedDate": "2026-09-08",
+      "source": {
+        "label": "Euskaltel 2026 consumer mobile tariff sheet",
+        "url": "https://www.euskaltel.com/docs_prod/euskaltel-front/pdf/info_legal_particulares/vigentes/Euskaltel_tarifas_abril_2026.pdf"
+      },
+      "ruleNoteNl": "Euskaltel is via Kelisto als actieve Spaanse provider opgenomen. Een actuele officiële tariefsheet is gekoppeld. Data2U gebruikt geen onbevestigde afrondregel.",
+      "ruleNoteEn": "Euskaltel was added as an active Spanish carrier from Kelisto. A current official tariff sheet is linked. Data2U applies no unverified rounding rule."
+    },
+    {
+      "id": "eztelecom_es",
+      "displayName": "EZ Telecom",
+      "country": "ES",
+      "aliases": [
+        "ez telecom",
+        "eztelecom"
+      ],
+      "mccMncs": [],
+      "network": "Orange / Yoigo",
+      "discoveredVia": [
+        "Kelisto"
+      ],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "verifiedDate": "2026-09-08",
+      "source": {
+        "label": "EZ Telecom official website",
+        "url": "https://eztelecom.es/"
+      },
+      "ruleNoteNl": "EZ Telecom is toegevoegd vanuit de actuele Kelisto-providerlijst. De facturatie-eenheid is niet expliciet bevestigd; daarom blijft Data2U bij Android-metingen en kalibratie.",
+      "ruleNoteEn": "EZ Telecom was added from Kelisto’s current carrier list. The billing increment has not been explicitly confirmed, so Data2U keeps Android measurements and calibration."
+    },
+    {
+      "id": "finetwork_es",
+      "displayName": "Finetwork",
+      "country": "ES",
+      "aliases": [
+        "finetwork",
+        "fi network",
+        "fi-network"
+      ],
+      "mccMncs": [],
+      "network": "Vodafone",
+      "discoveredVia": [
+        "Kelisto"
+      ],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "verifiedDate": "2026-09-08",
+      "source": {
+        "label": "Finetwork current mobile tariffs",
+        "url": "https://www.finetwork.com/tarifas-movil"
+      },
+      "ruleNoteNl": "Finetwork is via Kelisto ontdekt en heeft een actuele officiële mobiele tarievenbron. Specifieke roamingstructuren worden niet als nationale afrondregel gebruikt.",
+      "ruleNoteEn": "Finetwork was discovered through Kelisto and has a current official mobile-tariff source. Specific roaming structures are not treated as domestic rounding rules."
+    },
+    {
+      "id": "jazztel_es",
+      "displayName": "Jazztel",
+      "country": "ES",
+      "aliases": [
+        "jazztel"
+      ],
+      "mccMncs": [],
+      "network": "Orange",
+      "discoveredVia": [
+        "Kelisto"
+      ],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "verifiedDate": "2026-09-08",
+      "source": {
+        "label": "Jazztel official mobile tariff history/current plans",
+        "url": "https://www.jazztel.com/FrontComercialJazztel/Documents/historico_tarifas.pdf"
+      },
+      "ruleNoteNl": "Jazztel is toegevoegd via Kelisto en gekoppeld aan een officiële Jazztel-tariefbron. Data2U past alleen een afrondregel toe wanneer die expliciet voor het actuele mobiele verbruik wordt bevestigd.",
+      "ruleNoteEn": "Jazztel was added via Kelisto and linked to an official Jazztel tariff source. Data2U only applies a rounding rule when it is explicitly confirmed for current mobile usage."
+    },
+    {
+      "id": "lowi_es",
+      "displayName": "Lowi",
+      "country": "ES",
+      "aliases": [
+        "lowi"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "Lowi current 5G mobile tariffs",
+        "url": "https://www.lowi.es/tarifas-movil/"
+      },
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Lowi ES is opgenomen met de actuele officiële mobiele tarieven. Data2U verzint geen afrondregel wanneer de facturatie-eenheid niet expliciet staat vermeld.",
+      "ruleNoteEn": "Lowi ES is included with current official mobile tariffs. Data2U does not invent a rounding rule when the billing unit is not explicitly stated.",
+      "network": "Vodafone",
+      "discoveredVia": [
+        "Kelisto"
+      ]
+    },
+    {
+      "id": "movistar_es",
+      "displayName": "Movistar",
+      "country": "ES",
+      "aliases": [
+        "movistar",
+        "telefonica",
+        "telefónica"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "Movistar España current mobile tariffs",
+        "url": "https://www.movistar.es/tarifas-moviles/"
+      },
+      "ruleNoteNl": "Movistar ES wordt herkend, maar Data2U past geen historische of onbevestigde afrondregel toe. De actuele officiële tariefbron is gekoppeld voor controle.",
+      "ruleNoteEn": "Movistar ES is recognised, but Data2U applies no historical or unverified rounding rule. The current official tariff source is linked for review.",
+      "verifiedDate": "2026-09-08",
+      "network": "Movistar",
+      "discoveredVia": [
+        "Kelisto"
+      ]
+    },
+    {
+      "id": "masmovil_es",
+      "displayName": "MásMóvil",
+      "country": "ES",
+      "aliases": [
+        "masmovil",
+        "másmóvil",
+        "mas movil",
+        "más móvil"
+      ],
+      "mccMncs": [],
+      "network": "Orange / Yoigo",
+      "discoveredVia": [
+        "Kelisto"
+      ],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "verifiedDate": "2026-09-08",
+      "source": {
+        "label": "MásMóvil official website",
+        "url": "https://www.masmovil.es/"
+      },
+      "ruleNoteNl": "MásMóvil is opgenomen via Kelisto. De provider gebruikt MasOrange/Yoigo-dekking; zonder expliciete actuele facturatie-eenheid wordt geen afronding aangenomen.",
+      "ruleNoteEn": "MásMóvil is included from Kelisto. The carrier uses MasOrange/Yoigo coverage; no rounding is assumed without an explicit current billing unit."
+    },
+    {
+      "id": "o2_es",
+      "displayName": "O2",
+      "country": "ES",
+      "aliases": [
+        "o2",
+        "telefonica o2",
+        "telefónica o2"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "O2 España mobile tariffs",
+        "url": "https://o2online.es/tarifas-movil/"
+      },
+      "ruleNoteNl": "O2 ES is als providerprofiel toegevoegd. Zolang een actuele expliciete afrondregel ontbreekt, blijft Data2U bij de Android-teller en handmatige kalibratie.",
+      "ruleNoteEn": "O2 ES is included as a carrier profile. Until a current explicit rounding rule is available, Data2U stays with Android counters and manual calibration.",
+      "verifiedDate": "2026-09-08",
+      "network": "Movistar",
+      "discoveredVia": [
+        "Kelisto"
+      ]
+    },
+    {
+      "id": "orange_es",
+      "displayName": "Orange",
+      "country": "ES",
+      "aliases": [
+        "orange"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "Orange España current mobile tariffs",
+        "url": "https://www.orange.es/tarifas/movil"
+      },
+      "ruleNoteNl": "Orange ES wordt herkend. Data2U past geen roamingregel automatisch toe op nationaal verbruik en neemt daarom geen onbevestigde nationale afrondregel aan.",
+      "ruleNoteEn": "Orange ES is recognised. Data2U does not apply roaming rules to domestic usage, so no unverified domestic rounding rule is assumed.",
+      "verifiedDate": "2026-09-08",
+      "network": "Orange",
+      "discoveredVia": [
+        "Kelisto"
+      ]
+    },
+    {
+      "id": "oroc_es",
+      "displayName": "Oroc",
+      "country": "ES",
+      "aliases": [
+        "oroc"
+      ],
+      "mccMncs": [],
+      "network": "Orange",
+      "discoveredVia": [
+        "Kelisto"
+      ],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "verifiedDate": "2026-09-08",
+      "source": {
+        "label": "Oroc official mobile and fibre offers",
+        "url": "https://oroc.es/"
+      },
+      "ruleNoteNl": "Oroc is via Kelisto als actieve provider gevonden en de officiële site bevestigt mobiele bundels en fair-usevoorwaarden. Er wordt geen specifieke data-afronding aangenomen.",
+      "ruleNoteEn": "Oroc was found as an active carrier through Kelisto and its official site confirms mobile plans and fair-use conditions. No specific data rounding is assumed."
+    },
+    {
+      "id": "pepephone_es",
+      "displayName": "Pepephone",
+      "country": "ES",
+      "aliases": [
+        "pepephone",
+        "pepe phone"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "Pepephone current 5G mobile tariffs",
+        "url": "https://www.pepephone.com/tarifas-moviles"
+      },
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Pepephone ES is opgenomen met de actuele officiële mobiele tarieven. Zonder een expliciete actuele afrondregel blijft Data2U bij Android-metingen en kalibratie.",
+      "ruleNoteEn": "Pepephone ES is included with current official mobile tariffs. Without an explicit current rounding rule, Data2U stays with Android measurements and calibration.",
+      "network": "Orange",
+      "discoveredVia": [
+        "Kelisto"
+      ]
+    },
+    {
+      "id": "r_cable_es",
+      "displayName": "R Cable",
+      "country": "ES",
+      "aliases": [
+        "r cable",
+        "mundo r",
+        "mundo-r"
+      ],
+      "mccMncs": [],
+      "network": "Orange",
+      "discoveredVia": [
+        "Kelisto"
+      ],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "verifiedDate": "2026-09-08",
+      "source": {
+        "label": "R Cable official website",
+        "url": "https://mundo-r.com/"
+      },
+      "ruleNoteNl": "R Cable is toegevoegd uit de actuele Kelisto-providerlijst. De officiële bron is gekoppeld, maar Data2U verzint geen afrondregel wanneer die niet expliciet is bevestigd.",
+      "ruleNoteEn": "R Cable was added from Kelisto’s current carrier list. The official source is linked, but Data2U does not invent a rounding rule when it is not explicitly confirmed."
+    },
+    {
+      "id": "simyo_es",
+      "displayName": "simyo",
+      "country": "ES",
+      "aliases": [
+        "simyo"
+      ],
+      "mccMncs": [],
+      "network": "Orange",
+      "discoveredVia": [
+        "Kelisto"
+      ],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "verifiedDate": "2026-09-08",
+      "source": {
+        "label": "simyo España current 5G mobile tariffs",
+        "url": "https://www.simyo.es/tarifas-movil.html"
+      },
+      "ruleNoteNl": "simyo Spanje is apart van Simyo Nederland opgenomen. De officiële Spaanse tarievenbron is gekoppeld; de vermelding van prijzen per MB wordt niet automatisch vertaald naar een facturatie-afronding zonder expliciete incrementregel.",
+      "ruleNoteEn": "simyo Spain is stored separately from Simyo Netherlands. The official Spanish tariff source is linked; prices per MB are not automatically converted into a billing-rounding rule without an explicit increment."
+    },
+    {
+      "id": "telecable_es",
+      "displayName": "Telecable",
+      "country": "ES",
+      "aliases": [
+        "telecable"
+      ],
+      "mccMncs": [],
+      "network": "Movistar",
+      "discoveredVia": [
+        "Kelisto"
+      ],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "verifiedDate": "2026-09-08",
+      "source": {
+        "label": "Telecable official website",
+        "url": "https://telecable.es/"
+      },
+      "ruleNoteNl": "Telecable is toegevoegd via Kelisto. Het netwerk is als metadata opgenomen; zonder expliciete officiële facturatie-eenheid gebruikt Data2U geen providerafronding.",
+      "ruleNoteEn": "Telecable was added via Kelisto. Its network is stored as metadata; without an explicit official billing unit Data2U applies no carrier rounding."
+    },
+    {
+      "id": "vodafone_es",
+      "displayName": "Vodafone",
+      "country": "ES",
+      "aliases": [
+        "vodafone"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "Vodafone España current mobile contract tariffs",
+        "url": "https://www.vodafone.es/c/particulares/es/productos-y-servicios/movil/contrato/tarifas-contrato/"
+      },
+      "ruleNoteNl": "Vodafone ES is opgenomen met de actuele officiële mobiele tarieven. Onbevestigde afrondregels worden niet toegepast.",
+      "ruleNoteEn": "Vodafone ES is included with the current official mobile tariffs. Unverified rounding rules are not applied.",
+      "verifiedDate": "2026-09-08",
+      "network": "Vodafone",
+      "discoveredVia": [
+        "Kelisto"
+      ]
+    },
+    {
+      "id": "yoigo_es",
+      "displayName": "Yoigo",
+      "country": "ES",
+      "aliases": [
+        "yoigo",
+        "xfera"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "Yoigo current mobile tariffs",
+        "url": "https://www.yoigo.com/tarifas-moviles"
+      },
+      "ruleNoteNl": "Yoigo ES wordt herkend via de actuele officiële tarievenpagina. Data2U past alleen regels toe die expliciet zijn geverifieerd.",
+      "ruleNoteEn": "Yoigo ES is recognised from the current official tariff page. Data2U only applies rules that are explicitly verified.",
+      "verifiedDate": "2026-09-08",
+      "network": "MasOrange / Yoigo",
+      "discoveredVia": [
+        "Kelisto"
+      ]
+    },
+    {
+      "id": "auchan_fr",
+      "displayName": "Auchan Telecom",
+      "country": "FR",
+      "aliases": [
+        "auchan telecom"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Auchan Telecom is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Auchan Telecom is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "Selectra France"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "bandyou_fr",
+      "displayName": "B&YOU",
+      "country": "FR",
+      "aliases": [
+        "b&you",
+        "bandyou"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "B&YOU is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "B&YOU is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Bouygues Telecom",
+      "discoveredVia": [
+        "Selectra France"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "bouygues_fr",
+      "displayName": "Bouygues Telecom",
+      "country": "FR",
+      "aliases": [
+        "bouygues telecom",
+        "bouygues"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Bouygues Telecom is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Bouygues Telecom is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Bouygues Telecom",
+      "discoveredVia": [
+        "Selectra France"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "cdiscount_fr",
+      "displayName": "Cdiscount Mobile",
+      "country": "FR",
+      "aliases": [
+        "cdiscount mobile"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Cdiscount Mobile is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Cdiscount Mobile is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "Selectra France"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "free_fr",
+      "displayName": "Free Mobile",
+      "country": "FR",
+      "aliases": [
+        "free mobile",
+        "free"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Free Mobile is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Free Mobile is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Free",
+      "discoveredVia": [
+        "Selectra France"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "lapostemobile_fr",
+      "displayName": "La Poste Mobile",
+      "country": "FR",
+      "aliases": [
+        "la poste mobile"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "La Poste Mobile is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "La Poste Mobile is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "Selectra France"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "lebara_fr",
+      "displayName": "Lebara France",
+      "country": "FR",
+      "aliases": [
+        "lebara france",
+        "lebara"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Lebara France is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Lebara France is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "Selectra France"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "lycamobile_fr",
+      "displayName": "Lyca Mobile France",
+      "country": "FR",
+      "aliases": [
+        "lyca mobile",
+        "lycamobile"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Lyca Mobile France is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Lyca Mobile France is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "Selectra France"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "nrjmobile_fr",
+      "displayName": "NRJ Mobile",
+      "country": "FR",
+      "aliases": [
+        "nrj mobile"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "NRJ Mobile is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "NRJ Mobile is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "Selectra France"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "orange_fr",
+      "displayName": "Orange France",
+      "country": "FR",
+      "aliases": [
+        "orange france",
+        "orange"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Orange France is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Orange France is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Orange",
+      "discoveredVia": [
+        "Selectra France"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "prixtel_fr",
+      "displayName": "Prixtel",
+      "country": "FR",
+      "aliases": [
+        "prixtel"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Prixtel is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Prixtel is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "Selectra France"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "redbysfr_fr",
+      "displayName": "RED by SFR",
+      "country": "FR",
+      "aliases": [
+        "red by sfr",
+        "red sfr"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "RED by SFR is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "RED by SFR is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "SFR",
+      "discoveredVia": [
+        "Selectra France"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "reglomobile_fr",
+      "displayName": "Réglo Mobile",
+      "country": "FR",
+      "aliases": [
+        "réglo mobile",
+        "reglo mobile"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Réglo Mobile is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Réglo Mobile is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "Selectra France"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "sfr_fr",
+      "displayName": "SFR",
+      "country": "FR",
+      "aliases": [
+        "sfr"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "SFR is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "SFR is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "SFR",
+      "discoveredVia": [
+        "Selectra France"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "sosh_fr",
+      "displayName": "Sosh",
+      "country": "FR",
+      "aliases": [
+        "sosh"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Sosh is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Sosh is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Orange",
+      "discoveredVia": [
+        "Selectra France"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "youprice_fr",
+      "displayName": "YouPrice",
+      "country": "FR",
+      "aliases": [
+        "youprice"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "YouPrice is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "YouPrice is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "Selectra France"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "asdamobile_gb",
+      "displayName": "Asda Mobile",
+      "country": "GB",
+      "aliases": [
+        "asda mobile"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Asda Mobile is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Asda Mobile is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Vodafone",
+      "discoveredVia": [
+        "Uswitch"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "ee_gb",
+      "displayName": "EE",
+      "country": "GB",
+      "aliases": [
+        "ee",
+        "ee uk"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "EE is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "EE is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "EE",
+      "discoveredVia": [
+        "Uswitch"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "giffgaff_gb",
+      "displayName": "giffgaff",
+      "country": "GB",
+      "aliases": [
+        "giffgaff"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "giffgaff is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "giffgaff is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "O2",
+      "discoveredVia": [
+        "Uswitch"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "idmobile_gb",
+      "displayName": "iD Mobile",
+      "country": "GB",
+      "aliases": [
+        "id mobile",
+        "idmobile"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "iD Mobile is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "iD Mobile is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Three",
+      "discoveredVia": [
+        "Uswitch"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "lebara_gb",
+      "displayName": "Lebara Mobile UK",
+      "country": "GB",
+      "aliases": [
+        "lebara mobile uk",
+        "lebara mobile",
+        "lebara"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Lebara Mobile UK is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Lebara Mobile UK is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Vodafone",
+      "discoveredVia": [
+        "Uswitch"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "lyca_gb",
+      "displayName": "Lyca Mobile UK",
+      "country": "GB",
+      "aliases": [
+        "lyca mobile uk",
+        "lyca mobile",
+        "lycamobile"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Lyca Mobile UK is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Lyca Mobile UK is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "EE",
+      "discoveredVia": [
+        "Uswitch"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "o2_gb",
+      "displayName": "O2 UK",
+      "country": "GB",
+      "aliases": [
+        "o2-uk",
+        "o2 uk",
+        "o2"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "O2 UK is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "O2 UK is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "O2",
+      "discoveredVia": [
+        "Uswitch"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "skymobile_gb",
+      "displayName": "Sky Mobile",
+      "country": "GB",
+      "aliases": [
+        "sky mobile"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Sky Mobile is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Sky Mobile is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "O2",
+      "discoveredVia": [
+        "Uswitch"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "smarty_gb",
+      "displayName": "SMARTY",
+      "country": "GB",
+      "aliases": [
+        "smarty"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "SMARTY is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "SMARTY is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Three",
+      "discoveredVia": [
+        "Uswitch"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "spusu_gb",
+      "displayName": "spusu UK",
+      "country": "GB",
+      "aliases": [
+        "spusu uk",
+        "spusu"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "spusu UK is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "spusu UK is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "Uswitch"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "talkmobile_gb",
+      "displayName": "Talkmobile",
+      "country": "GB",
+      "aliases": [
+        "talkmobile"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Talkmobile is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Talkmobile is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Vodafone",
+      "discoveredVia": [
+        "Uswitch"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "tescomobile_gb",
+      "displayName": "Tesco Mobile",
+      "country": "GB",
+      "aliases": [
+        "tesco mobile"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Tesco Mobile is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Tesco Mobile is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "O2",
+      "discoveredVia": [
+        "Uswitch"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "three_gb",
+      "displayName": "Three UK",
+      "country": "GB",
+      "aliases": [
+        "three uk",
+        "3 uk",
+        "three"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Three UK is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Three UK is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Three",
+      "discoveredVia": [
+        "Uswitch"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "vodafone_gb",
+      "displayName": "Vodafone UK",
+      "country": "GB",
+      "aliases": [
+        "vodafone uk",
+        "vodafone"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Vodafone UK is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Vodafone UK is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Vodafone",
+      "discoveredVia": [
+        "Uswitch"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "voxi_gb",
+      "displayName": "VOXI",
+      "country": "GB",
+      "aliases": [
+        "voxi"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "VOXI is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "VOXI is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Vodafone",
+      "discoveredVia": [
+        "Uswitch"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "1mobile_it",
+      "displayName": "1Mobile",
+      "country": "IT",
+      "aliases": [
+        "1mobile"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "1Mobile is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "1Mobile is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "SOStariffe.it"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "coopvoce_it",
+      "displayName": "CoopVoce",
+      "country": "IT",
+      "aliases": [
+        "coopvoce"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "CoopVoce is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "CoopVoce is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "SOStariffe.it"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "fastweb_it",
+      "displayName": "Fastweb Mobile",
+      "country": "IT",
+      "aliases": [
+        "fastweb mobile",
+        "fastweb"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Fastweb Mobile is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Fastweb Mobile is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "SOStariffe.it"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "ho_it",
+      "displayName": "ho. Mobile",
+      "country": "IT",
+      "aliases": [
+        "ho. mobile",
+        "ho mobile",
+        "ho."
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "ho. Mobile is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "ho. Mobile is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Vodafone",
+      "discoveredVia": [
+        "SOStariffe.it"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "iliad_it",
+      "displayName": "Iliad Italia",
+      "country": "IT",
+      "aliases": [
+        "iliad italia",
+        "iliad"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Iliad Italia is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Iliad Italia is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Iliad",
+      "discoveredVia": [
+        "SOStariffe.it"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "kena_it",
+      "displayName": "Kena Mobile",
+      "country": "IT",
+      "aliases": [
+        "kena mobile",
+        "kena"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Kena Mobile is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Kena Mobile is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "TIM",
+      "discoveredVia": [
+        "SOStariffe.it"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "lyca_it",
+      "displayName": "Lyca Mobile Italia",
+      "country": "IT",
+      "aliases": [
+        "lyca mobile italia",
+        "lyca mobile",
+        "lycamobile"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Lyca Mobile Italia is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Lyca Mobile Italia is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "SOStariffe.it"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "optima_it",
+      "displayName": "Optima Mobile",
+      "country": "IT",
+      "aliases": [
+        "optima mobile",
+        "optima"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Optima Mobile is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Optima Mobile is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "SOStariffe.it"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "postemobile_it",
+      "displayName": "PosteMobile",
+      "country": "IT",
+      "aliases": [
+        "postemobile"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "PosteMobile is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "PosteMobile is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "SOStariffe.it"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "spusu_it",
+      "displayName": "spusu Italia",
+      "country": "IT",
+      "aliases": [
+        "spusu italia",
+        "spusu"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "spusu Italia is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "spusu Italia is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": null,
+      "discoveredVia": [
+        "SOStariffe.it"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "tim_it",
+      "displayName": "TIM",
+      "country": "IT",
+      "aliases": [
+        "tim"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "TIM is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "TIM is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "TIM",
+      "discoveredVia": [
+        "SOStariffe.it"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "tiscali_it",
+      "displayName": "Tiscali Mobile",
+      "country": "IT",
+      "aliases": [
+        "tiscali mobile",
+        "tiscali"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Tiscali Mobile is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Tiscali Mobile is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "TIM",
+      "discoveredVia": [
+        "SOStariffe.it"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "very_it",
+      "displayName": "Very Mobile",
+      "country": "IT",
+      "aliases": [
+        "very mobile"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Very Mobile is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Very Mobile is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "WINDTRE",
+      "discoveredVia": [
+        "SOStariffe.it"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "vianova_it",
+      "displayName": "Vianova Mobile",
+      "country": "IT",
+      "aliases": [
+        "vianova mobile",
+        "vianova"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Vianova Mobile is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Vianova Mobile is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "TIM",
+      "discoveredVia": [
+        "SOStariffe.it"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "vodafone_it",
+      "displayName": "Vodafone Italia",
+      "country": "IT",
+      "aliases": [
+        "vodafone italia",
+        "vodafone"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Vodafone Italia is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "Vodafone Italia is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "Vodafone",
+      "discoveredVia": [
+        "SOStariffe.it"
+      ],
+      "speedProfiles": []
+    },
+    {
+      "id": "windtre_it",
+      "displayName": "WINDTRE",
+      "country": "IT",
+      "aliases": [
+        "windtre",
+        "wind tre"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": null,
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "WINDTRE is opgenomen in de Europese providerdatabase op basis van een actuele markt-/vergelijkingsbron. Data2U neemt geen provider-specifieke factureringsregel of maximumsnelheid aan zolang die niet expliciet door de provider zelf is bevestigd.",
+      "ruleNoteEn": "WINDTRE is included in the European carrier database using a current market/comparison source. Data2U assumes no carrier-specific billing rule or maximum speed until the carrier itself explicitly confirms it.",
+      "network": "WINDTRE",
+      "discoveredVia": [
+        "SOStariffe.it"
+      ],
+      "speedProfiles": []
+    },
     {
       "id": "50plusmobiel_nl",
       "displayName": "50+ mobiel",
@@ -752,459 +3255,9 @@
           "noteEn": "Optional paid speed upgrade. Youfone explicitly publishes 300 Mbit/s download; a separate upload maximum for this option is not published."
         }
       ]
-    },
-    {
-      "id": "alemobil_es",
-      "displayName": "alemobil",
-      "country": "ES",
-      "aliases": [
-        "alemobil",
-        "ale movil",
-        "ale móvil"
-      ],
-      "mccMncs": [],
-      "network": "MasOrange",
-      "discoveredVia": [
-        "Kelisto editorial",
-        "Official carrier source"
-      ],
-      "unitBase": 1000,
-      "dataRounding": null,
-      "voiceRounding": null,
-      "verificationStatus": "partial",
-      "verifiedDate": "2026-09-08",
-      "source": {
-        "label": "alemobil current mobile tariffs",
-        "url": "https://alemobil.com/tarifas-movil/"
-      },
-      "ruleNoteNl": "alemobil is als aanvullende budgetprovider opgenomen. De officiële site vermeldt mobiele bundels en MasOrange-dekking. Data2U past geen onbevestigde afrondregel toe.",
-      "ruleNoteEn": "alemobil is included as an additional budget carrier. Its official site lists mobile plans and MasOrange coverage. Data2U applies no unverified rounding rule."
-    },
-    {
-      "id": "digi_es",
-      "displayName": "DIGI",
-      "country": "ES",
-      "aliases": [
-        "digi",
-        "digimobil"
-      ],
-      "mccMncs": [],
-      "unitBase": 1000,
-      "dataRounding": null,
-      "voiceRounding": null,
-      "verificationStatus": "partial",
-      "source": {
-        "label": "DIGI España current 5G mobile tariffs",
-        "url": "https://www.digimobil.es/movil/"
-      },
-      "ruleNoteNl": "DIGI ES is opgenomen met actuele officiële tarieven. De bron bevestigt bundels en belvoorwaarden, maar Data2U neemt zonder expliciete facturatie-eenheid geen afrondregel aan.",
-      "ruleNoteEn": "DIGI ES is included with current official tariffs. The source confirms allowances and call conditions, but Data2U assumes no rounding rule without an explicit billing unit.",
-      "verifiedDate": "2026-09-08",
-      "network": "Movistar",
-      "discoveredVia": [
-        "Official carrier source"
-      ]
-    },
-    {
-      "id": "euskaltel_es",
-      "displayName": "Euskaltel",
-      "country": "ES",
-      "aliases": [
-        "euskaltel"
-      ],
-      "mccMncs": [],
-      "network": "Orange",
-      "discoveredVia": [
-        "Kelisto"
-      ],
-      "unitBase": 1000,
-      "dataRounding": null,
-      "voiceRounding": null,
-      "verificationStatus": "partial",
-      "verifiedDate": "2026-09-08",
-      "source": {
-        "label": "Euskaltel 2026 consumer mobile tariff sheet",
-        "url": "https://www.euskaltel.com/docs_prod/euskaltel-front/pdf/info_legal_particulares/vigentes/Euskaltel_tarifas_abril_2026.pdf"
-      },
-      "ruleNoteNl": "Euskaltel is via Kelisto als actieve Spaanse provider opgenomen. Een actuele officiële tariefsheet is gekoppeld. Data2U gebruikt geen onbevestigde afrondregel.",
-      "ruleNoteEn": "Euskaltel was added as an active Spanish carrier from Kelisto. A current official tariff sheet is linked. Data2U applies no unverified rounding rule."
-    },
-    {
-      "id": "eztelecom_es",
-      "displayName": "EZ Telecom",
-      "country": "ES",
-      "aliases": [
-        "ez telecom",
-        "eztelecom"
-      ],
-      "mccMncs": [],
-      "network": "Orange / Yoigo",
-      "discoveredVia": [
-        "Kelisto"
-      ],
-      "unitBase": 1000,
-      "dataRounding": null,
-      "voiceRounding": null,
-      "verificationStatus": "partial",
-      "verifiedDate": "2026-09-08",
-      "source": {
-        "label": "EZ Telecom official website",
-        "url": "https://eztelecom.es/"
-      },
-      "ruleNoteNl": "EZ Telecom is toegevoegd vanuit de actuele Kelisto-providerlijst. De facturatie-eenheid is niet expliciet bevestigd; daarom blijft Data2U bij Android-metingen en kalibratie.",
-      "ruleNoteEn": "EZ Telecom was added from Kelisto’s current carrier list. The billing increment has not been explicitly confirmed, so Data2U keeps Android measurements and calibration."
-    },
-    {
-      "id": "finetwork_es",
-      "displayName": "Finetwork",
-      "country": "ES",
-      "aliases": [
-        "finetwork",
-        "fi network",
-        "fi-network"
-      ],
-      "mccMncs": [],
-      "network": "Vodafone",
-      "discoveredVia": [
-        "Kelisto"
-      ],
-      "unitBase": 1000,
-      "dataRounding": null,
-      "voiceRounding": null,
-      "verificationStatus": "partial",
-      "verifiedDate": "2026-09-08",
-      "source": {
-        "label": "Finetwork current mobile tariffs",
-        "url": "https://www.finetwork.com/tarifas-movil"
-      },
-      "ruleNoteNl": "Finetwork is via Kelisto ontdekt en heeft een actuele officiële mobiele tarievenbron. Specifieke roamingstructuren worden niet als nationale afrondregel gebruikt.",
-      "ruleNoteEn": "Finetwork was discovered through Kelisto and has a current official mobile-tariff source. Specific roaming structures are not treated as domestic rounding rules."
-    },
-    {
-      "id": "jazztel_es",
-      "displayName": "Jazztel",
-      "country": "ES",
-      "aliases": [
-        "jazztel"
-      ],
-      "mccMncs": [],
-      "network": "Orange",
-      "discoveredVia": [
-        "Kelisto"
-      ],
-      "unitBase": 1000,
-      "dataRounding": null,
-      "voiceRounding": null,
-      "verificationStatus": "partial",
-      "verifiedDate": "2026-09-08",
-      "source": {
-        "label": "Jazztel official mobile tariff history/current plans",
-        "url": "https://www.jazztel.com/FrontComercialJazztel/Documents/historico_tarifas.pdf"
-      },
-      "ruleNoteNl": "Jazztel is toegevoegd via Kelisto en gekoppeld aan een officiële Jazztel-tariefbron. Data2U past alleen een afrondregel toe wanneer die expliciet voor het actuele mobiele verbruik wordt bevestigd.",
-      "ruleNoteEn": "Jazztel was added via Kelisto and linked to an official Jazztel tariff source. Data2U only applies a rounding rule when it is explicitly confirmed for current mobile usage."
-    },
-    {
-      "id": "lowi_es",
-      "displayName": "Lowi",
-      "country": "ES",
-      "aliases": [
-        "lowi"
-      ],
-      "mccMncs": [],
-      "unitBase": 1000,
-      "dataRounding": null,
-      "voiceRounding": null,
-      "verificationStatus": "partial",
-      "source": {
-        "label": "Lowi current 5G mobile tariffs",
-        "url": "https://www.lowi.es/tarifas-movil/"
-      },
-      "verifiedDate": "2026-09-08",
-      "ruleNoteNl": "Lowi ES is opgenomen met de actuele officiële mobiele tarieven. Data2U verzint geen afrondregel wanneer de facturatie-eenheid niet expliciet staat vermeld.",
-      "ruleNoteEn": "Lowi ES is included with current official mobile tariffs. Data2U does not invent a rounding rule when the billing unit is not explicitly stated.",
-      "network": "Vodafone",
-      "discoveredVia": [
-        "Kelisto"
-      ]
-    },
-    {
-      "id": "movistar_es",
-      "displayName": "Movistar",
-      "country": "ES",
-      "aliases": [
-        "movistar",
-        "telefonica",
-        "telefónica"
-      ],
-      "mccMncs": [],
-      "unitBase": 1000,
-      "dataRounding": null,
-      "voiceRounding": null,
-      "verificationStatus": "partial",
-      "source": {
-        "label": "Movistar España current mobile tariffs",
-        "url": "https://www.movistar.es/tarifas-moviles/"
-      },
-      "ruleNoteNl": "Movistar ES wordt herkend, maar Data2U past geen historische of onbevestigde afrondregel toe. De actuele officiële tariefbron is gekoppeld voor controle.",
-      "ruleNoteEn": "Movistar ES is recognised, but Data2U applies no historical or unverified rounding rule. The current official tariff source is linked for review.",
-      "verifiedDate": "2026-09-08",
-      "network": "Movistar",
-      "discoveredVia": [
-        "Kelisto"
-      ]
-    },
-    {
-      "id": "masmovil_es",
-      "displayName": "MásMóvil",
-      "country": "ES",
-      "aliases": [
-        "masmovil",
-        "másmóvil",
-        "mas movil",
-        "más móvil"
-      ],
-      "mccMncs": [],
-      "network": "Orange / Yoigo",
-      "discoveredVia": [
-        "Kelisto"
-      ],
-      "unitBase": 1000,
-      "dataRounding": null,
-      "voiceRounding": null,
-      "verificationStatus": "partial",
-      "verifiedDate": "2026-09-08",
-      "source": {
-        "label": "MásMóvil official website",
-        "url": "https://www.masmovil.es/"
-      },
-      "ruleNoteNl": "MásMóvil is opgenomen via Kelisto. De provider gebruikt MasOrange/Yoigo-dekking; zonder expliciete actuele facturatie-eenheid wordt geen afronding aangenomen.",
-      "ruleNoteEn": "MásMóvil is included from Kelisto. The carrier uses MasOrange/Yoigo coverage; no rounding is assumed without an explicit current billing unit."
-    },
-    {
-      "id": "o2_es",
-      "displayName": "O2",
-      "country": "ES",
-      "aliases": [
-        "o2",
-        "telefonica o2",
-        "telefónica o2"
-      ],
-      "mccMncs": [],
-      "unitBase": 1000,
-      "dataRounding": null,
-      "voiceRounding": null,
-      "verificationStatus": "partial",
-      "source": {
-        "label": "O2 España mobile tariffs",
-        "url": "https://o2online.es/tarifas-movil/"
-      },
-      "ruleNoteNl": "O2 ES is als providerprofiel toegevoegd. Zolang een actuele expliciete afrondregel ontbreekt, blijft Data2U bij de Android-teller en handmatige kalibratie.",
-      "ruleNoteEn": "O2 ES is included as a carrier profile. Until a current explicit rounding rule is available, Data2U stays with Android counters and manual calibration.",
-      "verifiedDate": "2026-09-08",
-      "network": "Movistar",
-      "discoveredVia": [
-        "Kelisto"
-      ]
-    },
-    {
-      "id": "orange_es",
-      "displayName": "Orange",
-      "country": "ES",
-      "aliases": [
-        "orange"
-      ],
-      "mccMncs": [],
-      "unitBase": 1000,
-      "dataRounding": null,
-      "voiceRounding": null,
-      "verificationStatus": "partial",
-      "source": {
-        "label": "Orange España current mobile tariffs",
-        "url": "https://www.orange.es/tarifas/movil"
-      },
-      "ruleNoteNl": "Orange ES wordt herkend. Data2U past geen roamingregel automatisch toe op nationaal verbruik en neemt daarom geen onbevestigde nationale afrondregel aan.",
-      "ruleNoteEn": "Orange ES is recognised. Data2U does not apply roaming rules to domestic usage, so no unverified domestic rounding rule is assumed.",
-      "verifiedDate": "2026-09-08",
-      "network": "Orange",
-      "discoveredVia": [
-        "Kelisto"
-      ]
-    },
-    {
-      "id": "oroc_es",
-      "displayName": "Oroc",
-      "country": "ES",
-      "aliases": [
-        "oroc"
-      ],
-      "mccMncs": [],
-      "network": "Orange",
-      "discoveredVia": [
-        "Kelisto"
-      ],
-      "unitBase": 1000,
-      "dataRounding": null,
-      "voiceRounding": null,
-      "verificationStatus": "partial",
-      "verifiedDate": "2026-09-08",
-      "source": {
-        "label": "Oroc official mobile and fibre offers",
-        "url": "https://oroc.es/"
-      },
-      "ruleNoteNl": "Oroc is via Kelisto als actieve provider gevonden en de officiële site bevestigt mobiele bundels en fair-usevoorwaarden. Er wordt geen specifieke data-afronding aangenomen.",
-      "ruleNoteEn": "Oroc was found as an active carrier through Kelisto and its official site confirms mobile plans and fair-use conditions. No specific data rounding is assumed."
-    },
-    {
-      "id": "pepephone_es",
-      "displayName": "Pepephone",
-      "country": "ES",
-      "aliases": [
-        "pepephone",
-        "pepe phone"
-      ],
-      "mccMncs": [],
-      "unitBase": 1000,
-      "dataRounding": null,
-      "voiceRounding": null,
-      "verificationStatus": "partial",
-      "source": {
-        "label": "Pepephone current 5G mobile tariffs",
-        "url": "https://www.pepephone.com/tarifas-moviles"
-      },
-      "verifiedDate": "2026-09-08",
-      "ruleNoteNl": "Pepephone ES is opgenomen met de actuele officiële mobiele tarieven. Zonder een expliciete actuele afrondregel blijft Data2U bij Android-metingen en kalibratie.",
-      "ruleNoteEn": "Pepephone ES is included with current official mobile tariffs. Without an explicit current rounding rule, Data2U stays with Android measurements and calibration.",
-      "network": "Orange",
-      "discoveredVia": [
-        "Kelisto"
-      ]
-    },
-    {
-      "id": "r_cable_es",
-      "displayName": "R Cable",
-      "country": "ES",
-      "aliases": [
-        "r cable",
-        "mundo r",
-        "mundo-r"
-      ],
-      "mccMncs": [],
-      "network": "Orange",
-      "discoveredVia": [
-        "Kelisto"
-      ],
-      "unitBase": 1000,
-      "dataRounding": null,
-      "voiceRounding": null,
-      "verificationStatus": "partial",
-      "verifiedDate": "2026-09-08",
-      "source": {
-        "label": "R Cable official website",
-        "url": "https://mundo-r.com/"
-      },
-      "ruleNoteNl": "R Cable is toegevoegd uit de actuele Kelisto-providerlijst. De officiële bron is gekoppeld, maar Data2U verzint geen afrondregel wanneer die niet expliciet is bevestigd.",
-      "ruleNoteEn": "R Cable was added from Kelisto’s current carrier list. The official source is linked, but Data2U does not invent a rounding rule when it is not explicitly confirmed."
-    },
-    {
-      "id": "simyo_es",
-      "displayName": "simyo",
-      "country": "ES",
-      "aliases": [
-        "simyo"
-      ],
-      "mccMncs": [],
-      "network": "Orange",
-      "discoveredVia": [
-        "Kelisto"
-      ],
-      "unitBase": 1000,
-      "dataRounding": null,
-      "voiceRounding": null,
-      "verificationStatus": "partial",
-      "verifiedDate": "2026-09-08",
-      "source": {
-        "label": "simyo España current 5G mobile tariffs",
-        "url": "https://www.simyo.es/tarifas-movil.html"
-      },
-      "ruleNoteNl": "simyo Spanje is apart van Simyo Nederland opgenomen. De officiële Spaanse tarievenbron is gekoppeld; de vermelding van prijzen per MB wordt niet automatisch vertaald naar een facturatie-afronding zonder expliciete incrementregel.",
-      "ruleNoteEn": "simyo Spain is stored separately from Simyo Netherlands. The official Spanish tariff source is linked; prices per MB are not automatically converted into a billing-rounding rule without an explicit increment."
-    },
-    {
-      "id": "telecable_es",
-      "displayName": "Telecable",
-      "country": "ES",
-      "aliases": [
-        "telecable"
-      ],
-      "mccMncs": [],
-      "network": "Movistar",
-      "discoveredVia": [
-        "Kelisto"
-      ],
-      "unitBase": 1000,
-      "dataRounding": null,
-      "voiceRounding": null,
-      "verificationStatus": "partial",
-      "verifiedDate": "2026-09-08",
-      "source": {
-        "label": "Telecable official website",
-        "url": "https://telecable.es/"
-      },
-      "ruleNoteNl": "Telecable is toegevoegd via Kelisto. Het netwerk is als metadata opgenomen; zonder expliciete officiële facturatie-eenheid gebruikt Data2U geen providerafronding.",
-      "ruleNoteEn": "Telecable was added via Kelisto. Its network is stored as metadata; without an explicit official billing unit Data2U applies no carrier rounding."
-    },
-    {
-      "id": "vodafone_es",
-      "displayName": "Vodafone",
-      "country": "ES",
-      "aliases": [
-        "vodafone"
-      ],
-      "mccMncs": [],
-      "unitBase": 1000,
-      "dataRounding": null,
-      "voiceRounding": null,
-      "verificationStatus": "partial",
-      "source": {
-        "label": "Vodafone España current mobile contract tariffs",
-        "url": "https://www.vodafone.es/c/particulares/es/productos-y-servicios/movil/contrato/tarifas-contrato/"
-      },
-      "ruleNoteNl": "Vodafone ES is opgenomen met de actuele officiële mobiele tarieven. Onbevestigde afrondregels worden niet toegepast.",
-      "ruleNoteEn": "Vodafone ES is included with the current official mobile tariffs. Unverified rounding rules are not applied.",
-      "verifiedDate": "2026-09-08",
-      "network": "Vodafone",
-      "discoveredVia": [
-        "Kelisto"
-      ]
-    },
-    {
-      "id": "yoigo_es",
-      "displayName": "Yoigo",
-      "country": "ES",
-      "aliases": [
-        "yoigo",
-        "xfera"
-      ],
-      "mccMncs": [],
-      "unitBase": 1000,
-      "dataRounding": null,
-      "voiceRounding": null,
-      "verificationStatus": "partial",
-      "source": {
-        "label": "Yoigo current mobile tariffs",
-        "url": "https://www.yoigo.com/tarifas-moviles"
-      },
-      "ruleNoteNl": "Yoigo ES wordt herkend via de actuele officiële tarievenpagina. Data2U past alleen regels toe die expliciet zijn geverifieerd.",
-      "ruleNoteEn": "Yoigo ES is recognised from the current official tariff page. Data2U only applies rules that are explicitly verified.",
-      "verifiedDate": "2026-09-08",
-      "network": "MasOrange / Yoigo",
-      "discoveredVia": [
-        "Kelisto"
-      ]
     }
   ],
-  "databaseVersion": 3,
+  "databaseVersion": 4,
   "discoverySources": [
     {
       "country": "NL",
@@ -1220,6 +3273,31 @@
       "country": "ES",
       "label": "Kelisto",
       "url": "https://www.kelisto.es/tarifas-movil-contrato"
+    },
+    {
+      "country": "BE",
+      "label": "Selectra Belgium",
+      "url": "https://selectra.be/nl/telecom/aanbieder"
+    },
+    {
+      "country": "DE",
+      "label": "CHECK24",
+      "url": "https://handytarife.check24.de/anbieter"
+    },
+    {
+      "country": "FR",
+      "label": "Selectra France",
+      "url": "https://selectra.info/telecom/fournisseurs"
+    },
+    {
+      "country": "IT",
+      "label": "SOStariffe.it",
+      "url": "https://www.sostariffe.it/tariffe-cellulari/"
+    },
+    {
+      "country": "GB",
+      "label": "Uswitch",
+      "url": "https://www.uswitch.com/mobiles/"
     }
   ]
 }
