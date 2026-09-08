@@ -61,11 +61,11 @@
     },
     {
       "id": "helderweer",
-      "name": "WeatherMe",
+      "name": "Weather2U",
       "packageName": "com.helderweer.app",
       "versionCode": 22,
       "versionName": "2.4.5",
-      "description": "Material You weer-app met verwachtingen, waarschuwingen, radar en weerdetails.",
+      "description": "Modern weather app with forecasts, rain radar, official warnings, widgets and smart background alerts.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/weatherme.png",
       "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/v2.4.5/Weather2U-v2.4.5.apk",
       "changelog": "Weather2U v2.4.5\n\n- Renamed the app from WeatherMe to Weather2U.\n- Improved weather alert reliability in the background.\n- Notification channels are now checked before scheduling unnecessary background work.\n- Rain alert background checks stop automatically when all precipitation alert types are disabled.\n- Improved rain, thunderstorm, hail and snow alert deduplication so new weather events are not suppressed by older alerts.\n- Alert filter changes are now applied immediately.\n- Improved location accuracy for local precipitation alerts without continuous GPS usage.\n- Manually selected and favorite locations are no longer replaced automatically by the current device location.\n- Improved weather cache handling so older foreground data cannot overwrite newer widget or forecast data.\n- Added separate cache durations for air quality, pollen, ensemble forecasts and marine data to reduce unnecessary network usage.\n- Improved WorkManager scheduling and notification state synchronization when returning to the app.\n- Reduced unnecessary background activity while preserving reliable alerts.\n- Restored the complete Gradle wrapper in the source release.\n- General stability, reliability and battery efficiency improvements",
