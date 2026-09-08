@@ -1,0 +1,1225 @@
+{
+  "schemaVersion": 3,
+  "generatedAt": "2026-09-08",
+  "description": "Versioned carrier accounting profiles for Data2U. Comparison sites are used to discover active carriers and networks; billing rules are applied only when an official carrier source explicitly confirms them.",
+  "profiles": [
+    {
+      "id": "50plusmobiel_nl",
+      "displayName": "50+ mobiel",
+      "country": "NL",
+      "aliases": [
+        "50+ mobiel",
+        "50plus mobiel",
+        "50plusmobiel"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "50+ mobiel current Sim Only offer",
+        "url": "https://bestellen.50plusmobiel.nl/sim-only"
+      },
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "50+ mobiel is opgenomen met de actuele officiële Sim Only-bron. Data2U neemt geen specifieke data- of belafronding aan zolang die niet expliciet is bevestigd.",
+      "ruleNoteEn": "50+ mobiel is included with its current official Sim Only source. Data2U assumes no specific data or voice rounding until it is explicitly confirmed.",
+      "network": "Vodafone",
+      "discoveredVia": [
+        "Mobiel.nl",
+        "Belsimpel"
+      ],
+      "speedProfiles": [
+        {
+          "id": "50plusmobiel_nl_current",
+          "labelNl": "Huidig abonnement",
+          "labelEn": "Current plan",
+          "maxDownloadMbps": 350,
+          "maxUploadMbps": 100,
+          "planType": "all",
+          "isDefault": true,
+          "appliesToAllPlans": false,
+          "verifiedDate": "2026-09-08",
+          "source": {
+            "label": "50+ mobiel current speeds",
+            "url": "https://www.50plusmobiel.nl/veel-gestelde-vragen/van-welk-netwerk-maakt-50-mobiel-gebruik"
+          },
+          "noteNl": "Voor abonnementen afgesloten vanaf 31 juli 2026 15:00.",
+          "noteEn": "For plans activated from 31 July 2026 15:00."
+        },
+        {
+          "id": "50plusmobiel_nl_legacy",
+          "labelNl": "Abonnement vóór 31 juli 2026",
+          "labelEn": "Plan before 31 July 2026",
+          "maxDownloadMbps": 200,
+          "maxUploadMbps": 100,
+          "planType": "legacy",
+          "isDefault": false,
+          "appliesToAllPlans": false,
+          "verifiedDate": "2026-09-08",
+          "source": {
+            "label": "50+ mobiel legacy speeds",
+            "url": "https://www.50plusmobiel.nl/veel-gestelde-vragen/van-welk-netwerk-maakt-50-mobiel-gebruik"
+          },
+          "noteNl": "Kies dit handmatig voor oudere abonnementen.",
+          "noteEn": "Select this manually for older plans."
+        }
+      ]
+    },
+    {
+      "id": "ben_nl",
+      "displayName": "Ben",
+      "country": "NL",
+      "aliases": [
+        "ben"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": {
+        "type": "ceil_per_call",
+        "incrementSeconds": 60
+      },
+      "verificationStatus": "verified",
+      "source": {
+        "label": "Ben current Sim Only product conditions",
+        "url": "https://www.ben.nl/sim-only"
+      },
+      "ruleNoteNl": "Ben vermeldt dat belminuten per gesprek naar boven op hele minuten worden afgerond. Voor data neemt Data2U geen specifieke afrondregel aan zolang die niet officieel is bevestigd.",
+      "ruleNoteEn": "Ben states that call minutes are rounded upward to whole minutes per call. Data2U does not assume a specific data-rounding rule until an official rule is confirmed.",
+      "verifiedDate": "2026-09-08",
+      "network": "Odido",
+      "discoveredVia": [
+        "Mobiel.nl",
+        "Belsimpel"
+      ],
+      "speedProfiles": [
+        {
+          "id": "ben_nl_standard",
+          "labelNl": "5G",
+          "labelEn": "5G",
+          "maxDownloadMbps": 200,
+          "maxUploadMbps": 50,
+          "planType": "all",
+          "isDefault": true,
+          "appliesToAllPlans": true,
+          "verifiedDate": "2026-09-08",
+          "source": {
+            "label": "Ben 5G information",
+            "url": "https://www.ben.nl/blog/5g/"
+          },
+          "noteNl": "Ben biedt standaard 5G; maximum 200 Mbit/s download. De actuele prijslijst vermeldt 50 Mbit/s upload.",
+          "noteEn": "Ben includes 5G by default; maximum 200 Mbit/s download. The current tariff sheet lists 50 Mbit/s upload."
+        }
+      ]
+    },
+    {
+      "id": "budget_mobiel_nl",
+      "displayName": "Budget Mobiel",
+      "country": "NL",
+      "aliases": [
+        "budget mobiel",
+        "budget thuis"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "Budget Thuis / Budget Mobiel current Sim Only offer",
+        "url": "https://www.budgetthuis.nl/mobiel/sim-only"
+      },
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Budget Mobiel is opgenomen met een actuele officiële Sim Only-bron. Data2U neemt geen oude of onbevestigde afrondregel over; Android-metingen en kalibratie blijven leidend.",
+      "ruleNoteEn": "Budget Mobiel is included with a current official Sim Only source. Data2U does not carry over old or unverified rounding rules; Android measurements and calibration remain the basis.",
+      "network": "KPN",
+      "discoveredVia": [
+        "Mobiel.nl",
+        "Belsimpel"
+      ],
+      "speedProfiles": [
+        {
+          "id": "budget_mobiel_nl_limited",
+          "labelNl": "Databundel",
+          "labelEn": "Capped data plan",
+          "maxDownloadMbps": 100,
+          "maxUploadMbps": 50,
+          "planType": "limited",
+          "isDefault": true,
+          "appliesToAllPlans": false,
+          "verifiedDate": "2026-09-08",
+          "source": {
+            "label": "Budget Mobiel speed by plan",
+            "url": "https://www.budgetthuis.nl/mobiel/aanbod/overzicht"
+          },
+          "noteNl": "Voor huidige bundels met een vaste databundel.",
+          "noteEn": "For current plans with a fixed data allowance."
+        },
+        {
+          "id": "budget_mobiel_nl_unlimited",
+          "labelNl": "Onbeperkt data",
+          "labelEn": "Unlimited data",
+          "maxDownloadMbps": 25,
+          "maxUploadMbps": 10,
+          "planType": "unlimited",
+          "isDefault": true,
+          "appliesToAllPlans": false,
+          "verifiedDate": "2026-09-08",
+          "source": {
+            "label": "Budget Mobiel speed by plan",
+            "url": "https://www.budgetthuis.nl/mobiel/aanbod/overzicht"
+          },
+          "noteNl": "Voor de huidige onbeperkte databundel.",
+          "noteEn": "For the current unlimited-data plan."
+        }
+      ]
+    },
+    {
+      "id": "delta_nl",
+      "displayName": "DELTA",
+      "country": "NL",
+      "aliases": [
+        "delta",
+        "delta mobiel"
+      ],
+      "mccMncs": [],
+      "network": "Odido",
+      "discoveredVia": [
+        "Mobiel.nl",
+        "Belsimpel"
+      ],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "verifiedDate": "2026-09-08",
+      "source": {
+        "label": "DELTA Mobiel current Sim Only plans",
+        "url": "https://www.delta.nl/mobiel/sim-only"
+      },
+      "ruleNoteNl": "DELTA Mobiel is toegevoegd via Nederlandse vergelijkingsbronnen. DELTA bevestigt dat mobiel via het Odido-netwerk loopt. Zonder expliciete actuele afrondregel gebruikt Data2U Android-metingen en eventuele kalibratie.",
+      "ruleNoteEn": "DELTA Mobiel was added from Dutch comparison sources. DELTA confirms that mobile service runs on the Odido network. Without an explicit current rounding rule, Data2U uses Android measurements and optional calibration.",
+      "speedProfiles": [
+        {
+          "id": "delta_nl_standard",
+          "labelNl": "5G",
+          "labelEn": "5G",
+          "maxDownloadMbps": 450,
+          "maxUploadMbps": 75,
+          "planType": "all",
+          "isDefault": true,
+          "appliesToAllPlans": true,
+          "verifiedDate": "2026-09-08",
+          "source": {
+            "label": "DELTA Mobiel 5G speeds",
+            "url": "https://www.delta.nl/mobiel/5g/"
+          },
+          "noteNl": "DELTA publiceert tot 450 Mbit/s download en 75 Mbit/s upload voor zijn mobiele abonnementen.",
+          "noteEn": "DELTA publishes up to 450 Mbit/s download and 75 Mbit/s upload for its mobile plans."
+        }
+      ]
+    },
+    {
+      "id": "hollandsnieuwe_nl",
+      "displayName": "hollandsnieuwe",
+      "country": "NL",
+      "aliases": [
+        "hollandsnieuwe",
+        "hollandse nieuwe"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "hollandsnieuwe current Sim Only offer",
+        "url": "https://www.hollandsnieuwe.nl/sim_only"
+      },
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "hollandsnieuwe is opgenomen met de actuele officiële bundel- en tarievenpagina. De gecombineerde MB/min/SMS-bundel is bekend, maar Data2U past zonder expliciete facturatie-eenheid geen afrondregel toe.",
+      "ruleNoteEn": "hollandsnieuwe is included with its current official bundle and tariff page. Its combined MB/min/SMS allowance is known, but Data2U applies no rounding rule without an explicit billing unit.",
+      "network": "Vodafone",
+      "discoveredVia": [
+        "Mobiel.nl",
+        "Belsimpel"
+      ],
+      "speedProfiles": [
+        {
+          "id": "hollandsnieuwe_nl_standard",
+          "labelNl": "4G/5G",
+          "labelEn": "4G/5G",
+          "maxDownloadMbps": 350,
+          "maxUploadMbps": 100,
+          "planType": "all",
+          "isDefault": true,
+          "appliesToAllPlans": true,
+          "verifiedDate": "2026-09-08",
+          "source": {
+            "label": "hollandsnieuwe 5G speeds",
+            "url": "https://www.hollandsnieuwe.nl/5g"
+          },
+          "noteNl": "Geldt voor 4G en 5G bij hollandsnieuwe.",
+          "noteEn": "Applies to 4G and 5G at hollandsnieuwe."
+        }
+      ]
+    },
+    {
+      "id": "kpn_nl",
+      "displayName": "KPN",
+      "country": "NL",
+      "aliases": [
+        "kpn"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "KPN current Mobile and Sim Only tariffs",
+        "url": "https://www.kpn.com/mobiel-abonnement/tarieven"
+      },
+      "ruleNoteNl": "KPN-profiel en actuele bron zijn gecontroleerd. Data2U neemt geen onbevestigde data- of belafronding aan en gebruikt Android-metingen plus eventuele kalibratie.",
+      "ruleNoteEn": "The KPN profile and current official source were checked. Data2U assumes no unverified data or voice rounding and uses Android measurements plus optional calibration.",
+      "verifiedDate": "2026-09-08",
+      "network": "KPN",
+      "discoveredVia": [
+        "Mobiel.nl",
+        "Belsimpel"
+      ],
+      "speedProfiles": [
+        {
+          "id": "kpn_nl_limited",
+          "labelNl": "Abonnement met datalimiet",
+          "labelEn": "Plan with data allowance",
+          "maxDownloadMbps": 300,
+          "maxUploadMbps": 150,
+          "planType": "limited",
+          "isDefault": true,
+          "appliesToAllPlans": false,
+          "verifiedDate": "2026-09-08",
+          "source": {
+            "label": "KPN maximum speeds by mobile plan",
+            "url": "https://www.kpn.com/mobiel-abonnement/unlimited-data"
+          },
+          "noteNl": "Automatisch gekozen wanneer in Data2U een eindige databundel is ingesteld.",
+          "noteEn": "Selected automatically when Data2U has a finite data allowance."
+        },
+        {
+          "id": "kpn_nl_unlimited50",
+          "labelNl": "Unlimited50",
+          "labelEn": "Unlimited50",
+          "maxDownloadMbps": 50,
+          "maxUploadMbps": 20,
+          "planType": "unlimited",
+          "isDefault": false,
+          "appliesToAllPlans": false,
+          "verifiedDate": "2026-09-08",
+          "source": {
+            "label": "KPN Unlimited50 speeds",
+            "url": "https://www.kpn.com/mobiel-abonnement/unlimited-data"
+          },
+          "noteNl": "",
+          "noteEn": ""
+        },
+        {
+          "id": "kpn_nl_unlimited400",
+          "labelNl": "Unlimited400",
+          "labelEn": "Unlimited400",
+          "maxDownloadMbps": 400,
+          "maxUploadMbps": 150,
+          "planType": "unlimited",
+          "isDefault": false,
+          "appliesToAllPlans": false,
+          "verifiedDate": "2026-09-08",
+          "source": {
+            "label": "KPN Unlimited400 speeds",
+            "url": "https://www.kpn.com/mobiel-abonnement/unlimited-data"
+          },
+          "noteNl": "",
+          "noteEn": ""
+        },
+        {
+          "id": "kpn_nl_superunlimited",
+          "labelNl": "SuperUnlimited",
+          "labelEn": "SuperUnlimited",
+          "maxDownloadMbps": 700,
+          "maxUploadMbps": 200,
+          "planType": "unlimited",
+          "isDefault": false,
+          "appliesToAllPlans": false,
+          "verifiedDate": "2026-09-08",
+          "source": {
+            "label": "KPN SuperUnlimited speeds",
+            "url": "https://www.kpn.com/mobiel-abonnement/unlimited-data"
+          },
+          "noteNl": "",
+          "noteEn": ""
+        },
+        {
+          "id": "kpn_nl_superunlimited_plus",
+          "labelNl": "SuperUnlimited+",
+          "labelEn": "SuperUnlimited+",
+          "maxDownloadMbps": 1000,
+          "maxUploadMbps": 200,
+          "planType": "unlimited",
+          "isDefault": false,
+          "appliesToAllPlans": false,
+          "verifiedDate": "2026-09-08",
+          "source": {
+            "label": "KPN SuperUnlimited+ speeds",
+            "url": "https://www.kpn.com/mobiel-abonnement/unlimited-data"
+          },
+          "noteNl": "",
+          "noteEn": ""
+        }
+      ]
+    },
+    {
+      "id": "lebara_nl",
+      "displayName": "Lebara",
+      "country": "NL",
+      "aliases": [
+        "lebara"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "Lebara NL current tariffs",
+        "url": "https://www.lebara.nl/nl/tarieven.html"
+      },
+      "ruleNoteNl": "Lebara NL is opgenomen met de actuele tarievenbron. Zonder expliciete afrondregel blijft Data2U bij Android-metingen en kalibratie.",
+      "ruleNoteEn": "Lebara NL is included with its current tariff source. Without an explicit rounding rule, Data2U sticks to Android measurements and calibration.",
+      "verifiedDate": "2026-09-08",
+      "network": "KPN",
+      "discoveredVia": [
+        "Mobiel.nl",
+        "Belsimpel"
+      ],
+      "speedProfiles": [
+        {
+          "id": "lebara_nl_simonly",
+          "labelNl": "Sim Only",
+          "labelEn": "Sim Only",
+          "maxDownloadMbps": 75,
+          "maxUploadMbps": 25,
+          "planType": "all",
+          "isDefault": true,
+          "appliesToAllPlans": false,
+          "verifiedDate": "2026-09-08",
+          "source": {
+            "label": "Lebara NL Sim Only speeds",
+            "url": "https://www.lebara.nl/nl/tarieven.html"
+          },
+          "noteNl": "Standaardselectie voor Lebara Sim Only. Kies Prepaid handmatig als dat van toepassing is.",
+          "noteEn": "Default selection for Lebara Sim Only. Select Prepaid manually when applicable."
+        },
+        {
+          "id": "lebara_nl_prepaid",
+          "labelNl": "Prepaid voordeelbundel",
+          "labelEn": "Prepaid bundle",
+          "maxDownloadMbps": 25,
+          "maxUploadMbps": 10,
+          "planType": "prepaid",
+          "isDefault": false,
+          "appliesToAllPlans": false,
+          "verifiedDate": "2026-09-08",
+          "source": {
+            "label": "Lebara NL prepaid speeds",
+            "url": "https://www.lebara.nl/nl/prepaid/beltegoed.html"
+          },
+          "noteNl": "",
+          "noteEn": ""
+        }
+      ]
+    },
+    {
+      "id": "lycamobile_nl",
+      "displayName": "Lyca Mobile",
+      "country": "NL",
+      "aliases": [
+        "lyca",
+        "lycamobile",
+        "lyca mobile"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "Lyca Mobile NL current bundles",
+        "url": "https://www.lycamobile.nl/nl/bundles/renew-bundle/"
+      },
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Lyca Mobile NL is opgenomen met de actuele officiële bundelpagina. Zonder expliciete actuele facturatie-eenheid past Data2U geen afrondregel toe.",
+      "ruleNoteEn": "Lyca Mobile NL is included with the current official bundle page. Without an explicit current billing unit, Data2U applies no rounding rule.",
+      "network": "KPN",
+      "discoveredVia": [
+        "Official carrier source"
+      ]
+    },
+    {
+      "id": "odido_nl",
+      "displayName": "Odido",
+      "country": "NL",
+      "aliases": [
+        "odido",
+        "t-mobile nl",
+        "t-mobile"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "Odido current Sim Only information",
+        "url": "https://www.odido.nl/mobiel-abonnement/sim-only/vergelijken"
+      },
+      "ruleNoteNl": "Odido is opgenomen met een actuele officiële bron. Data2U verzint geen sessie- of belafronding wanneer die niet expliciet uit de actuele voorwaarden blijkt.",
+      "ruleNoteEn": "Odido is included with a current official source. Data2U does not invent session or voice rounding when it is not explicit in the current terms.",
+      "verifiedDate": "2026-09-08",
+      "network": "Odido",
+      "discoveredVia": [
+        "Mobiel.nl",
+        "Belsimpel"
+      ],
+      "speedProfiles": [
+        {
+          "id": "odido_nl_other",
+          "labelNl": "Andere abonnementen",
+          "labelEn": "Other plans",
+          "maxDownloadMbps": 225,
+          "maxUploadMbps": 65,
+          "planType": "all",
+          "isDefault": true,
+          "appliesToAllPlans": false,
+          "verifiedDate": "2026-09-08",
+          "source": {
+            "label": "Odido mobile internet speeds",
+            "url": "https://www.odido.nl/netwerk/internetsnelheid"
+          },
+          "noteNl": "Odido publiceert voor “andere abonnementen” maximaal 225/65 Mbit/s. Hogere Unlimited-profielen verschillen per abonnement.",
+          "noteEn": "Odido publishes up to 225/65 Mbit/s for “other plans”. Higher Unlimited tiers vary by plan."
+        },
+        {
+          "id": "odido_nl_basis_sim",
+          "labelNl": "Basis Sim",
+          "labelEn": "Basis Sim",
+          "maxDownloadMbps": 120,
+          "maxUploadMbps": 65,
+          "planType": "manual",
+          "isDefault": false,
+          "appliesToAllPlans": false,
+          "verifiedDate": "2026-09-08",
+          "source": {
+            "label": "Odido Basis Sim speeds",
+            "url": "https://www.odido.nl/netwerk/internetsnelheid"
+          },
+          "noteNl": "",
+          "noteEn": ""
+        },
+        {
+          "id": "odido_nl_prepaid",
+          "labelNl": "Prepaid",
+          "labelEn": "Prepaid",
+          "maxDownloadMbps": 100,
+          "maxUploadMbps": 50,
+          "planType": "prepaid",
+          "isDefault": false,
+          "appliesToAllPlans": false,
+          "verifiedDate": "2026-09-08",
+          "source": {
+            "label": "Odido prepaid speeds",
+            "url": "https://www.odido.nl/netwerk/internetsnelheid"
+          },
+          "noteNl": "",
+          "noteEn": ""
+        }
+      ]
+    },
+    {
+      "id": "simpel_nl",
+      "displayName": "Simpel",
+      "country": "NL",
+      "aliases": [
+        "simpel"
+      ],
+      "mccMncs": [],
+      "network": "Odido",
+      "discoveredVia": [
+        "Mobiel.nl",
+        "Belsimpel"
+      ],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "verifiedDate": "2026-09-08",
+      "source": {
+        "label": "Simpel current mobile subscription information",
+        "url": "https://www.simpel.nl/mobiel-abonnement"
+      },
+      "ruleNoteNl": "Simpel is toegevoegd via Mobiel.nl en Belsimpel en gebruikt het Odido-netwerk. De officiële Simpel-bron is gekoppeld; Data2U past geen data- of belafronding toe zolang de actuele facturatie-eenheid niet expliciet is bevestigd.",
+      "ruleNoteEn": "Simpel was discovered through Mobiel.nl and Belsimpel and uses the Odido network. The official Simpel source is linked; Data2U applies no data or voice rounding until the current billing unit is explicitly confirmed.",
+      "speedProfiles": [
+        {
+          "id": "simpel_nl_standard",
+          "labelNl": "5G",
+          "labelEn": "5G",
+          "maxDownloadMbps": 150,
+          "maxUploadMbps": 50,
+          "planType": "all",
+          "isDefault": true,
+          "appliesToAllPlans": true,
+          "verifiedDate": "2026-09-08",
+          "source": {
+            "label": "Simpel mobile tariff information",
+            "url": "https://www.simpel.nl/docs/TRF/40213"
+          },
+          "noteNl": "5G is inbegrepen bij de internetbundels met maximaal 150/50 Mbit/s.",
+          "noteEn": "5G is included with data plans at up to 150/50 Mbit/s."
+        }
+      ]
+    },
+    {
+      "id": "simyo_nl",
+      "displayName": "Simyo",
+      "country": "NL",
+      "aliases": [
+        "simyo"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": {
+        "type": "per_kilobyte",
+        "scope": "usage",
+        "direction": "none",
+        "incrementBytes": 1000
+      },
+      "voiceRounding": {
+        "type": "ceil_per_call",
+        "incrementSeconds": 60
+      },
+      "verificationStatus": "verified",
+      "source": {
+        "label": "Simyo current Sim Only tariffs and usage calculation",
+        "url": "https://www.simyo.nl/tarieven/sim-only"
+      },
+      "ruleNoteNl": "Simyo vermeldt dat MB's niet worden afgerond en per kilobyte worden berekend. Gesprekken worden naar boven afgerond op hele minuten. Data2U kan die belregel per uitgaand gesprek toepassen wanneer Belverbruik is ingeschakeld.",
+      "ruleNoteEn": "Simyo states that MB usage is not rounded and is calculated per kilobyte. Calls are rounded upward to whole minutes. Data2U can apply that voice rule per outgoing call when Call usage is enabled.",
+      "verifiedDate": "2026-09-08",
+      "network": "KPN",
+      "discoveredVia": [
+        "Mobiel.nl",
+        "Belsimpel"
+      ],
+      "speedProfiles": [
+        {
+          "id": "simyo_nl_standard",
+          "labelNl": "4G/5G",
+          "labelEn": "4G/5G",
+          "maxDownloadMbps": 300,
+          "maxUploadMbps": 150,
+          "planType": "all",
+          "isDefault": true,
+          "appliesToAllPlans": true,
+          "verifiedDate": "2026-09-08",
+          "source": {
+            "label": "Simyo mobile internet speeds",
+            "url": "https://www.simyo.nl/klantenservice/netwerk"
+          },
+          "noteNl": "Simyo publiceert 300/150 Mbit/s als maximum voor 4G en 5G.",
+          "noteEn": "Simyo publishes 300/150 Mbit/s as the maximum for 4G and 5G."
+        }
+      ]
+    },
+    {
+      "id": "vodafone_nl",
+      "displayName": "Vodafone",
+      "country": "NL",
+      "aliases": [
+        "vodafone"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "Vodafone NL 2026 consumer mobile tariff overview",
+        "url": "https://www.vodafone.nl/content/dam/vodafone/downloads/tarieven/2026/tarievenoverzicht_particulier_16_maart_2026.pdf"
+      },
+      "ruleNoteNl": "Vodafone NL is herkend via een actuele officiële bron. Er wordt geen specifieke afrondregel toegepast zolang de facturatie-eenheid niet expliciet is bevestigd.",
+      "ruleNoteEn": "Vodafone NL is recognised from a current official source. No specific rounding rule is applied until the billing unit is explicitly confirmed.",
+      "verifiedDate": "2026-09-08",
+      "network": "Vodafone",
+      "discoveredVia": [
+        "Mobiel.nl",
+        "Belsimpel"
+      ],
+      "speedProfiles": [
+        {
+          "id": "vodafone_nl_standard",
+          "labelNl": "Maximale mobiele snelheid",
+          "labelEn": "Maximum mobile speed",
+          "maxDownloadMbps": 1000,
+          "maxUploadMbps": 112.5,
+          "planType": "all",
+          "isDefault": true,
+          "appliesToAllPlans": true,
+          "verifiedDate": "2026-09-08",
+          "source": {
+            "label": "Vodafone mobile network speed",
+            "url": "https://www.vodafone.nl/support/internet-en-dekking/snelheid"
+          },
+          "noteNl": "Theoretisch maximum van Vodafone 5G; de werkelijke snelheid hangt af van dekking, toestel en drukte.",
+          "noteEn": "Theoretical Vodafone 5G maximum; actual speed depends on coverage, device and congestion."
+        }
+      ]
+    },
+    {
+      "id": "youfone_nl",
+      "displayName": "Youfone",
+      "country": "NL",
+      "aliases": [
+        "youfone"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": {
+        "type": "ceil_increment",
+        "scope": "session",
+        "direction": "up",
+        "incrementBytes": 100000
+      },
+      "voiceRounding": {
+        "type": "per_second",
+        "incrementSeconds": 1
+      },
+      "verificationStatus": "verified",
+      "source": {
+        "label": "Youfone Sim Only tariff sheet – valid from 17 August 2026",
+        "url": "https://www.youfone.nl/sites/default/files/2026-08/20260817_Tarievensheet-Youfone_Sim_Only_Consument_0.pdf"
+      },
+      "ruleNoteNl": "Youfone rekent gesprekken per seconde en rondt verbruikte KB's per datasessie naar boven af op 100 KB. Android toont de facturatiesessies niet exact; daarom gebruikt Data2U de dataregel als transparante providerinformatie en blijft een handmatige providerstand de beste kalibratie.",
+      "ruleNoteEn": "Youfone bills calls per second and rounds used KB upward to 100 KB per data session. Android does not expose the carrier billing sessions exactly, so Data2U shows the rule transparently and keeps a manual carrier baseline as the best calibration.",
+      "verifiedDate": "2026-09-08",
+      "network": "KPN",
+      "discoveredVia": [
+        "Mobiel.nl",
+        "Belsimpel"
+      ],
+      "speedProfiles": [
+        {
+          "id": "youfone_nl_standard",
+          "labelNl": "Standaard 4G/5G",
+          "labelEn": "Standard 4G/5G",
+          "maxDownloadMbps": 200,
+          "maxUploadMbps": 100,
+          "planType": "all",
+          "isDefault": true,
+          "appliesToAllPlans": true,
+          "verifiedDate": "2026-09-08",
+          "source": {
+            "label": "Youfone mobile network speeds",
+            "url": "https://www.youfone.nl/sim-only/netwerk"
+          },
+          "noteNl": "Standaard bij alle Sim Only-bundels.",
+          "noteEn": "Standard on all Sim Only plans."
+        },
+        {
+          "id": "youfone_nl_5g_extra",
+          "labelNl": "5G Extra Snel",
+          "labelEn": "5G Extra Fast",
+          "maxDownloadMbps": 300,
+          "maxUploadMbps": null,
+          "planType": "option",
+          "isDefault": false,
+          "appliesToAllPlans": false,
+          "verifiedDate": "2026-09-08",
+          "source": {
+            "label": "Youfone 5G Extra Snel",
+            "url": "https://www.youfone.nl/sim-only/5g"
+          },
+          "noteNl": "Optionele €1-p/m upgrade. Youfone publiceert hier expliciet 300 Mbit/s download; een aparte uploadsnelheid voor deze optie is niet gepubliceerd.",
+          "noteEn": "Optional paid speed upgrade. Youfone explicitly publishes 300 Mbit/s download; a separate upload maximum for this option is not published."
+        }
+      ]
+    },
+    {
+      "id": "alemobil_es",
+      "displayName": "alemobil",
+      "country": "ES",
+      "aliases": [
+        "alemobil",
+        "ale movil",
+        "ale móvil"
+      ],
+      "mccMncs": [],
+      "network": "MasOrange",
+      "discoveredVia": [
+        "Kelisto editorial",
+        "Official carrier source"
+      ],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "verifiedDate": "2026-09-08",
+      "source": {
+        "label": "alemobil current mobile tariffs",
+        "url": "https://alemobil.com/tarifas-movil/"
+      },
+      "ruleNoteNl": "alemobil is als aanvullende budgetprovider opgenomen. De officiële site vermeldt mobiele bundels en MasOrange-dekking. Data2U past geen onbevestigde afrondregel toe.",
+      "ruleNoteEn": "alemobil is included as an additional budget carrier. Its official site lists mobile plans and MasOrange coverage. Data2U applies no unverified rounding rule."
+    },
+    {
+      "id": "digi_es",
+      "displayName": "DIGI",
+      "country": "ES",
+      "aliases": [
+        "digi",
+        "digimobil"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "DIGI España current 5G mobile tariffs",
+        "url": "https://www.digimobil.es/movil/"
+      },
+      "ruleNoteNl": "DIGI ES is opgenomen met actuele officiële tarieven. De bron bevestigt bundels en belvoorwaarden, maar Data2U neemt zonder expliciete facturatie-eenheid geen afrondregel aan.",
+      "ruleNoteEn": "DIGI ES is included with current official tariffs. The source confirms allowances and call conditions, but Data2U assumes no rounding rule without an explicit billing unit.",
+      "verifiedDate": "2026-09-08",
+      "network": "Movistar",
+      "discoveredVia": [
+        "Official carrier source"
+      ]
+    },
+    {
+      "id": "euskaltel_es",
+      "displayName": "Euskaltel",
+      "country": "ES",
+      "aliases": [
+        "euskaltel"
+      ],
+      "mccMncs": [],
+      "network": "Orange",
+      "discoveredVia": [
+        "Kelisto"
+      ],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "verifiedDate": "2026-09-08",
+      "source": {
+        "label": "Euskaltel 2026 consumer mobile tariff sheet",
+        "url": "https://www.euskaltel.com/docs_prod/euskaltel-front/pdf/info_legal_particulares/vigentes/Euskaltel_tarifas_abril_2026.pdf"
+      },
+      "ruleNoteNl": "Euskaltel is via Kelisto als actieve Spaanse provider opgenomen. Een actuele officiële tariefsheet is gekoppeld. Data2U gebruikt geen onbevestigde afrondregel.",
+      "ruleNoteEn": "Euskaltel was added as an active Spanish carrier from Kelisto. A current official tariff sheet is linked. Data2U applies no unverified rounding rule."
+    },
+    {
+      "id": "eztelecom_es",
+      "displayName": "EZ Telecom",
+      "country": "ES",
+      "aliases": [
+        "ez telecom",
+        "eztelecom"
+      ],
+      "mccMncs": [],
+      "network": "Orange / Yoigo",
+      "discoveredVia": [
+        "Kelisto"
+      ],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "verifiedDate": "2026-09-08",
+      "source": {
+        "label": "EZ Telecom official website",
+        "url": "https://eztelecom.es/"
+      },
+      "ruleNoteNl": "EZ Telecom is toegevoegd vanuit de actuele Kelisto-providerlijst. De facturatie-eenheid is niet expliciet bevestigd; daarom blijft Data2U bij Android-metingen en kalibratie.",
+      "ruleNoteEn": "EZ Telecom was added from Kelisto’s current carrier list. The billing increment has not been explicitly confirmed, so Data2U keeps Android measurements and calibration."
+    },
+    {
+      "id": "finetwork_es",
+      "displayName": "Finetwork",
+      "country": "ES",
+      "aliases": [
+        "finetwork",
+        "fi network",
+        "fi-network"
+      ],
+      "mccMncs": [],
+      "network": "Vodafone",
+      "discoveredVia": [
+        "Kelisto"
+      ],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "verifiedDate": "2026-09-08",
+      "source": {
+        "label": "Finetwork current mobile tariffs",
+        "url": "https://www.finetwork.com/tarifas-movil"
+      },
+      "ruleNoteNl": "Finetwork is via Kelisto ontdekt en heeft een actuele officiële mobiele tarievenbron. Specifieke roamingstructuren worden niet als nationale afrondregel gebruikt.",
+      "ruleNoteEn": "Finetwork was discovered through Kelisto and has a current official mobile-tariff source. Specific roaming structures are not treated as domestic rounding rules."
+    },
+    {
+      "id": "jazztel_es",
+      "displayName": "Jazztel",
+      "country": "ES",
+      "aliases": [
+        "jazztel"
+      ],
+      "mccMncs": [],
+      "network": "Orange",
+      "discoveredVia": [
+        "Kelisto"
+      ],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "verifiedDate": "2026-09-08",
+      "source": {
+        "label": "Jazztel official mobile tariff history/current plans",
+        "url": "https://www.jazztel.com/FrontComercialJazztel/Documents/historico_tarifas.pdf"
+      },
+      "ruleNoteNl": "Jazztel is toegevoegd via Kelisto en gekoppeld aan een officiële Jazztel-tariefbron. Data2U past alleen een afrondregel toe wanneer die expliciet voor het actuele mobiele verbruik wordt bevestigd.",
+      "ruleNoteEn": "Jazztel was added via Kelisto and linked to an official Jazztel tariff source. Data2U only applies a rounding rule when it is explicitly confirmed for current mobile usage."
+    },
+    {
+      "id": "lowi_es",
+      "displayName": "Lowi",
+      "country": "ES",
+      "aliases": [
+        "lowi"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "Lowi current 5G mobile tariffs",
+        "url": "https://www.lowi.es/tarifas-movil/"
+      },
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Lowi ES is opgenomen met de actuele officiële mobiele tarieven. Data2U verzint geen afrondregel wanneer de facturatie-eenheid niet expliciet staat vermeld.",
+      "ruleNoteEn": "Lowi ES is included with current official mobile tariffs. Data2U does not invent a rounding rule when the billing unit is not explicitly stated.",
+      "network": "Vodafone",
+      "discoveredVia": [
+        "Kelisto"
+      ]
+    },
+    {
+      "id": "movistar_es",
+      "displayName": "Movistar",
+      "country": "ES",
+      "aliases": [
+        "movistar",
+        "telefonica",
+        "telefónica"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "Movistar España current mobile tariffs",
+        "url": "https://www.movistar.es/tarifas-moviles/"
+      },
+      "ruleNoteNl": "Movistar ES wordt herkend, maar Data2U past geen historische of onbevestigde afrondregel toe. De actuele officiële tariefbron is gekoppeld voor controle.",
+      "ruleNoteEn": "Movistar ES is recognised, but Data2U applies no historical or unverified rounding rule. The current official tariff source is linked for review.",
+      "verifiedDate": "2026-09-08",
+      "network": "Movistar",
+      "discoveredVia": [
+        "Kelisto"
+      ]
+    },
+    {
+      "id": "masmovil_es",
+      "displayName": "MásMóvil",
+      "country": "ES",
+      "aliases": [
+        "masmovil",
+        "másmóvil",
+        "mas movil",
+        "más móvil"
+      ],
+      "mccMncs": [],
+      "network": "Orange / Yoigo",
+      "discoveredVia": [
+        "Kelisto"
+      ],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "verifiedDate": "2026-09-08",
+      "source": {
+        "label": "MásMóvil official website",
+        "url": "https://www.masmovil.es/"
+      },
+      "ruleNoteNl": "MásMóvil is opgenomen via Kelisto. De provider gebruikt MasOrange/Yoigo-dekking; zonder expliciete actuele facturatie-eenheid wordt geen afronding aangenomen.",
+      "ruleNoteEn": "MásMóvil is included from Kelisto. The carrier uses MasOrange/Yoigo coverage; no rounding is assumed without an explicit current billing unit."
+    },
+    {
+      "id": "o2_es",
+      "displayName": "O2",
+      "country": "ES",
+      "aliases": [
+        "o2",
+        "telefonica o2",
+        "telefónica o2"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "O2 España mobile tariffs",
+        "url": "https://o2online.es/tarifas-movil/"
+      },
+      "ruleNoteNl": "O2 ES is als providerprofiel toegevoegd. Zolang een actuele expliciete afrondregel ontbreekt, blijft Data2U bij de Android-teller en handmatige kalibratie.",
+      "ruleNoteEn": "O2 ES is included as a carrier profile. Until a current explicit rounding rule is available, Data2U stays with Android counters and manual calibration.",
+      "verifiedDate": "2026-09-08",
+      "network": "Movistar",
+      "discoveredVia": [
+        "Kelisto"
+      ]
+    },
+    {
+      "id": "orange_es",
+      "displayName": "Orange",
+      "country": "ES",
+      "aliases": [
+        "orange"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "Orange España current mobile tariffs",
+        "url": "https://www.orange.es/tarifas/movil"
+      },
+      "ruleNoteNl": "Orange ES wordt herkend. Data2U past geen roamingregel automatisch toe op nationaal verbruik en neemt daarom geen onbevestigde nationale afrondregel aan.",
+      "ruleNoteEn": "Orange ES is recognised. Data2U does not apply roaming rules to domestic usage, so no unverified domestic rounding rule is assumed.",
+      "verifiedDate": "2026-09-08",
+      "network": "Orange",
+      "discoveredVia": [
+        "Kelisto"
+      ]
+    },
+    {
+      "id": "oroc_es",
+      "displayName": "Oroc",
+      "country": "ES",
+      "aliases": [
+        "oroc"
+      ],
+      "mccMncs": [],
+      "network": "Orange",
+      "discoveredVia": [
+        "Kelisto"
+      ],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "verifiedDate": "2026-09-08",
+      "source": {
+        "label": "Oroc official mobile and fibre offers",
+        "url": "https://oroc.es/"
+      },
+      "ruleNoteNl": "Oroc is via Kelisto als actieve provider gevonden en de officiële site bevestigt mobiele bundels en fair-usevoorwaarden. Er wordt geen specifieke data-afronding aangenomen.",
+      "ruleNoteEn": "Oroc was found as an active carrier through Kelisto and its official site confirms mobile plans and fair-use conditions. No specific data rounding is assumed."
+    },
+    {
+      "id": "pepephone_es",
+      "displayName": "Pepephone",
+      "country": "ES",
+      "aliases": [
+        "pepephone",
+        "pepe phone"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "Pepephone current 5G mobile tariffs",
+        "url": "https://www.pepephone.com/tarifas-moviles"
+      },
+      "verifiedDate": "2026-09-08",
+      "ruleNoteNl": "Pepephone ES is opgenomen met de actuele officiële mobiele tarieven. Zonder een expliciete actuele afrondregel blijft Data2U bij Android-metingen en kalibratie.",
+      "ruleNoteEn": "Pepephone ES is included with current official mobile tariffs. Without an explicit current rounding rule, Data2U stays with Android measurements and calibration.",
+      "network": "Orange",
+      "discoveredVia": [
+        "Kelisto"
+      ]
+    },
+    {
+      "id": "r_cable_es",
+      "displayName": "R Cable",
+      "country": "ES",
+      "aliases": [
+        "r cable",
+        "mundo r",
+        "mundo-r"
+      ],
+      "mccMncs": [],
+      "network": "Orange",
+      "discoveredVia": [
+        "Kelisto"
+      ],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "verifiedDate": "2026-09-08",
+      "source": {
+        "label": "R Cable official website",
+        "url": "https://mundo-r.com/"
+      },
+      "ruleNoteNl": "R Cable is toegevoegd uit de actuele Kelisto-providerlijst. De officiële bron is gekoppeld, maar Data2U verzint geen afrondregel wanneer die niet expliciet is bevestigd.",
+      "ruleNoteEn": "R Cable was added from Kelisto’s current carrier list. The official source is linked, but Data2U does not invent a rounding rule when it is not explicitly confirmed."
+    },
+    {
+      "id": "simyo_es",
+      "displayName": "simyo",
+      "country": "ES",
+      "aliases": [
+        "simyo"
+      ],
+      "mccMncs": [],
+      "network": "Orange",
+      "discoveredVia": [
+        "Kelisto"
+      ],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "verifiedDate": "2026-09-08",
+      "source": {
+        "label": "simyo España current 5G mobile tariffs",
+        "url": "https://www.simyo.es/tarifas-movil.html"
+      },
+      "ruleNoteNl": "simyo Spanje is apart van Simyo Nederland opgenomen. De officiële Spaanse tarievenbron is gekoppeld; de vermelding van prijzen per MB wordt niet automatisch vertaald naar een facturatie-afronding zonder expliciete incrementregel.",
+      "ruleNoteEn": "simyo Spain is stored separately from Simyo Netherlands. The official Spanish tariff source is linked; prices per MB are not automatically converted into a billing-rounding rule without an explicit increment."
+    },
+    {
+      "id": "telecable_es",
+      "displayName": "Telecable",
+      "country": "ES",
+      "aliases": [
+        "telecable"
+      ],
+      "mccMncs": [],
+      "network": "Movistar",
+      "discoveredVia": [
+        "Kelisto"
+      ],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "verifiedDate": "2026-09-08",
+      "source": {
+        "label": "Telecable official website",
+        "url": "https://telecable.es/"
+      },
+      "ruleNoteNl": "Telecable is toegevoegd via Kelisto. Het netwerk is als metadata opgenomen; zonder expliciete officiële facturatie-eenheid gebruikt Data2U geen providerafronding.",
+      "ruleNoteEn": "Telecable was added via Kelisto. Its network is stored as metadata; without an explicit official billing unit Data2U applies no carrier rounding."
+    },
+    {
+      "id": "vodafone_es",
+      "displayName": "Vodafone",
+      "country": "ES",
+      "aliases": [
+        "vodafone"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "Vodafone España current mobile contract tariffs",
+        "url": "https://www.vodafone.es/c/particulares/es/productos-y-servicios/movil/contrato/tarifas-contrato/"
+      },
+      "ruleNoteNl": "Vodafone ES is opgenomen met de actuele officiële mobiele tarieven. Onbevestigde afrondregels worden niet toegepast.",
+      "ruleNoteEn": "Vodafone ES is included with the current official mobile tariffs. Unverified rounding rules are not applied.",
+      "verifiedDate": "2026-09-08",
+      "network": "Vodafone",
+      "discoveredVia": [
+        "Kelisto"
+      ]
+    },
+    {
+      "id": "yoigo_es",
+      "displayName": "Yoigo",
+      "country": "ES",
+      "aliases": [
+        "yoigo",
+        "xfera"
+      ],
+      "mccMncs": [],
+      "unitBase": 1000,
+      "dataRounding": null,
+      "voiceRounding": null,
+      "verificationStatus": "partial",
+      "source": {
+        "label": "Yoigo current mobile tariffs",
+        "url": "https://www.yoigo.com/tarifas-moviles"
+      },
+      "ruleNoteNl": "Yoigo ES wordt herkend via de actuele officiële tarievenpagina. Data2U past alleen regels toe die expliciet zijn geverifieerd.",
+      "ruleNoteEn": "Yoigo ES is recognised from the current official tariff page. Data2U only applies rules that are explicitly verified.",
+      "verifiedDate": "2026-09-08",
+      "network": "MasOrange / Yoigo",
+      "discoveredVia": [
+        "Kelisto"
+      ]
+    }
+  ],
+  "databaseVersion": 3,
+  "discoverySources": [
+    {
+      "country": "NL",
+      "label": "Mobiel.nl",
+      "url": "https://www.mobiel.nl/sim-only"
+    },
+    {
+      "country": "NL",
+      "label": "Belsimpel",
+      "url": "https://www.belsimpel.nl/telefoon/gsm"
+    },
+    {
+      "country": "ES",
+      "label": "Kelisto",
+      "url": "https://www.kelisto.es/tarifas-movil-contrato"
+    }
+  ]
+}
