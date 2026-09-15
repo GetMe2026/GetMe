@@ -39,13 +39,18 @@
       "id": "esmarty",
       "name": "Esmarty",
       "packageName": "com.esmarty.app",
-      "versionCode": 10,
-      "versionName": "0.5.4",
+      "versionCode": 11,
+      "versionName": "0.6.0",
       "description": "Material You app voor het vinden en vergelijken van lokale prepaid-eSIMs.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/esmarty.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/esmarty-v0.5.4/Esmarty.0.5.4.apk",
-      "changelog": "<img width=\"1130\" height=\"1413\" alt=\"645622060-ac957106-214e-45d1-9d75-e17eb4b87bbf\" src=\"https://github.com/user-attachments/assets/b1242901-7510-4722-8af7-060e57e71535\" />\n\n  Esmarty changelog\n\n  v0.5.4\n\n- Provider links now open in Esmarty's own in-app browser by default instead of always handing the URL to Android's default browser.\n- Added automatic provider-page language detection and on-device translation with ML Kit.\n- Added website translation targets: System language, Dutch, English and Spanish.\n- Esmarty first prefers an official provider language variant when one is advertised by the site; otherwise it translates the visible page text.\n- Added Original / Translate switching plus an explicit Open in browser action.\n- Login, authentication, cart, checkout and payment flows are handed back to the user's normal browser.\n- Added an Esmarty settings dialog for in-app browser and translation preferences.\n- Fixed system theme handling: Esmarty now uses the dark palette when Android dark mode is enabled and the light palette otherwise.\n- The embedded browser follows system dark mode using WebView algorithmic darkening where supported.\n- Added explicit day/night system-bar styling.\n- Updated app version to 0.5.4 (versionCode 10).",
-      "publishedAt": "2026-09-04"
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/esmarty-v0.6.0/Esmarty.0.6.0.apk",
+      "changelog": "Esmarty 0.6.0\n\n  UI redesign\n- Simplified the main navigation to Discover, Trips and Wallet.\n- Favorites are now integrated into Discover.\n- Comparing eSIMs is now contextual instead of using a permanent tab.\n- Added more compact and easier-to-scan eSIM cards.\n- Added a Best match section to country pages.\n- Improved the upcoming trip overview.\n\n  Translate 2.0\n- Improved automatic website translation with on-device ML Kit.\n- System language now follows all supported device languages.\n- Added Dutch, English, Spanish, German, French, Italian and Portuguese as explicit translation targets.\n- Translation now works with larger contextual text blocks for more natural results.\n- Visible website content is translated first for faster perceived performance.\n- Added support for dynamically loaded website content.\n- Protected technical terms such as eSIM, SIM, APN, 5G, GB and prices from unnecessary translation.\n- Added a temporary local translation cache.\n- Added an option to download translation models over Wi-Fi only.\n\n  Provider browser\n- Improved the built-in provider browser.\n- Official provider domains are now clearly identified.\n- Leaving the verified provider domain is clearly indicated.\n- Login, cart, checkout and payment flows continue to open in the system browser.\n- Improved page title and translation status presentation.\n\n  Performance\n- No periodic background polling was added.\n- Translation processing only runs while the in-app browser is active.\n- Improved translation batching and debouncing to reduce unnecessary CPU usage.",
+      "publishedAt": "2026-09-15",
+      "sha256": "6c2d93ca26ab105354ddb6a428931572f957df97f6e4d981efec2022d70d3b91",
+      "apkSize": 110795807,
+      "signingSha256": "707df17f678b2530f2f958d26de3e34cc6d967dd70b67bdc870d4abc93a89b25",
+      "minimumAndroid": 26,
+      "prerelease": false
     },
     {
       "id": "p2dichtbij",
