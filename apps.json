@@ -126,20 +126,25 @@
       "id": "getme",
       "name": "GetMe",
       "packageName": "nl.getme.app",
-      "versionCode": 8,
-      "versionName": "1.4.0",
+      "versionCode": 10,
+      "versionName": "1.5.1",
       "description": "Eigen Material You appcatalogus en veilige updater voor directe APK-releases.",
       "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/getme.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/getme-v1.4.0/GetMe-v1.4.0.apk",
-      "changelog": "GetMe 1.4.0\n\n- Added a new Update Center with update count and Update all.\n- Added app details, categories, favorites and My apps.\n- Added installed, update available, new and updated status indicators.\n- Added resumable APK downloads with progress, pause, cancel and retry.\n- Added optional Wi-Fi-only downloads.\n- Added APK package, version, signature and SHA-256 verification.\n- Added previous-version history with guarded rollback support.\n- Added battery-friendly automatic update checks.\n- Added catalog validation and safer cache handling.\n- GetMe can now update itself through GetMe.",
-      "publishedAt": "2026-09-05",
+      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/v1.5.0/GetMe-v1.5.0.apk",
+      "changelog": "GetMe 1.5.0\n\nRedesigned the apps overview to prioritize apps already installed on your device.\nAdded a dedicated section for apps available through GetMe.\nImproved installed-app detection and update highlighting.\nImproved bilingual UI and release information.\nRefined the overall layout and navigation.\nPerformance and stability improvements.",
+      "publishedAt": "2026-09-15",
       "category": "Systeem",
       "tags": [
         "updater",
         "catalogus",
         "apk"
       ],
-      "featured": true
+      "featured": true,
+      "sha256": "01b7a280615904d8694fef4c88eb10fccb864252cc9213cd154dc9d611966ef9",
+      "apkSize": 12207304,
+      "signingSha256": "08a794c3430b2552f0503dfd26840d9c38a05633789882ae03c4cbdb50275063",
+      "minimumAndroid": 26,
+      "prerelease": false
     }
   ]
 }
