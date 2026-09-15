@@ -28,7 +28,10 @@ jobs:
           ref: main
 
       - name: Android tools instellen
-        uses: android-actions/setup-android@v3
+  uses: android-actions/setup-android@v3
+  with:
+    packages: platform-tools
+       
 
       - name: Android build-tools installeren
         shell: bash
