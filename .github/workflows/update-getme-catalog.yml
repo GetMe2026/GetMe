@@ -3,6 +3,7 @@ name: Update GetMe catalog from release
 on:
   release:
     types: [published]
+
   workflow_dispatch:
     inputs:
       tag:
@@ -28,10 +29,9 @@ jobs:
           ref: main
 
       - name: Android tools instellen
-  uses: android-actions/setup-android@v3
-  with:
-    packages: platform-tools
-       
+        uses: android-actions/setup-android@v3
+        with:
+          packages: platform-tools
 
       - name: Android build-tools installeren
         shell: bash
@@ -46,7 +46,12 @@ jobs:
           else
             TAG="${{ inputs.tag }}"
           fi
-          [[ -n "$TAG" ]] || { echo "Geen release-tag gevonden."; exit 1; }
+
+          [[ -n "$TAG" ]] || {
+            echo "Geen release-tag gevonden."
+            exit 1
+          }
+
           echo "tag=$TAG" >> "$GITHUB_OUTPUT"
 
       - name: Releasegegevens ophalen
@@ -55,8 +60,13 @@ jobs:
           TAG: ${{ steps.release.outputs.tag }}
         shell: bash
         run: |
-          gh api "repos/${GITHUB_REPOSITORY}/releases/tags/${TAG}" > /tmp/getme-release.json
-          APK_COUNT=$(jq '[.assets[] | select(.name | ascii_downcase | endswith(".apk"))] | length' /tmp/getme-release.json)
+          gh api "repos/${GITHUB_REPOSITORY}/releases/tags/${TAG}" \
+            > /tmp/getme-release.json
+
+          APK_COUNT=$(jq \
+            '[.assets[] | select(.name | ascii_downcase | endswith(".apk"))] | length' \
+            /tmp/getme-release.json)
+
           if [[ "$APK_COUNT" -ne 1 ]]; then
             echo "GetMe verwacht precies 1 APK in deze release, maar vond: $APK_COUNT"
             exit 1
@@ -70,33 +80,76 @@ jobs:
         run: |
           rm -rf release-apk
           mkdir -p release-apk
-          gh release download "$TAG" --pattern '*.apk' --dir release-apk
-          APK=$(find release-apk -maxdepth 1 -type f -iname '*.apk' -print -quit)
-          [[ -n "$APK" ]] || { echo "APK kon niet worden gedownload."; exit 1; }
+
+          gh release download "$TAG" \
+            --pattern '*.apk' \
+            --dir release-apk
+
+          APK=$(find release-apk \
+            -maxdepth 1 \
+            -type f \
+            -iname '*.apk' \
+            -print \
+            -quit)
+
+          [[ -n "$APK" ]] || {
+            echo "APK kon niet worden gedownload."
+            exit 1
+          }
+
           echo "APK_PATH=$APK" >> "$GITHUB_ENV"
 
       - name: APK metadata en hashes uitlezen
         shell: bash
         run: |
-          AAPT=$(find "$ANDROID_HOME/build-tools" -maxdepth 2 -type f -name aapt | sort -V | tail -n 1)
-          APKSIGNER=$(find "$ANDROID_HOME/build-tools" -maxdepth 2 -type f -name apksigner | sort -V | tail -n 1)
-          [[ -n "$AAPT" && -n "$APKSIGNER" ]] || { echo "aapt/apksigner niet gevonden."; exit 1; }
+          AAPT=$(find "$ANDROID_HOME/build-tools" \
+            -maxdepth 2 \
+            -type f \
+            -name aapt \
+            | sort -V \
+            | tail -n 1)
 
-          BADGING=$($AAPT dump badging "$APK_PATH")
-          PACKAGE_LINE=$(printf '%s\n' "$BADGING" | grep '^package:' | head -n 1)
-          SDK_LINE=$(printf '%s\n' "$BADGING" | grep '^sdkVersion:' | head -n 1)
+          APKSIGNER=$(find "$ANDROID_HOME/build-tools" \
+            -maxdepth 2 \
+            -type f \
+            -name apksigner \
+            | sort -V \
+            | tail -n 1)
 
-          PACKAGE_NAME=$(printf '%s\n' "$PACKAGE_LINE" | sed -n "s/^package: name='\([^']*\)'.*/\1/p")
-          VERSION_CODE=$(printf '%s\n' "$PACKAGE_LINE" | sed -n "s/.*versionCode='\([^']*\)'.*/\1/p")
-          VERSION_NAME=$(printf '%s\n' "$PACKAGE_LINE" | sed -n "s/.*versionName='\([^']*\)'.*/\1/p")
-          MIN_SDK=$(printf '%s\n' "$SDK_LINE" | sed -n "s/.*'\([^']*\)'.*/\1/p")
+          [[ -n "$AAPT" && -n "$APKSIGNER" ]] || {
+            echo "aapt/apksigner niet gevonden."
+            exit 1
+          }
+
+          BADGING=$("$AAPT" dump badging "$APK_PATH")
+
+          PACKAGE_LINE=$(printf '%s\n' "$BADGING" \
+            | grep '^package:' \
+            | head -n 1)
+
+          SDK_LINE=$(printf '%s\n' "$BADGING" \
+            | grep '^sdkVersion:' \
+            | head -n 1)
+
+          PACKAGE_NAME=$(printf '%s\n' "$PACKAGE_LINE" \
+            | sed -n "s/^package: name='\([^']*\)'.*/\1/p")
+
+          VERSION_CODE=$(printf '%s\n' "$PACKAGE_LINE" \
+            | sed -n "s/.*versionCode='\([^']*\)'.*/\1/p")
+
+          VERSION_NAME=$(printf '%s\n' "$PACKAGE_LINE" \
+            | sed -n "s/.*versionName='\([^']*\)'.*/\1/p")
+
+          MIN_SDK=$(printf '%s\n' "$SDK_LINE" \
+            | sed -n "s/.*'\([^']*\)'.*/\1/p")
+
           SHA256=$(sha256sum "$APK_PATH" | awk '{print $1}')
           APK_SIZE=$(stat -c '%s' "$APK_PATH")
 
-          # Verify first. Then accept the signer labels emitted by both older and newer
-          # apksigner versions, e.g. "Signer #1 ..." and "Signer (minSdkVersion=...) ...".
           set +e
-          CERT_OUTPUT=$($APKSIGNER verify --print-certs "$APK_PATH" 2>&1)
+          CERT_OUTPUT=$("$APKSIGNER" verify \
+            --print-certs \
+            "$APK_PATH" 2>&1)
           CERT_STATUS=$?
           set -e
 
@@ -107,15 +160,24 @@ jobs:
           fi
 
           SIGNING_SHA256=$(printf '%s\n' "$CERT_OUTPUT" \
-          | sed -nE 's/^.*certificate SHA-256 digest:[[:space:]]*//p' \
-          | head -n 1 \
-          | tr -d ':[:space:]' \
-          | tr 'A-F' 'a-f')
+            | sed -nE \
+              's/^.*certificate SHA-256 digest:[[:space:]]*//p' \
+            | head -n 1 \
+            | tr -d ':[:space:]' \
+            | tr 'A-F' 'a-f')
 
-          [[ -n "$PACKAGE_NAME" && -n "$VERSION_CODE" && -n "$VERSION_NAME" ]] || {
-            echo "Package- of versiegegevens konden niet uit de APK worden gelezen."; exit 1;
+          [[ -n "$PACKAGE_NAME" \
+            && -n "$VERSION_CODE" \
+            && -n "$VERSION_NAME" ]] || {
+            echo "Package- of versiegegevens konden niet uit de APK worden gelezen."
+            exit 1
           }
-          [[ "$SHA256" =~ ^[0-9a-f]{64}$ ]] || { echo "Ongeldige SHA-256."; exit 1; }
+
+          [[ "$SHA256" =~ ^[0-9a-f]{64}$ ]] || {
+            echo "Ongeldige SHA-256."
+            exit 1
+          }
+
           if [[ ! "$SIGNING_SHA256" =~ ^[0-9a-f]{64}$ ]]; then
             printf '%s\n' "$CERT_OUTPUT"
             echo "Signing certificate kon niet uit de apksigner-uitvoer worden gelezen."
@@ -134,41 +196,96 @@ jobs:
         shell: bash
         run: |
           python3 <<'PY'
-          import json, os, re
+          import json
+          import os
+          import re
           from pathlib import Path
 
           catalog_path = Path("apps.json")
           release_path = Path("/tmp/getme-release.json")
-          catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
-          release = json.loads(release_path.read_text(encoding="utf-8"))
+
+          catalog = json.loads(
+              catalog_path.read_text(encoding="utf-8")
+          )
+
+          release = json.loads(
+              release_path.read_text(encoding="utf-8")
+          )
+
           apps = catalog.setdefault("apps", [])
 
           package_name = os.environ["PACKAGE_NAME"]
           version_code = int(os.environ["VERSION_CODE"])
           version_name = os.environ["VERSION_NAME"]
-          minimum_android = int(os.environ.get("MIN_SDK") or 26)
+          minimum_android = int(
+              os.environ.get("MIN_SDK") or 26
+          )
           sha256 = os.environ["APK_SHA256"].lower()
           apk_size = int(os.environ["APK_SIZE"])
-          signing_sha256 = os.environ["SIGNING_SHA256"].lower()
-          prerelease = bool(release.get("prerelease", False))
+          signing_sha256 = os.environ[
+              "SIGNING_SHA256"
+          ].lower()
 
-          apk_assets = [a for a in release.get("assets", []) if str(a.get("name", "")).lower().endswith(".apk")]
+          prerelease = bool(
+              release.get("prerelease", False)
+          )
+
+          apk_assets = [
+              asset
+              for asset in release.get("assets", [])
+              if str(asset.get("name", ""))
+              .lower()
+              .endswith(".apk")
+          ]
+
           apk_url = apk_assets[0]["browser_download_url"]
-          published_at = str(release.get("published_at") or "")[:10]
+
+          published_at = str(
+              release.get("published_at") or ""
+          )[:10]
 
           notes = (release.get("body") or "").strip()
+
           cleaned = []
+
           for line in notes.splitlines():
               if re.search(r"<img\b", line, flags=re.I):
                   continue
-              line = re.sub(r"^\s{0,3}#{1,6}\s*", "", line)
-              line = line.replace("**", "").replace("__", "").replace("`", "")
-              cleaned.append(line.rstrip())
-          changelog = "\n".join(cleaned).strip() or f"Update naar {version_name}."
 
-          match = next((a for a in apps if a.get("packageName") == package_name), None)
+              line = re.sub(
+                  r"^\s{0,3}#{1,6}\s*",
+                  "",
+                  line
+              )
+
+              line = (
+                  line
+                  .replace("**", "")
+                  .replace("__", "")
+                  .replace("`", "")
+              )
+
+              cleaned.append(line.rstrip())
+
+          changelog = (
+              "\n".join(cleaned).strip()
+              or f"Update naar {version_name}."
+          )
+
+          match = next(
+              (
+                  app
+                  for app in apps
+                  if app.get("packageName")
+                  == package_name
+              ),
+              None
+          )
+
           if match is None:
-              raise SystemExit(f"{package_name} staat nog niet in apps.json.")
+              raise SystemExit(
+                  f"{package_name} staat nog niet in apps.json."
+              )
 
           match.update({
               "versionCode": version_code,
@@ -184,10 +301,19 @@ jobs:
           })
 
           catalog_path.write_text(
-              json.dumps(catalog, ensure_ascii=False, indent=2) + "\n",
+              json.dumps(
+                  catalog,
+                  ensure_ascii=False,
+                  indent=2
+              ) + "\n",
               encoding="utf-8"
           )
-          print(f"Catalogus bijgewerkt: {package_name} -> {version_name} ({version_code})")
+
+          print(
+              f"Catalogus bijgewerkt: "
+              f"{package_name} -> "
+              f"{version_name} ({version_code})"
+          )
           PY
 
       - name: Wijziging naar main committen
@@ -197,8 +323,14 @@ jobs:
             echo "apps.json was al actueel; niets te committen."
             exit 0
           fi
+
           git config user.name "GetMe Release Bot"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add apps.json
-          git commit -m "GetMe: ${PACKAGE_NAME} ${VERSION_NAME}"
+
+          git commit \
+            -m "GetMe: ${PACKAGE_NAME} ${VERSION_NAME}"
+
           git push origin main
