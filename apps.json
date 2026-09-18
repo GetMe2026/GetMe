@@ -19,23 +19,6 @@
       "prerelease": false
     },
     {
-      "id": "vatradar",
-      "name": "VAT24",
-      "packageName": "com.vatradar.app",
-      "versionCode": 95,
-      "versionName": "1.1.34",
-      "description": "Live VATSIM-radar met vluchten, ATC, vliegvelden, routes en vliegtuigfoto's.",
-      "iconUrl": "https://raw.githubusercontent.com/GetMe2026/GetMe/main/VAT24.png",
-      "apkUrl": "https://github.com/GetMe2026/GetMe/releases/download/vat24-v1.1.34/VAT24-v1.1.34.apk",
-      "changelog": "VAT24 1.1.34\n\nThis release focuses on the map-performance regression introduced by the richer aircraft rendering in 1.1.33.\n\nThe visual aircraft upgrade remains intact, but the hot rendering path has been reworked so panning and pinch-to-zoom no longer trigger avoidable aircraft bitmap generation, repeated classification, repeated projection, full label collision scans or camera-driven marker rebuild work.\n\nVATSIM positioning is intentionally unchanged. VAT24 still uses the same source snapshots, coordinates, headings and refresh flow; no predictive aircraft movement or new interpolation has been introduced.",
-      "publishedAt": "2026-09-18",
-      "sha256": "03655d5083bb03b4a52b8fe37bc2fbffd4596fef8ac3c57caee79d4a8758ae5e",
-      "apkSize": 16168850,
-      "signingSha256": "7d54fbb91e35db9b60f647644d829363fbea7cb2a69436a5d05a660aa68ce2cb",
-      "minimumAndroid": 26,
-      "prerelease": false
-    },
-    {
       "id": "esmarty",
       "name": "Esmarty",
       "packageName": "com.esmarty.app",
